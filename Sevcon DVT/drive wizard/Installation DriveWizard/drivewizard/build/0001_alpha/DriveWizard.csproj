@@ -1,0 +1,395 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{016BC55B-2773-4756-804C-A047ADF3CEA6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Source\bin\Release\Resources\icons\DriveWizard.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DriveWizard</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DriveWizard</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>DriveWizard.MAIN_WINDOW</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>Source\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;PERMITTING_VIRTUAL_NODES;EXTERNAL_SELF_CHAR;NEW_SYSTEM_PDOS</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>Source\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;PERMITTING_VIRTUAL_NODES;EXTERNAL_SELF_CHAR;NEW_SYSTEM_PDOS</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Office">
+      <Name>office</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="vcinet2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1fb9dc3563e138e2, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Source\bin\Release\vcinet2.dll</HintPath>
+    </Reference>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\tools\DW Tree View Editor\build\WindowsApplication2\ObjectXMLSerializer.cs">
+      <Link>Source\GUI\XML\ObjectXMLSerializer.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\..\tools\DW Tree View Editor\build\WindowsApplication2\sevconEDSFields.cs">
+      <Link>Source\GUI\XML\sevconEDSFields.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\..\tools\DW Tree View Editor\build\WindowsApplication2\SevconTree.cs">
+      <Link>Source\GUI\XML\SevconTree.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Source\customInstall\InstallFileOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\customInstall\ShortcutsInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\customInstall\UnInstallFileOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\DI\COBObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\DI\communications.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\DI\EDSFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\DI\LSS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\DI\nodeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\DI\SystemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\DI\VCI3.cs" />
+    <Compile Include="Source\GUI\GUICommonClasses\DWConfigFileManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\GUICommonClasses\formControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\GUICommonClasses\GUIdataGrid_Classes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\GUICommonClasses\SCCorpStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\GUICommonClasses\VehicleProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\CAN_BUS_CONFIGURATION.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\COUNTERS_LOG_WINDOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\DATA_DISPLAY_WINDOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\DEVICE_PROGRAMMING_WINDOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\EEPROM_VIEW_WINDOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\ErrorMessageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\FAULT_LOG_WINDOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\HELP_ABOUT_WINDOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\MAIN_WINDOW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\ManageEDSsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\ManageEDSsWindow.Designer.cs">
+      <DependentUpon>ManageEDSsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\OPTIONS_WINDOW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\OP_LOGS_WINDOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\SEARCH_WINDOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\SEARCH_WINDOW.Designer.cs">
+      <DependentUpon>SEARCH_WINDOW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\SELECT_PROFILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\SELF_CHARACTERISATION_WINDOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\WindowClasses\SYSTEM_LOG_WINDOW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\XML\MonitorStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\GUI\XML\sevconProducts.cs" />
+    <Compile Include="Source\SelfCharacterization\amebsa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\SelfCharacterization\Amotsa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\SelfCharacterization\Delegates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\SelfCharacterization\EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\SelfCharacterization\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\SelfCharacterization\Ran1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\SelfCharacterization\SCprofile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Source\bin\Release\resources\App.ico" />
+    <Content Include="Source\bin\Release\resources\icons\hideRO.png" />
+    <Content Include="Source\bin\Release\resources\icons\loggedIn.ico" />
+    <Content Include="Source\bin\Release\resources\icons\notConnected.ico" />
+    <Content Include="Source\bin\Release\resources\icons\notloggedIn.ico" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\AnimPreOpLEDMaster.gif" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\AnimPreOpLEDSlave.gif" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\IOPoint.gif" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\newCANNodeMasterOffOff2.png" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\newCANNodeMasterOffOn2.png" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\newCANNodeMasterOnOff2.png" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\newCANNodeMasterOnOn2.png" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\newCANNodeSlaveOffOff2.png" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\newCANNodeSlaveOffOn2.png" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\newCANNodeSlaveOnOff2.gif" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\newCANNodeSlaveOnOff2.png" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\newCANNodeSlaveOnOn2.png" />
+    <Content Include="Source\bin\Release\resources\icons\PDOImages\stopHand.gif" />
+    <Content Include="Source\bin\Release\resources\icons\seeRO.png" />
+    <Content Include="Source\bin\Release\resources\VCIcsharp.dll" />
+    <Content Include="Source\bin\Release\resources\vcinet2.dll" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\bin\Release\resources\icons\circleArrowAnim.gif" />
+    <EmbeddedResource Include="Source\bin\Release\resources\icons\ConnectedOK.ico" />
+    <EmbeddedResource Include="Source\customInstall\InstallFileOptions.resx">
+      <DependentUpon>InstallFileOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\customInstall\ShortcutsInstaller.resx">
+      <DependentUpon>ShortcutsInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\customInstall\UnInstallFileOptions.resx">
+      <DependentUpon>UnInstallFileOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\GUICommonClasses\formControls.resx">
+      <DependentUpon>formControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\GUICommonClasses\GUIdataGrid_Classes.resx">
+      <DependentUpon>GUIdataGrid_Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\CAN_BUS_CONFIGURATION.resx">
+      <DependentUpon>CAN_BUS_CONFIGURATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\COUNTERS_LOG_WINDOW.resx">
+      <DependentUpon>COUNTERS_LOG_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\DATA_DISPLAY_WINDOW.resx">
+      <DependentUpon>DATA_DISPLAY_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\DEVICE_PROGRAMMING_WINDOW.resx">
+      <DependentUpon>DEVICE_PROGRAMMING_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\EEPROM_VIEW_WINDOW.resx">
+      <DependentUpon>EEPROM_VIEW_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\ErrorMessageWindow.resx">
+      <DependentUpon>ErrorMessageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\FAULT_LOG_WINDOW.resx">
+      <DependentUpon>FAULT_LOG_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\HELP_ABOUT_WINDOW.resx">
+      <DependentUpon>HELP_ABOUT_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\MAIN_WINDOW.resx">
+      <DependentUpon>MAIN_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\ManageEDSsWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManageEDSsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\OPTIONS_WINDOW.resx">
+      <DependentUpon>OPTIONS_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\OP_LOGS_WINDOW.resx">
+      <DependentUpon>OP_LOGS_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\SEARCH_WINDOW.resx">
+      <DependentUpon>SEARCH_WINDOW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\SELECT_PROFILE.resx">
+      <DependentUpon>SELECT_PROFILE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\SELF_CHARACTERISATION_WINDOW.resx">
+      <DependentUpon>SELF_CHARACTERISATION_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GUI\WindowClasses\SYSTEM_LOG_WINDOW.resx">
+      <DependentUpon>SYSTEM_LOG_WINDOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\SelfCharacterization\EditProfile.resx">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\SelfCharacterization\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,280 @@
+<!--
+(C) COPYRIGHT Sevcon 2007
+
+Project Reference UK0139
+
+FILE
+	$Revision:1.3$
+	$Version:$
+	$Author:ak$
+	$ProjectName:DriveWizard$ 
+
+	$RevDate:11/12/2007 11:26:16$
+	$ModDate:11/12/2007 11:01:02$
+
+ORIGINAL AUTHOR
+    Jude Wood
+
+DESCRIPTION
+	Drive wizard HTML help page.
+ 
+REFERENCES    
+
+MODIFICATION HISTORY
+    $Log:  58852: user controls overview .htm 
+
+   Rev 1.3    11/12/2007 11:26:16  ak
+ TC keywords added to source for version control.
+
+
+
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/DWHelpTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>User controls</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="../../../CSS%20Style%20Sheets/DWHelp.css" rel="stylesheet" type="text/css">
+<!-- InstanceParam name="ALinks" type="boolean" value="true" -->
+</head>
+
+<body>
+  <div align="right">    <img src="../../../Topic%20Files/Help%20Images/DWlogoSmall.gif" alt="Drive WIzard logo" width="54" height="24">&nbsp;<a name="top"></a><img src="../../../Topic%20Files/Help%20Images/SEVCON.gif" alt="Sevcon logo" width="115" height="16" align="left">
+  </div>
+  <hr>
+  <div id="Layer1" style="position:absolute; z-index:1; visibility: hidden; left: 0; top: 0;"></div>
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+  <h1><span class="TopHeader">User
+    Controls</span></h1>
+  <ul><li><a href="#mainmenu">Main Menu</a></li>
+    <li><a href="#contextmenus">Context Menus</a></li>
+    <li><a href="#toolbar">Tool Bar</a></li>
+    <li><a href="#draganddrop">Drag and Drop icons</a></li>
+    <li><a href="#windowscontrols">Windows GUI Controls</a>
+      <ul>
+        <li><a href="#general">General </a>     
+        </li>
+      </ul>
+    </li>
+    <ul>
+      <li><a href="#parametertable">Parameter table</a></li>
+      <li><a href="#otherusercontrols">Other user controls</a></li>
+    </ul>
+  </ul>
+  <h2 align="center"><a name="mainmenu"></a>Main Menu<span class="DWbodyText"><br>
+  The
+      main menu is used for Drive WIzard specific and offline options:</span></h2>
+  <p align="center"><span class="DWbodyText">  </span><img src="../../Help%20Images/user%20controls%20Img1.gif" alt="main menu" border="0" usemap="#Map">
+    <map name="Map">
+        <area shape="rect" coords="2,18,37,38" href="#" alt="Offline and Connection options">
+        <area shape="rect" coords="35,18,70,37" href="#" alt="Access Help screens">
+        <area shape="rect" coords="70,18,96,38" href="#" alt="Exit Drive Wizard">
+    </map>
+  </p>
+  <blockquote>
+    <h3 >Tools <br>
+    <span class="DWbodyText">Used for setting up Drive WIzard options e.g. language
+    and connection options e.g. Vehicle Profiles.</span></h3>
+    <h3 align="left">Help<br>
+    <span class="DWbodyText">Access to Drive Wizard Help screens</span></h3>
+    <h3 align="left">Exit<br>
+    <span class="DWbodyText">To exit Drive Wizard</span> </h3>
+    <p align="right"><a href="#top">Top</a> </p>
+  </blockquote>
+  <h2 align="left"><a name="contextmenus"></a>Context Menus<span class="DWbodyText"><br>
+Context menus are
+      used to show options that relate to the currently selected screen item.
+    Context menus display all the processes that can be applied to this screen
+    item. When you right click on a screen item its context menu
+      (if available) is displayed. Some context  menu options are dependent
+    on
+      User login level and vehicle mode. Drive
+    Wizard automatically updates the context
+    menus
+  and hides/disables actions that cannot currently be perfromed.</span></h2>
+  <p align="right"><a href="#top">Top</a></p>
+  <h2 align="left"><a name="toolbar"></a>Toolbar<br>
+    <span class="DWbodyText">The toolbar icons are</span></h2>
+  <table width="100%" border="0" cellpadding="3">
+    <tr>
+      <td width="13%"><img src="../../Help%20Images/Toolbar%20Images/anim%20toolbar%20preop.gif" alt="Request pre-operational " width="27" height="26"></td>
+      <td width="87%"><p><span class="DWbodyText">Request the bus master to command all connected CANopen nodes to
+          adopt NMT pre-operational state. <br>
+        If there is no bus master or the bus master is not a sevcon node then
+        Drive Wizard will hide this icon.</span><br>
+      </p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="../../Help%20Images/systemStructIcons/newCANNodeSlaveOnOff2.png" alt="Request operational" width="24" height="24"></td>
+      <td><p class="DWbodyText">Request the bus master to command all connected
+          CANopen nodes to adopt NMT operational state.<br>
+        If there is no bus master
+          or the bus master is not a Sevcon node then
+        Drive Wizard will hide this icon.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="../../Help%20Images/Toolbar%20Images/graph.png" alt="Start Graphing" width="24" height="24"></td>
+      <td class="DWbodyText">Drive WIzard will launch the Guided Process to graph Object Dictionary
+        items.</td>
+    </tr>
+    <tr>
+      <td><img src="../../Help%20Images/Toolbar%20Images/seeRO.gif" alt="Show non-editable OD items" width="24" height="24">, <img src="../../Help%20Images/Toolbar%20Images/hideRO.gif" alt="Hide non-editable OD items" width="24" height="24"></td>
+      <td><p class="DWbodyText">Toggles between displaying and hiing Object
+          Dictionary items that are non-writeable. This gives a simplified System
+          Structure when if you
+        need to modify individual Object dictionary items</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="../../Help%20Images/Toolbar%20Images/plus.png" alt="expand below current" width="24" height="24"></td>
+      <td class="DWbodyText">Expands all icons beneath the currently highlighted
+        icon in the Structure pane view</td>
+    </tr>
+    <tr>
+      <td><img src="../../Help%20Images/Toolbar%20Images/minus.png" alt="collapse all " width="24" height="24"></td>
+      <td class="DWbodyText">Collapses all icons in the structure pane</td>
+    </tr>
+  </table>
+  <p align="right"><a href="#top">Top</a></p>
+  <h2 align="right"><a name="draganddrop"></a>Drag and Drop icons<br>
+    <span class="DWbodyText">    Where a task
+    involves linking one or more Object Dictionary items to a function
+    e.g. adding items to the DCF store or mapping
+    Object Dictionary items into System PDOs, Drive WIzard enables Drag&amp;Drop
+    of the icon from the System structure to its destination. To drag an icon,
+     click and
+    hold
+    the left mouse button over the icon,. With the mouse
+    button
+    held down, drag the item to it destination. A shadow copy of the icon's text
+    will be dragged to indicate that you have successfully dragged the item.
+    When the mouse is over a suitable target, Drive Wizard changes the mouse
+  cursor to a copy symbol and highlights the destination. </span></h2>
+  <p align="right">    <a href="#top">Top</a>     
+  <h2 align="left"><a name="windowscontrols"></a>Window GUI controls</h2>
+  <h2 align="left"><a name="general"></a>General<br>
+    <span class="DWbodyText">    Drive Wizard  hides or
+    disables  controls that are not relevant to the current user level and
+    vehicle mode.
+    When either the
+    user
+    login level
+    or
+    vehicle mode changes Drive Wizard reevaluates which controls to show/enable. <br>
+    Generally, when Drive Wizard is busy 
+user controls to initiate other tasks are disabled until Drive Wizard has finished.
+    Exceptions to this include</span></h2>
+  <blockquote>
+    <h3 align="left">Close Buttons<br>
+      <span class="DWbodyText">Always available but during some critical tasks
+      Drive Wizard will display a warning and ask you confirm window closure</span></h3>
+    <h3 align="left">Drive Wizard Exit menu Option<br>
+    <span class="DWbodyText">Always available but during some
+  critical tasks Drive Wizard will display a warning and ask you confirm exit</span></h3>
+  </blockquote>
+  <p align="right"><a href="#top">Top</a></p>
+  <h2 align="left"><a name="parametertable"></a>Parameter Table. </h2>
+  <table width="100%" border="0">
+    <tr>
+      <td width="10%"><img src="../../Help%20Images/docs_symbols/UM_warning_symbol.gif" alt="Warning symbol" width="29" height="22" align="top"></td>
+      <td width="93%" class="DWbodyText">Changing individual Object Dictionary parameters can affect
+        vehicle perfromance and safety and should only be attempted by expert
+        users.
+        Use Drive Wizard
+        guided processes to change the vehicle set up. </td>
+    </tr>
+  </table>
+  <p align="left" class="DWbodyText">The Parameter Table is displayed in the
+    Detail Pane and allows you to enter new values for Object Dictionary items.
+    Drive Wizard allows
+    prevents you from editing  parameters that are read only for the current
+    user and vehicle mode. Parameters that can be edited ar always show with
+    a blue background. Non editable parameters have either a white or mauve
+    ( heaing lines) back ground. The parameters are color code to make it
+    clear which items can/cannot be edited.
+    If the
+    user
+    login
+    level
+    or
+    vehicle
+    mode
+    changes
+    then Drive WIzard automatically updates which items are now editable. The
+    diagrams below show that the parameter &quot;Source Hours Counter&quot; cannot
+  be edited until this CAN node is pre-operational</p>
+  <table width="75%" border="0" cellpadding="3">
+    <tr>
+      <td><img src="../../Help%20Images/screen%20shots/UserControls%20Img2.gif" alt="Vehicle in operational" width="331" height="162"></td>
+      <td><img src="../../Help%20Images/screen%20shots/UserControls%20Img3.gif" alt="vehicle in pre-operational" width="325" height="163"></td>
+    </tr>
+  </table>
+  <p align="left"><img src="../../Help%20Images/screen%20shots/UserControls%20Img1.gif" alt="key" width="598" height="16">&nbsp;</p>
+  <h3 align="left">Entering values into the Parameter Table<br>
+    <span class="DWbodyText">    When you click on
+    an editable Object Dictionary parameter values Drive Wizard checks whether
+    this parameter has an associated list of
+    valid values If so, Drive WIzard automatically displays a drop down list
+    using  descriptive
+    names for the valid values These drop down lists ar also used in table
+  associated with Drive Wizard logs</span></h3>
+  <p align="left"><img src="../../Help%20Images/screen%20shots/UserControls%20Img4.gif" alt="Parameter Table drop down list" width="275" height="139"></p>
+  <p align="left" class="DWbodyText">If a parameter has no associated list then
+    Drive Wizard waits for you to enter the new value. Drive Wizard then checks
+    the entered value.
+    Drive Wizard checks for and
+    report the following error types. </p>
+  <h3 align="left">Range checking error<br>
+    <span class="DWbodyText">    Occurs if  the entered value. is greater
+  than the value in the Max column or less than he value. in the Min column</span></h3>
+  <p align="left"><img src="../../Help%20Images/screen%20shots/UserControls%20Img7.gif" alt="Range Error handling" width="611" height="102"></p>
+  <h3 align="left">Format checking<br>
+    <span class="DWbodyText"> Occurs if a hexadecimal parameter is entered
+  without the leading &quot;0x&quot;. </span></h3>
+  <p align="left"><img src="../../Help%20Images/screen%20shots/UserControls%20Img6.gif" alt="Format error handling">&nbsp;</p>
+  <h3 align="left">Typographical errors<br>
+    <span class="DWbodyText">    Occurs if an entry fromat doe snot match
+    the CANopen data type e.g. a letter was entered when Drive Wizard was expecting
+  a number. </span></h3>
+  <p align="left"><img src="../../Help%20Images/screen%20shots/UserControls%20Img5.gif" alt="Typographical Error Handling" width="371" height="136"></p>
+  <p align="left" class="DWbodyText">If Drive WIzard reports and error then a <img src="../../Help%20Images/screen%20shots/ExclamtionMark_InputErrorSymbol.gif" alt="Error in user entry symbol" width="12" height="11"> symbol
+    is displayed in the offening cell and an explanation of the error is displayed
+    as a tool tip. you should re-enter the value. or press Escape or Delete to
+    redisplay the original value.</p>
+  <p align="right"><a href="#top">Top</a></p>
+  <h2 align="left"><a name="otherusercontrols"></a>Other User controls</h2>
+  <h3 align="left">Checkboxes<br>
+    <span class="DWbodyText">Grayed out when disabled</span></h3>
+  <h3 align="left">Combo boxes. <br>
+    <span class="DWbodyText">    A drop down list os sample values is provided
+    but Drive Wizard also allows you to enter you own values e.g. entering a
+    unique PDO identification</span></h3>
+  <h3 align="left">Number Entry boxes<br>
+    <span class="DWbodyText">    Allows you to enter or select a numerical
+  value.</span></h3>
+  <h3 align="left">Tex boxes<br>
+    <span class="DWbodyText">    Used mainly for entry of text strings e.g. Vehicle
+    Profile names. No error checking is perfromed but a maximum length may be
+  applied.</span></h3>
+  <h3 align="left"> Buttons<br>
+    <span class="DWbodyText">    USer for user confirmation e.g. to move to the
+    next stage of a guided process or to Submit new values to a CANopen node. </span></h3>
+  <h3 align="left">Drag&amp;Drop<br>
+    <span class="DWbodyText">    Used for linking Object dictionary items to
+    specific destinations as described <a href="#draganddrop">here</a>. Also
+  used to link other objects e.g. routing System PDOs</span></h3>
+  <h3 align="left">Tab Controls<br>
+  <span class="DWbodyText">  Standard WIndow Tab control e.g. Tools Options screen.</span></h3>
+  <p align="right"><a href="#top">Top</a></p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

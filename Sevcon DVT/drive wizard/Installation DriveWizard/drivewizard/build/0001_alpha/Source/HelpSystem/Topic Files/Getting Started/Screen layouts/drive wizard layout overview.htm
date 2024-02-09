@@ -1,0 +1,126 @@
+<!--
+(C) COPYRIGHT Sevcon 2007
+
+Project Reference UK0139
+
+FILE
+	$Revision:1.3$
+	$Version:$
+	$Author:ak$
+	$ProjectName:DriveWizard$ 
+
+	$RevDate:11/12/2007 11:25:58$
+	$ModDate:11/12/2007 10:57:48$
+
+ORIGINAL AUTHOR
+    Jude Wood
+
+DESCRIPTION
+	Drive wizard HTML help page.
+ 
+REFERENCES    
+
+MODIFICATION HISTORY
+    $Log:  58838: drive wizard layout overview.htm 
+
+   Rev 1.3    11/12/2007 11:25:58  ak
+ TC keywords added to source for version control.
+
+
+
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/DWHelpTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Layout: Overview</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="../../../CSS%20Style%20Sheets/DWHelp.css" rel="stylesheet" type="text/css">
+<!-- InstanceParam name="ALinks" type="boolean" value="true" -->
+</head>
+
+<body>
+  <div align="right">    <img src="../../../Topic%20Files/Help%20Images/DWlogoSmall.gif" alt="Drive WIzard logo" width="54" height="24">&nbsp;<a name="top"></a><img src="../../../Topic%20Files/Help%20Images/SEVCON.gif" alt="Sevcon logo" width="115" height="16" align="left"></br>
+  </div>
+  <hr>
+  <div id="Layer1" style="position:absolute; z-index:1; visibility: hidden; left: 0; top: 0;"></div>
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+<Object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<param name="Keyword" value="Drive Wizard Layout: Overview">
+</OBJECT>
+<h1 align="left" class="TopHeader"><b><font color="#000075" size="4" face="Arial, Helvetica, sans-serif">Drive Wizard Layout: Overview</font></b></h1>
+<p class="DWbodyText">Drive Wizard main view is divided into two main sections:</p>
+<ul>
+  <li><a href="#structurepane">The Structure
+  Pane which is located on the left side of the main screen</a> </li>
+  <li><a href="#detailpane">The Detail
+      Pane which
+    is located on the right side of the main screen</a></li>
+</ul>
+<p align="center"><img src="../../Help%20Images/screen%20shots/drive%20wizard%20layout%20overview%20img1.gif" alt="main screen layout" width="669" height="536" border="0" usemap="#Map">
+  <map name="Map">
+  <area shape="rect" coords="1,509,668,534" href="../User%20feedback/user%20feedback.htm" alt="Status bar">
+  <area shape="rect" coords="1,30,669,52" href="../User%20feedback/user%20feedback.htm" alt="Toolbar">
+  <area shape="rect" coords="0,13,670,29" href="../User%20feedback/user%20feedback.htm" alt="Main menu">
+  <area shape="rect" coords="177,75,667,510" href="#detailpane" alt="Detail Pane">
+  <area shape="rect" coords="1,50,175,508" href="#structurepane" alt="Structure Pane">
+  <area shape="rect" coords="173,50,178,511" href="#" alt="seperator bar">
+  <area shape="rect" coords="176,50,669,77" href="../User%20feedback/user%20feedback.htm" alt="User Instuctions area">
+  </map>
+</p>
+<p class="DWbodyText">These panes are separated by an moveable bar allowing you to see more or
+  less of each pane.</p>
+<p class="DWbodyText">Drive Wizard uses separate windows for functionality that needs to be viewed
+  concurrently with the the <a href="#detailpane">Detail
+Pane</a> such as graphing data. </p>
+<p class="DWbodyText">Separate windows are also used for functionality which is not part of normal
+  System setup, monitoring and adjustment such as fine tuning a Sevcon controller
+  to the individual characteristics of the attached motor(s).</p>
+<h2>The Structure Pane<a name="structurepane"></a></h2>
+<p class="DWbodyText">The structure pane is used to display the connected CAN
+  nodes and a structured view of the parameters contained in their object dictionaries.
+  The structure
+  view also displays icons for Drive Wizard guided processes that can be
+  applied to either the vehicle or to individual nodes. For a definition of each
+  icon
+  type see <a href="../User%20feedback/user%20feedback.htm#systemstructureicons">System
+  Structure icons</a>, Guided processes can be displayed
+  by clicking their icon. If a guided process is not currently applicable e.g.
+  a
+  process
+  requires the node to be in the pre-operational state the Drive Wizard automatically
+  removes the icon from the structure view and redisplays it once the CAN node
+  is set to the pre-operational state. Icons representing parameters contained
+  in a  CAN nodes Object Dictionary can be clicked to view further infromation
+  about this section of the Object Dictionary in the detail pane. Alternatively
+  Object Dictionary items can be dragged to another destination e.g. a list of
+  items to be graphed/monitored in real time.Right clicking in the Structure
+  pane displays a context menu applicable to the currently highlighted
+  Structure Pane icon e.g. Right clicking on any icon under the DCF icon will
+  display the DCF context menu items currently applicable.</p>
+<h2>The Detail Pane<a name="detailpane"></a></h2>
+<p class="DWbodyText">The detail panel is used primarily to display detailed infromation about
+  Object Dictionary parameters. You can monitor individual parameters sin real
+  time using the e detail Pane context
+  menu. You can also change the value of individual parameters that ar available
+  in the current context if necessary. </p>
+<table width="100%" border="0">
+  <tr>
+    <td width="10%"><img src="../../Help%20Images/docs_symbols/UM_warning_symbol.gif" alt="Warning symbol" width="29" height="22" align="top"></td>
+    <td width="93%" class="DWbodyText">Changing  individual parameters can affect vehicle perfromance
+      and safety and should only be attempted by expert users. Use Drive
+      Wizard guided processes to change the vehicle set up. </td>
+  </tr>
+</table>
+<p><span class="DWbodyText">Each window contains a progress indicator, user instructions section and status
+  bar to provide standardized<a href="../User%20feedback/user%20feedback.htm"> User
+Feedback</a></span>:</p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

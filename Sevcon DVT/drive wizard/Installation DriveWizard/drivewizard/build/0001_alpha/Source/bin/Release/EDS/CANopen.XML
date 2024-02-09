@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DWTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DateTimeValue="2006-06-04">
+  <treeStruct Title="Sevcon Device">
+    <XMLSections>
+      <XMLSection Title="Communication Profile">
+        <XMLSections>
+          <XMLSection Title="CommunicationProfile" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Manufacturer Specific Profile">
+        <XMLSections>
+          <XMLSection Title="ManufacturerSpecificProfile" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Standard Device Profile 0">
+        <XMLSections>
+          <XMLSection Title="StandardisedDeviceProfile0" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Standard Device Profile 1">
+        <XMLSections>
+          <XMLSection Title="StandardisedDeviceProfile1" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Standard Device Profile 2">
+        <XMLSections>
+          <XMLSection Title="StandardisedDeviceProfile2" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Standard Device Profile 3">
+        <XMLSections>
+          <XMLSection Title="StandardisedDeviceProfile3" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Standard Device Profile 4">
+        <XMLSections>
+          <XMLSection Title="StandardisedDeviceProfile4" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Standard Device Profile 5">
+        <XMLSections>
+          <XMLSection Title="StandardisedDeviceProfile5" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Standard Device Profile 6">
+        <XMLSections>
+          <XMLSection Title="StandardisedDeviceProfile6" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Standard Device Profile 7">
+        <XMLSections>
+          <XMLSection Title="StandardisedDeviceProfile7" />
+        </XMLSections>
+      </XMLSection>
+    </XMLSections>
+  </treeStruct>
+  <VendorIDs />
+</DWTree>

@@ -1,0 +1,45 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=..\bin\Release\DWHelp.chm
+Contents file=toc.hhc
+Default Window=DriveWizardHelpCustomindow
+Default topic=Topic Files\Getting Started\index.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=Drive Wizard Help
+
+[WINDOWS]
+DriveWizardHelpCustomindow="Drive Wizard Help","toc.hhc","Index.hhk","Topic Files\Getting Started\index.htm","Topic Files\Getting Started\index.htm",,,,,0x42520,200,0x4e,[0,0,827,470],0x30000,,,,2,,0
+
+
+[FILES]
+Topic Files\Getting Started\index.htm
+Topic Files\Getting Started\the first time you run drive wizard.htm
+Topic Files\About Drive Wizard Help\about drive wizard help.htm
+Topic Files\About Drive Wizard Help\faqs.htm
+Topic Files\Getting Started\Screen layouts\drive wizard layout overview.htm
+Topic Files\DCF\DCf overview.htm
+Topic Files\About Drive Wizard Help\glossary.htm
+Topic Files\Getting Started\User feedback\user feedback.htm
+Topic Files\Getting Started\User feedback\Status LED flash rates.htm
+Topic Files\Getting Started\UserControls\user controls overview .htm
+Topic Files\Improving and Maintaining Vehicle Perfomance\improving and maintaining vehicle performance overview.htm
+Topic Files\Reference\CAN and CANopen\CAN and CANopen overview .htm
+Topic Files\Improving and Maintaining Vehicle Perfomance\Real time monitoring\real time monitoring overview.htm
+Topic Files\Reference\reference overview htm.htm
+Topic Files\Getting Started\Screen layouts\system status view.htm
+Topic Files\Getting Started\Screen layouts\Device Status view.htm
+Topic Files\Screen descriptions\logs overview.htm
+Topic Files\Screen descriptions\Operational Log.htm
+Topic Files\Screen descriptions\System Log.htm
+Topic Files\Screen descriptions\Fault Log.htm
+Topic Files\Screen descriptions\Event Counters log.htm
+Topic Files\Advanced Users\advanced users.htm
+Topic Files\Advanced Users\Programming Controllers\programming sevcon controllers overview.htm
+Topic Files\Advanced Users\using drive wizard in virtual mode.htm
+Topic Files\Advanced Users\Extending drive Wizard for nonsevcon CAN nodes.htm
+
+[INFOTYPES]
+

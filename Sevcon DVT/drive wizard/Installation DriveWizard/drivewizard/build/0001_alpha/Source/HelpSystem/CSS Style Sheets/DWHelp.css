@@ -1,0 +1,74 @@
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	text-transform: capitalize;
+	color: #333366;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 0pt;
+
+
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	color: #3F1F5F;
+	text-transform: capitalize;
+	text-align: left;
+	text-indent: 0pt;
+
+
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	text-transform: capitalize;
+	text-align: left;
+	text-indent: 0pt;
+	color: #333366;
+
+
+}
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #6666CC;
+	text-align: left;
+	text-indent: 10pt;
+	list-style-type: disc;
+
+
+
+
+}
+.DWbodyText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333399;
+	text-align: left;
+	background-color: #FFFFFF;
+	border: none;
+
+}
+.hasTooltip {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	border: thin none;
+	font-variant: normal;
+	color: #000000;
+	background-color: #FFFFCC;
+	text-decoration: none;
+
+
+}

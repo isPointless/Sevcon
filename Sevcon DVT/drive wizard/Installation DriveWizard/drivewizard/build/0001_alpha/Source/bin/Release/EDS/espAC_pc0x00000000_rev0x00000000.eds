@@ -1,0 +1,421 @@
+
+[FileInfo]
+FileName=C:\Program Files\Sevcon\DriveWizard\EDS\espAC_pc0x00000000_rev0x00000000.eds
+FileVersion=1
+FileRevision=0
+EDSVersion=4.0
+Description=SEVCON Shiroko AC Controller
+CreationTime=10:25AM
+CreationDate=02-03-2006
+CreatedBy=Tech/Ops SEVCON Ltd
+ModificationTime=10:25AM
+ModificationDate=02-03-2006
+ModifiedBy=Tech/Ops SEVCON Ltd
+
+[DeviceInfo]
+VendorName=Tech/Ops SEVCON Ltd
+ProductName=Self Characterisation Software
+OrderCode=TODO
+VendorNumber=0x1e
+ProductNumber=0x00000000
+RevisionNumber=0x00000000
+BaudRate_10=1
+BaudRate_20=1
+BaudRate_50=1
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=0
+BaudRate_1000=1
+SimpleBootUpMaster=1
+SimpleBootUpSlave=1
+Granularity=64
+GroupMessaging=0
+DynamicChannelsSupported=0
+NrOfRXPDO=0
+NrOfTXPDO=0
+LSS_Supported=0
+
+[Comments]
+Lines=1
+Line1=A comment.
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=0
+Dummy0004=0
+Dummy0005=0
+Dummy0006=0
+Dummy0007=0
+
+
+[MandatoryObjects]
+SupportedObjects=1
+1=0x1018
+
+[1018]
+SubNumber=5
+ObjectType=9
+ParameterName=Identity object
+;SEVCONFIELD OBJECT=IDENTITY
+;SEVCONFIELD SECTION=IDENTITY
+
+[1018sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=4
+
+[1018sub1]
+ParameterName=Vendor ID
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0x0000001E
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018sub2]
+ParameterName=Product code
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0x00000000
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018sub3]
+ParameterName=Revision number
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0x00000000
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018sub4]
+ParameterName=Serial number
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[OptionalObjects]
+SupportedObjects=1
+1=0x100A
+
+[100A]
+AccessType=const
+DataType=0x09
+PDOMapping=0
+ObjectType=7
+ParameterName=Manufacturer software version
+;SEVCONFIELD OBJECT=MANU_SW_VERSION
+;SEVCONFIELD SECTION=IDENTITY
+
+[ManufacturerObjects]
+SupportedObjects=10
+1=0x2D00
+2=0x467C
+3=0x467D
+4=0x467E
+5=0x467F
+6=0x468E
+7=0x468F
+8=0x46A0
+9=0x46FF
+10=0x5400
+
+[2D00]
+SubNumber=4
+ObjectType=9
+ParameterName=Contactor Output Configuration
+;SEVCONFIELD OBJECT=CONTACTOR_PARAM
+;SEVCONFIELD SECTION=VehicleConfig
+
+[2D00sub0]
+ParameterName=Number of parameters
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=3
+;SEVCONFIELD ACCESS_LEVEL=1
+
+[2D00sub1]
+ParameterName=Pull-In Voltage
+ObjectType=7
+DataType=0x05
+AccessType=rw
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=48
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=contactor.pull_in_voltage
+
+[2D00sub2]
+ParameterName=Pull-In Time
+ObjectType=7
+DataType=0x05
+AccessType=rw
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=100
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD SCALING=0.01
+;SEVCONFIELD UNITS=Seconds
+;SEVCONFIELD EEPROM=contactor.pull_in_time
+
+[2D00sub3]
+ParameterName=Hold-In Voltage
+ObjectType=7
+DataType=0x05
+AccessType=rw
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=36
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=contactor.hold_in_voltage
+
+[467C]
+AccessType=ro
+DataType=0x06
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+DefaultValue=
+ObjectType=7
+ParameterName=Error code
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD OBJECT=GENERAL_ABORT_CODE
+;SEVCONFIELD SECTION=NodeStatus
+;SEVCONFIELD NUMBER_FORMAT=21
+;SEVCONFIELD 0=None
+;SEVCONFIELD 1=General
+;SEVCONFIELD 2=Nothing to Transmit
+;SEVCONFIELD 3=Invalid Service
+;SEVCONFIELD 4=Not In Preoperational
+;SEVCONFIELD 5=Not In Operational
+;SEVCONFIELD 6=Cannot goto Preoperational
+;SEVCONFIELD 7=Cannot goto Operational
+;SEVCONFIELD 8=Access Level too low
+;SEVCONFIELD 9=Login Failed
+;SEVCONFIELD 10=Range Underflow
+;SEVCONFIELD 11=Range Overflow
+;SEVCONFIELD 12=Invalid Value
+;SEVCONFIELD 13=EEPROM Update Failed
+;SEVCONFIELD 14=Cannot reset Service Time
+;SEVCONFIELD 15=Cannot Reset Log
+;SEVCONFIELD 16=Cannot Read Log
+;SEVCONFIELD 17=Invalid Store Command
+;SEVCONFIELD 18=Bootloader Failure
+;SEVCONFIELD 19=DSP Update Failed
+;SEVCONFIELD 20=GIO Update Failed
+
+[467D]
+AccessType=ro
+DataType=0x06
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+DefaultValue=
+ObjectType=7
+ParameterName=Request Status
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD OBJECT=SelfChar_TestStatus
+;SEVCONFIELD SECTION=SelfChar_Test_Parameters
+
+[467E]
+AccessType=rw
+DataType=0x0F
+PDOMapping=0
+DefaultValue=
+ObjectType=2
+ParameterName=Request
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD OBJECT=SelfChar_TestRequest
+;SEVCONFIELD SECTION=SelfChar_Test_Parameters
+
+[467F]
+AccessType=ro
+DataType=0x0F
+PDOMapping=0
+DefaultValue=
+ObjectType=2
+ParameterName=Response
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD OBJECT=SelfChar_TestResponse
+;SEVCONFIELD SECTION=SelfChar_Test_Parameters
+
+[468E]
+AccessType=rw
+DataType=0x0F
+PDOMapping=0
+DefaultValue=
+ObjectType=2
+ParameterName=Test Request
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD OBJECT=SelfChar_TestStatus_Dev
+;SEVCONFIELD SECTION=SelfChar_Test_Parameters
+
+[468F]
+AccessType=ro
+DataType=0x0F
+PDOMapping=0
+DefaultValue=
+ObjectType=2
+ParameterName=Test Response
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD OBJECT=SelfChar_TestResponse_Dev
+;SEVCONFIELD SECTION=SelfChar_Test_Parameters
+
+[46A0]
+SubNumber=5
+ObjectType=9
+ParameterName=Power Frame Parameters
+;SEVCONFIELD OBJECT=SelfChar_PowerFrame
+;SEVCONFIELD SECTION=SelfChar_PowerFrame
+
+[46A0sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=4
+;SEVCONFIELD ACCESS_LEVEL=1
+
+[46A0sub1]
+ParameterName=Nominal power frame voltage
+ObjectType=7
+DataType=0x06
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+DefaultValue=
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD SCALING=0.00390625
+
+[46A0sub2]
+ParameterName=Minimum power frame voltage
+ObjectType=7
+DataType=0x06
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+DefaultValue=
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD SCALING=0.00390625
+
+[46A0sub3]
+ParameterName=Maximum power frame voltage
+ObjectType=7
+DataType=0x06
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+DefaultValue=
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD SCALING=0.00390625
+
+[46A0sub4]
+ParameterName=Power frame current
+ObjectType=7
+DataType=0x06
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+DefaultValue=
+;SEVCONFIELD ACCESS_LEVEL=1
+
+[46FF]
+SubNumber=4
+ObjectType=9
+ParameterName=Line Contactor Parameters
+;SEVCONFIELD OBJECT=SelfChar_LineContactor
+;SEVCONFIELD SECTION=SelfChar_LineContactor
+
+[46FFsub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=3
+;SEVCONFIELD ACCESS_LEVEL=1
+
+[46FFsub1]
+ParameterName=Line contactor output channel
+ObjectType=7
+DataType=0x05
+AccessType=rw
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=0
+;SEVCONFIELD ACCESS_LEVEL=1
+
+[46FFsub2]
+ParameterName=Precharge activate
+ObjectType=7
+DataType=0x05
+AccessType=rw
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=0
+;SEVCONFIELD ACCESS_LEVEL=1
+
+[46FFsub3]
+ParameterName=Line contactor activate
+ObjectType=7
+DataType=0x05
+AccessType=rw
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=0
+;SEVCONFIELD ACCESS_LEVEL=1
+
+[5400]
+AccessType=rw
+ObjFlags=0x3
+DataType=0x05
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=0
+ObjectType=7
+ParameterName=Bootloader Activate
+;SEVCONFIELD ACCESS_LEVEL=1
+;SEVCONFIELD OBJECT=BOOTLOADER_INIT
+;SEVCONFIELD SECTION=NodeStatus

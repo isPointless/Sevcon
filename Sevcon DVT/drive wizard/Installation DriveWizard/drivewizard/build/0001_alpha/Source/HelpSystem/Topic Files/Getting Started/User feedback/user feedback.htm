@@ -1,0 +1,225 @@
+<!--
+(C) COPYRIGHT Sevcon 2007
+
+Project Reference UK0139
+
+FILE
+	$Revision:1.3$
+	$Version:$
+	$Author:ak$
+	$ProjectName:DriveWizard$ 
+
+	$RevDate:11/12/2007 11:26:08$
+	$ModDate:11/12/2007 10:59:12$
+
+ORIGINAL AUTHOR
+    Jude Wood
+
+DESCRIPTION
+	Drive wizard HTML help page.
+ 
+REFERENCES    
+
+MODIFICATION HISTORY
+    $Log:  58846: user feedback.htm 
+
+   Rev 1.3    11/12/2007 11:26:08  ak
+ TC keywords added to source for version control.
+
+
+
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/DWHelpTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>User feedback</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="../../../CSS%20Style%20Sheets/DWHelp.css" rel="stylesheet" type="text/css">
+<!-- InstanceParam name="ALinks" type="boolean" value="true" -->
+</head>
+
+<body>
+  <div align="right">    <img src="../../../Topic%20Files/Help%20Images/DWlogoSmall.gif" alt="Drive WIzard logo" width="54" height="24">&nbsp;<a name="top"></a><img src="../../../Topic%20Files/Help%20Images/SEVCON.gif" alt="Sevcon logo" width="115" height="16" align="left"></br>
+  </div>
+  <hr>
+  <div id="Layer1" style="position:absolute; z-index:1; visibility: hidden; left: 0; top: 0;"></div>
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+<h1>User Feedback</h1>
+<p class="DWbodyText">User feedback is provided by the following screen items
+  :</p>
+<ul>
+  <li><a href="#statusbar">Status bar</a></li>
+  <li><a href="#progressbar">Progress bar</a></li>
+  <li><a href="#busyindicator">Drive Wizard busy Indicator</a></li>
+  <li><a href="#userinstructionslabel">User Instructions label</a></li>
+  <li><a href="#systemstructureicons">System Structure icons</a></li>
+</ul>
+<h2><a name="statusbar"></a>Status bars</h2>
+<p class="DWbodyText">All Drive Wizard screens contain a status bar. The status
+  bar on secondary windows and the rightmost panel of the main screen status
+  bar tells
+  you what action Drive Wizard is currently perfroming. On completion
+  of
+  an action,
+  an
+  indication
+  of success/failure is displayed in this panel. </p>
+<p class="DWbodyText">The Status bar in the main screen contains two more panels </p>
+<p><img src="../../Help%20Images/screen%20shots/userfeedback%20Img1.gif" alt="Main Window Status bar" width="901" height="40" border="0" usemap="#Map">
+  <map name="Map">
+  <area shape="rect" coords="1,0,205,40" href="#" alt="Connection summary">
+  <area shape="rect" coords="204,0,390,40" href="#" alt="System Login">
+  <area shape="rect" coords="390,0,900,44" href="#" alt="Drive Wizard activity/results">
+  </map>
+</p>
+<p align="left" class="DWbodyText">The leftmost panel displays the current baud
+  rate and whether Drive Wizard is using real or Virtual CNA nodes</p>
+<p align="left"><span class="DWbodyText">The middle panel displays the System
+    login level. This is the Login level used for System wide Guided Processes
+    and is the lowest login
+  level achieved on any connected Sevcon node that is running application software.</span> </p>
+<p align="right"><a href="#top">Top</a></p>
+<h2 align="left"><a name="progressbar"></a>
+Progress Bar</h2>
+<p align="left" class="DWbodyText">This shows Drive Wizard's progress
+  through its current task. A progress
+  bar is displayed when a
+  task
+  is expected
+  take noticeable time e.g. reprogramming a device. Specific progress may also
+  be displayed in the status bar as below</p>
+<p align="center"><img src="../../Help%20Images/screen%20shots/UsrFeedback%20Img2.gif" alt="progress bar" width="336" height="52"></p>
+<p align="right"><a href="#top">Top</a></p>
+<h2 align="left"><a name="busyindicator"></a>Busy Indicator</h2>
+<p align="left"><span class="DWbodyText">Some tasks may take
+    noticeable time but Drive WIzard cannot predict the  task
+    time e.g. retrieval of the  list of al possible events from a Sevcon controller.
+    In this scenario the busy indicator below is displayed and animated to indicate
+    that Drive WIzard
+  is still
+  working
+  on the
+  tas</span>k</p>
+<p align="left"><img src="../../Help%20Images/circleArrow.gif" alt="busy indicator">&nbsp;</p>
+<p align="right"><a href="#top">Top</a></p>
+<h2 align="left"><a name="userinstructionslabel"></a>User Instructions Label</h2>
+<p align="left" class="DWbodyText">This is displayed in the top of the current
+  window and tells you what  choices are available.</p>
+<p align="right"><a href="#top">Top</a></p>
+<h2 align="left"><a name="systemstructureicons"></a>System Structure icons</h2>
+<p align="left" class="DWbodyText">The following key shows all possible icons
+  that can be displayed in the System Structure (displayed in the Structure
+  Pane) . Some guided process
+  require minimum user login levels and specific vehicle node conditions to
+  be perfromed. Drive WIzard automatically displays/hides Guided Process icons
+  as appropriate. </p>
+<table width="75%" border="0" cellpadding="3">
+  <tr>
+    <td colspan="2"><h3>Icon relating to the vehicle</h3></td>
+  </tr>
+  <tr>
+    <td width="8%"><img src="../../Help%20Images/systemStructIcons/FLT.png" alt="vehicle icon" width="24" height="24"></td>
+    <td width="92%" class="DWbodyText">The root icon indicating the connected
+      vehicle.</td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/BusConfig.gif" alt="Bus Configuration icon" width="24" height="24"></td>
+    <td class="DWbodyText">Start Guided Process to change the baud rate and CNA node IDs of connected
+      CNA nodes</td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/ExtPDO.gif" alt="System PDOs icon" width="24" height="24"></td>
+    <td class="DWbodyText">Start Guided Process to configure the automatic messages
+      (System PDOs) transmitted across the CAN bus</td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>&nbsp;</p>
+    <h3>Icons relating to a single CAN node</h3></td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/newCANNodeMasterOnOn2.png" alt="CAN node icon" width="24" height="24"></td>
+    <td class="DWbodyText">Represents a CAN node that is connected to the vehicle
+      bus.  NMT master node shave a red outline, all others nodes have a dark
+      gray
+      outline. <br>
+      A flashing orange LED indicates that the node is in NMT pre-operational
+      state, constantly on orange LED denotes a node in the operational state.
+      All other NMT state are represented with the orange LED off.<br>
+      The green LED represents the fault status of the node. For Sevcon nodes
+      this LED mimics the status LED on the controller itself , a constantly
+      on green LED indicates normal operation. If a fault is active then the
+      flash
+      rate indicates the nature of the fault (<a href="Status%20LED%20flash%20rates.htm">defined
+      here</a>). For non-Sevcon nodes the green LED is set to on unless the node
+      transmits an emergency message when the green LED will be flashed.</td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/multiTri.gif" alt="Multiple Sections icon" width="24" height="24"></td>
+    <td class="DWbodyText">Represents a multiple sections of the Object Dictionary.
+      These groupings are included to improve readability. Drive WIzard does
+      not read parameter
+      values from the node in response to selecting multiple group icons. </td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/multiTriSingleCol.gif" alt="Single section icon" width="24" height="24"></td>
+    <td class="DWbodyText">Represents a single section of the Object dictionary.
+      This can be a CANopen defined section or a section defined by function
+      (Sevcon nodes)
+      . When you first select this icon after connection Device Wizard will
+      read and display the current value for each Object Dictionary parameter
+      in the
+      section</td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/singleTri.gif" alt="Single Item with subs icon" width="24" height="24"></td>
+    <td class="DWbodyText">Represents a single Object Dictionary item  that
+      contains sub items. </td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/lowest.gif" alt="single parameter icon" width="24" height="24"></td>
+    <td class="DWbodyText">Represents a single Object Dictionary sub item or
+      item with no associated sub items.</td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/SelfChar.gif" alt="Self Characterization icon" width="24" height="24"></td>
+    <td class="DWbodyText">Start Guided Process to perfrom Self Characterization on the associated
+    motor.</td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/Reprogram.gif" alt="reprogramming icon" width="24" height="24"></td>
+    <td class="DWbodyText">Start Guided Process to reprogram this CAN node</td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/IntPDO.gif" alt="Intenrla PDOs icon" width="24" height="24"></td>
+    <td class="DWbodyText">Start Guided Process to link the physical Inputs/Outputs
+      on a Sevcon CAN node to items in its Object Dictionary (Internal (or virtual)
+      PDOs)</td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/logs.gif" alt="Sevcon logs icon" width="24" height="24"></td>
+    <td class="DWbodyText">Start Guided Process to display and edit a Sevcon event log</td>
+  </tr>
+  <tr>
+    <td colspan="2"><h3>Non-Vehicle Icons</h3></td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/eyeBW.gif" alt="Real time monitoring list icon" width="24" height="24"></td>
+    <td class="DWbodyText">Real time Monitoring List store. </td>
+  </tr>
+  <tr>
+    <td><img src="../../Help%20Images/systemStructIcons/DCF.gif" alt="DCF strore icon" width="24" height="24"></td>
+    <td class="DWbodyText">DCF store</td>
+  </tr>
+</table>
+<p align="left">See also <a href="../UserControls/user%20controls%20overview%20.htm">User Controls</a></p>
+<p align="right"><a href="#top">Top</a></p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

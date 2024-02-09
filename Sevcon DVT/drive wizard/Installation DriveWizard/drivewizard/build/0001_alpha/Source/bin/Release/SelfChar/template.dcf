@@ -1,0 +1,1520 @@
+
+[FileInfo]
+FileVersion=1
+FileRevision=0
+EDSVersion=4.0
+Description=SEVCON Shiroko AC Controller Motor Characterisation data
+CreationTime=<!time>
+CreationDate=<!date>
+CreatedBy=Sevcon SCWiz
+ModificationTime=<!time>
+ModificationDate=<!date>
+ModifiedBy=Sevcon SCWiz
+
+[DeviceInfo]
+VendorName=Tech/Ops SEVCON Ltd
+ProductName=Shiroko AC Controller
+OrderCode=TODO
+VendorNumber=0x1e
+ProductNumber=0x01013046
+RevisionNumber=0x00010001
+BaudRate_10=1
+BaudRate_20=1
+BaudRate_50=1
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=0
+BaudRate_1000=1
+SimpleBootUpMaster=1
+SimpleBootUpSlave=1
+Granularity=64
+GroupMessaging=0
+DynamicChannelsSupported=0
+NrOfRXPDO=9
+NrOfTXPDO=9
+LSS_Supported=1
+
+[DeviceComissioning]
+NodeID=1
+Baudrate=1000
+CANopenManager=1
+
+[Comments]
+Lines=1
+Line1=A comment.
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=0
+Dummy0004=0
+Dummy0005=0
+Dummy0006=0
+Dummy0007=0
+
+[MandatoryObjects]
+SupportedObjects=3
+1=0x1000
+2=0x1001
+3=0x1018
+
+[1000]
+AccessType=ro
+DataType=0x07
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0xFFFF0192
+ObjectType=7
+ParameterName=Device type
+;SEVCONFIELD OBJECT=DEVICE_TYPE
+;SEVCONFIELD SECTION=COMMUNICATION_PROFILE
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+ParameterValue=0xFFFF0192
+
+[1001]
+AccessType=ro
+DataType=0x05
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+ObjectType=7
+ParameterName=Error register
+;SEVCONFIELD OBJECT=ERROR_REGISTER
+;SEVCONFIELD SECTION=COMMUNICATION_PROFILE
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+ParameterValue=0x91
+
+[1018]
+SubNumber=5
+ObjectType=9
+ParameterName=Identity object
+;SEVCONFIELD OBJECT=IDENTITY
+;SEVCONFIELD SECTION=IDENTITY
+
+[1018sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=4
+ParameterValue=0x4
+
+[1018sub1]
+ParameterName=Vendor ID
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0x0000001E
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+ParameterValue=0x1E
+
+[1018sub2]
+ParameterName=Product code
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0x01013046
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+ParameterValue=0x1013046
+
+[1018sub3]
+ParameterName=Revision number
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0x00010000
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+ParameterValue=0x10000
+
+[1018sub4]
+ParameterName=Serial number
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+ParameterValue=0x401
+
+[OptionalObjects]
+SupportedObjects=3
+1=0x6076
+2=0x6090
+3=0x6410
+
+[6076]
+AccessType=rw
+DataType=0x07
+LowLimit=0
+HighLimit=65000
+PDOMapping=0
+ParameterValue=<!motor_rated_torque.32.0>
+ObjectType=7
+ParameterName=Motor rated torque
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD OBJECT=MOTOR_RATED_TORQUE
+;SEVCONFIELD SECTION=MOTOR1_PROFILE
+;SEVCONFIELD EEPROM=motor_0.rated_torque
+
+[6090]
+SubNumber=3
+ObjectType=9
+ParameterName=Velocity encoder resolution
+;SEVCONFIELD OBJECT=ENCODER_RESOLUTION
+;SEVCONFIELD SECTION=MOTOR1_PROFILE
+
+[6090sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=2
+
+[6090sub1]
+ParameterName=Increments per second
+ObjectType=7
+DataType=0x07
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+ParameterValue=<!pulses_per_rev.32.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=Inc/s
+;SEVCONFIELD EEPROM=motor_0.encoder_incs_per_second
+;SEVCONFIELD WRITE_IN_PREOPERATIONAL_ONLY=TRUE
+
+[6090sub2]
+ParameterName=Motor revolutions per second
+ObjectType=7
+DataType=0x07
+AccessType=rw
+LowLimit=1
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+ParameterValue=1
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPS
+;SEVCONFIELD EEPROM=motor_0.encoder_revs_per_second
+;SEVCONFIELD WRITE_IN_PREOPERATIONAL_ONLY=TRUE
+
+[6410]
+SubNumber=18
+ObjectType=9
+ParameterName=Motor data (manufacturer specific)
+;SEVCONFIELD OBJECT=ESPAC_MOTOR_DATA
+;SEVCONFIELD SECTION=MOTOR1_PROFILE
+
+[6410sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=17
+
+[6410sub1]
+ParameterName=Commit
+ObjectType=7
+DataType=0x05
+AccessType=wo
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+ObjFlags=0x1
+DefaultValue=0
+;SEVCONFIELD ACCESS_LEVEL=4
+
+[6410sub2]
+ParameterName=Maximum Stator Current (Is_max)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!max_stator_current.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.max_stator_current
+
+[6410sub3]
+ParameterName=Minimum Magnetising Current (Im_min)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!min_magnetising_current.8.8>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.00390625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.min_flux_current
+
+[6410sub4]
+ParameterName=Maximum Magnetising/Direct Current (Id_max)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!max_magnetising_current.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.max_flux_current
+
+[6410sub5]
+ParameterName=Number of Pole Pairs (np)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=1
+HighLimit=6
+PDOMapping=0
+ParameterValue=<!pole_pairs.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD EEPROM=motor_0.number_of_pole_pairs
+
+[6410sub6]
+ParameterName=Stator Resistance (Rs)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!stator_resistance.4.12>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000244140625
+;SEVCONFIELD UNITS=Ohms
+;SEVCONFIELD EEPROM=motor_0.stator_resistance
+
+[6410sub7]
+ParameterName=Rated Stator Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!rated_stator_current.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.rotor_resistance
+
+[6410sub8]
+ParameterName=Rotor Resistance (Rr)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!rotor_resistance.4.12>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000244140625
+;SEVCONFIELD UNITS=Ohms
+;SEVCONFIELD EEPROM=motor_0.rotor_resistance
+
+[6410sub9]
+ParameterName=Magnetising Inductance (Lm)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!magnetising_inductance.0.16>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=1.52587890625E-05
+;SEVCONFIELD UNITS=Henry
+;SEVCONFIELD EEPROM=motor_0.flux_inductance
+
+[6410subA]
+ParameterName=Stator Leakage Inductance (Lls)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!stator_leakage_inductance.-4.20>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=9.5367431640625E-07
+;SEVCONFIELD UNITS=Henry
+;SEVCONFIELD EEPROM=motor_0.stator_leakage_inductance
+
+[6410subB]
+ParameterName=Rotor Leakage Inductance (Llr)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!rotor_leakage_inductance.-4.20>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=9.5367431640625E-07
+;SEVCONFIELD UNITS=Henry
+;SEVCONFIELD EEPROM=motor_0.rotor_leakage_inductance
+
+[6410subC]
+ParameterName=Nominal battery voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=6144
+HighLimit=49152
+PDOMapping=0
+ParameterValue=<!nominal_battery_voltage.8.8>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.00390625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.nom_bat_v
+
+[6410subD]
+ParameterName=Current controller proportional gain (Kp)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!current_control_prop_gain.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.i_ctrl_gain
+
+[6410subE]
+ParameterName=Torque Controller Discretisation
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_control_alpha.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.trq_ctrl_discretisation
+
+[6410subF]
+ParameterName=Current Controller Integral Gain (Ki)
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!current_control_int_gain.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.i_ctrl_discretisation
+
+[6410sub10]
+ParameterName=Reactive Gain Boost
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!reactive_gain_boost.0.16>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=1.52587890625E-05
+;SEVCONFIELD UNITS=Henry
+;SEVCONFIELD EEPROM=motor_0.reactive_gain_boost
+
+[6410sub11]
+ParameterName=RPM Limiter Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!rpm_limiter_gain.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD EEPROM=motor_0.rpm_limiter_gain
+
+[ManufacturerObjects]
+SupportedObjects=4
+1=0x4610
+2=0x4611
+3=0x4612
+4=0x4613
+
+[4610]
+SubNumber=19
+ObjectType=9
+ParameterName=Motor flux map
+;SEVCONFIELD OBJECT=MOTOR_FLUX_MAP
+;SEVCONFIELD SECTION=MOTOR1_PROFILE
+
+[4610sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=18
+
+[4610sub1]
+ParameterName=Pt 1 Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_td1.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.flux_map[0].x
+
+[4610sub2]
+ParameterName=Pt 1 Magnetising Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_im1.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.flux_map[0].y
+
+[4610sub3]
+ParameterName=Pt 2 Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_td2.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.flux_map[1].x
+
+[4610sub4]
+ParameterName=Pt 2 Magnetising Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_im2.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.flux_map[1].y
+
+[4610sub5]
+ParameterName=Pt 3 Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_td3.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.flux_map[2].x
+
+[4610sub6]
+ParameterName=Pt 3 Magnetising Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_im3.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.flux_map[2].y
+
+[4610sub7]
+ParameterName=Pt 4 Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_td4.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.flux_map[3].x
+
+[4610sub8]
+ParameterName=Pt 4 Magnetising Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_im4.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.flux_map[3].y
+
+[4610sub9]
+ParameterName=Pt 5 Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_td5.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.flux_map[4].x
+
+[4610subA]
+ParameterName=Pt 5 Magnetising Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_im5.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.flux_map[4].y
+
+[4610subB]
+ParameterName=Pt 6 Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_td6.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.flux_map[5].x
+
+[4610subC]
+ParameterName=Pt 6 Magnetising Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_im6.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.flux_map[5].y
+
+[4610subD]
+ParameterName=Pt 7 Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_td7.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.flux_map[6].x
+
+[4610subE]
+ParameterName=Pt 7 Magnetising Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_im7.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.flux_map[6].y
+
+[4610subF]
+ParameterName=Pt 8 Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_td8.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.flux_map[7].x
+
+[4610sub10]
+ParameterName=Pt 8 Magnetising Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_im8.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.flux_map[7].y
+
+[4610sub11]
+ParameterName=Pt 9 Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_td9.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.flux_map[8].x
+
+[4610sub12]
+ParameterName=Pt 9 Magnetising Current
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!flux_map_im9.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=A(RMS)
+;SEVCONFIELD EEPROM=motor_0.flux_map[8].y
+
+[4611]
+SubNumber=19
+ObjectType=9
+ParameterName=Motor power limit map
+;SEVCONFIELD OBJECT=MOTOR_POWER_LIMIT_MAP
+;SEVCONFIELD SECTION=MOTOR1_PROFILE
+
+[4611sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=18
+
+[4611sub1]
+ParameterName=Pt 1 Max Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_tmax1.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.power_map[0].x
+
+[4611sub2]
+ParameterName=Pt 1 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_rpm1.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.power_map[0].y
+
+[4611sub3]
+ParameterName=Pt 2 Max Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_tmax2.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.power_map[1].x
+
+[4611sub4]
+ParameterName=Pt 2 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_rpm2.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.power_map[1].y
+
+[4611sub5]
+ParameterName=Pt 3 Max Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_tmax3.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.power_map[2].x
+
+[4611sub6]
+ParameterName=Pt 3 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_rpm3.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.power_map[2].y
+
+[4611sub7]
+ParameterName=Pt 4 Max Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_tmax4.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.power_map[3].x
+
+[4611sub8]
+ParameterName=Pt 4 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_rpm4.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.power_map[3].y
+
+[4611sub9]
+ParameterName=Pt 5 Max Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_tmax5.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.power_map[4].x
+
+[4611subA]
+ParameterName=Pt 5 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_rpm5.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.power_map[4].y
+
+[4611subB]
+ParameterName=Pt 6 Max Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_tmax6.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.power_map[5].x
+
+[4611subC]
+ParameterName=Pt 6 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_rpm6.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.power_map[5].y
+
+[4611subD]
+ParameterName=Pt 7 Max Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_tmax7.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.power_map[6].x
+
+[4611subE]
+ParameterName=Pt 7 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_rpm7.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.power_map[6].y
+
+[4611subF]
+ParameterName=Pt 8 Max Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_tmax8.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.power_map[7].x
+
+[4611sub10]
+ParameterName=Pt 8 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_rpm8.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.power_map[7].y
+
+[4611sub11]
+ParameterName=Pt 9 Max Torque
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_tmax9.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=Nm
+;SEVCONFIELD EEPROM=motor_0.power_map[8].x
+
+[4611sub12]
+ParameterName=Pt 9 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!p_limit_map_rpm9.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.power_map[8].y
+
+[4612]
+SubNumber=19
+ObjectType=9
+ParameterName=Votlage Torque-Cutback Map
+;SEVCONFIELD OBJECT=VOLTAGE_TRQ_CUTBACK_MAP
+;SEVCONFIELD SECTION=MOTOR1_PROFILE
+
+[4612sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=18
+
+[4612sub1]
+ParameterName=Pt 1 Voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_v1.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[0].x
+
+[4612sub2]
+ParameterName=Pt 1 Voltage Cutback Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_g1.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[0].y
+
+[4612sub3]
+ParameterName=Pt 2 Voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_v2.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[1].x
+
+[4612sub4]
+ParameterName=Pt 2 Voltage Cutback Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_g2.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[1].y
+
+[4612sub5]
+ParameterName=Pt 3 Voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_v3.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[2].x
+
+[4612sub6]
+ParameterName=Pt 3 Voltage Cutback Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_g3.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[2].y
+
+[4612sub7]
+ParameterName=Pt 4 Voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_v4.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[3].x
+
+[4612sub8]
+ParameterName=Pt 4 Voltage Cutback Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_g4.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[3].y
+
+[4612sub9]
+ParameterName=Pt 5 Voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_v5.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[4].x
+
+[4612subA]
+ParameterName=Pt 5 Voltage Cutback Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_g5.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[4].y
+
+[4612subB]
+ParameterName=Pt 6 Voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_v6.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[5].x
+
+[4612subC]
+ParameterName=Pt 6 Voltage Cutback Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_g6.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[5].y
+
+[4612subD]
+ParameterName=Pt 7 Voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_v7.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[6].x
+
+[4612subE]
+ParameterName=Pt 7 Voltage Cutback Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_g7.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[6].y
+
+[4612subF]
+ParameterName=Pt 8 Voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_v8.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[7].x
+
+[4612sub10]
+ParameterName=Pt 8 Voltage Cutback Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_g8.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[7].y
+
+[4612sub11]
+ParameterName=Pt 9 Voltage
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_v9.10.6>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.015625
+;SEVCONFIELD UNITS=V
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[8].x
+
+[4612sub12]
+ParameterName=Pt 9 Voltage Cutback Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!torque_cut_map_g9.1.15>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.000030517578125
+;SEVCONFIELD EEPROM=motor_0.torque_cutback[8].y
+
+[4613]
+SubNumber=19
+ObjectType=9
+ParameterName=Field weakening map
+;SEVCONFIELD OBJECT=FIELD_WEAKENING_MAP
+;SEVCONFIELD SECTION=MOTOR1_PROFILE
+
+[4613sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=18
+
+[4613sub1]
+ParameterName=Pt 1 Field Weakening Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_g1.6.10>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.0009765625
+;SEVCONFIELD UNITS=A(RMS)/V
+;SEVCONFIELD EEPROM=motor_0.field_weak[0].x
+
+[4613sub2]
+ParameterName=Pt 1 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_rpm1.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.field_weak[0].y
+
+[4613sub3]
+ParameterName=Pt 2 Field Weakening Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_g2.6.10>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.0009765625
+;SEVCONFIELD UNITS=A(RMS)/V
+;SEVCONFIELD EEPROM=motor_0.field_weak[1].x
+
+[4613sub4]
+ParameterName=Pt 2 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_rpm2.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.field_weak[1].y
+
+[4613sub5]
+ParameterName=Pt 3 Field Weakening Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_g3.6.10>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.0009765625
+;SEVCONFIELD UNITS=A(RMS)/V
+;SEVCONFIELD EEPROM=motor_0.field_weak[2].x
+
+[4613sub6]
+ParameterName=Pt 3 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_rpm3.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.field_weak[2].y
+
+[4613sub7]
+ParameterName=Pt 4 Field Weakening Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_g4.6.10>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.0009765625
+;SEVCONFIELD UNITS=A(RMS)/V
+;SEVCONFIELD EEPROM=motor_0.field_weak[3].x
+
+[4613sub8]
+ParameterName=Pt 4 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_rpm4.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.field_weak[3].y
+
+[4613sub9]
+ParameterName=Pt 5 Field Weakening Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_g5.6.10>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.0009765625
+;SEVCONFIELD UNITS=A(RMS)/V
+;SEVCONFIELD EEPROM=motor_0.field_weak[4].x
+
+[4613subA]
+ParameterName=Pt 5 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_rpm5.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.field_weak[4].y
+
+[4613subB]
+ParameterName=Pt 6 Field Weakening Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_g6.6.10>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.0009765625
+;SEVCONFIELD UNITS=A(RMS)/V
+;SEVCONFIELD EEPROM=motor_0.field_weak[5].x
+
+[4613subC]
+ParameterName=Pt 6 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_rpm6.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.field_weak[5].y
+
+[4613subD]
+ParameterName=Pt 7 Field Weakening Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_g7.6.10>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.0009765625
+;SEVCONFIELD UNITS=A(RMS)/V
+;SEVCONFIELD EEPROM=motor_0.field_weak[6].x
+
+[4613subE]
+ParameterName=Pt 7 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_rpm7.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.field_weak[6].y
+
+[4613subF]
+ParameterName=Pt 8 Field Weakening Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_g8.6.10>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.0009765625
+;SEVCONFIELD UNITS=A(RMS)/V
+;SEVCONFIELD EEPROM=motor_0.field_weak[7].x
+
+[4613sub10]
+ParameterName=Pt 8 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_rpm8.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.field_weak[7].y
+
+[4613sub11]
+ParameterName=Pt 9 Field Weakening Gain
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_g9.6.10>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD SCALING=0.0009765625
+;SEVCONFIELD UNITS=A(RMS)/V
+;SEVCONFIELD EEPROM=motor_0.field_weak[8].x
+
+[4613sub12]
+ParameterName=Pt 9 Speed
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0
+HighLimit=0xFFFF
+PDOMapping=0
+ParameterValue=<!fw_map_rpm9.16.0>
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=RPM
+;SEVCONFIELD EEPROM=motor_0.field_weak[8].y
+
+;

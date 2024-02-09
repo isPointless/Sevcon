@@ -1,0 +1,1675 @@
+[FileInfo]
+FileName=MM217_V3Y_4.eds
+FileVersion=1
+FileRevision=04
+EDSVersion=404
+Description=EDS for SYSTEC CANopen-Chip F40 V3 Configuration 4
+CreationTime=04:36PM
+CreationDate=10-26-2004
+CreatedBy=M.Berthel, SYS TEC electronic GmbH
+ModificationTime=04:36PM
+ModificationDate=02-05-2006
+ModifiedBy=M.Berthel, SYS TEC electronic GmbH
+
+[DeviceInfo]
+VendorName=SYSTEC electronic GmbH
+VendorNumber=0x3F
+ProductName=CANopen Chip F40 V3
+ProductNumber=0x217
+RevisionNumber=0x01050527
+OrderCode=MM-217-V3Y
+Baudrate_10=1
+Baudrate_20=1
+Baudrate_50=1
+Baudrate_125=1
+Baudrate_250=1
+Baudrate_500=1
+Baudrate_800=1
+Baudrate_1000=1
+SimpleBootUpMaster=0
+SimpleBootUpSlave=1
+Granularity=8
+DynamicChannelsSupported=0
+GroupMessaging=0
+NrOfRXPDO=2
+NrOfTXPDO=4
+LSS_Supported=1
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=0
+Dummy0004=0
+Dummy0005=1
+Dummy0006=1
+Dummy0007=1
+
+[Comments]
+Lines=3
+Line1=CANopen Chip F40 V3 EDS-File for Configuration 4
+Line2=Device Profile 401 for IO
+Line3=20DI, 2AI
+
+[MandatoryObjects]
+SupportedObjects=3
+1=0x1000
+2=0x1001
+3=0x1018
+
+[1000]
+ParameterName=Device Type
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x70191
+PDOMapping=0x0
+
+[1001]
+ParameterName=Error Register
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1018]
+SubNumber=0x5
+ParameterName=Identity Object
+ObjectType=0x9
+
+[1018sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x4
+PDOMapping=0x0
+
+[1018sub1]
+ParameterName=Vendor-ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x3F
+PDOMapping=0x0
+
+[1018sub2]
+ParameterName=Product Code
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x217
+PDOMapping=0x0
+
+[1018sub3]
+ParameterName=Revision Number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x1050527
+PDOMapping=0x0
+
+[1018sub4]
+ParameterName=Serial Number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0x0
+
+[ManufacturerObjects]
+SupportedObjects=2
+1=0x2000
+2=0x2001
+
+[2000]
+ParameterName=IO Configuration
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x4
+PDOMapping=0x0
+
+[2001]
+SubNumber=0x3
+ParameterName=NMT Boot Network
+ObjectType=0x8
+
+[2001sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0x0
+
+[2001sub1]
+ParameterName=NMT Boot Enable
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[2001sub2]
+ParameterName=NMT Start Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x1F4
+PDOMapping=0x0
+
+[OptionalObjects]
+SupportedObjects=36
+1=0x1003
+2=0x1005
+3=0x1007
+4=0x1008
+5=0x1009
+6=0x100A
+7=0x100C
+8=0x100D
+9=0x1010
+10=0x1011
+11=0x1014
+12=0x1016
+13=0x1017
+14=0x1200
+15=0x1201
+16=0x1400
+17=0x1401
+18=0x1600
+19=0x1601
+20=0x1800
+21=0x1801
+22=0x1802
+23=0x1803
+24=0x1A00
+25=0x1A01
+26=0x1A02
+27=0x1A03
+28=0x6000
+29=0x6401
+30=0x6421
+31=0x6422
+32=0x6423
+33=0x6424
+34=0x6425
+35=0x6426
+36=0x67FE
+
+[1003]
+SubNumber=0xB
+ParameterName=Pre-defined Error Field
+ObjectType=0x8
+
+[1003sub0]
+ParameterName=number of errors
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003sub1]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003sub2]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003sub3]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003sub4]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003sub5]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003sub6]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003sub7]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003sub8]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003sub9]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1003subA]
+ParameterName=standard error field
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1005]
+ParameterName=COB-ID SYNC
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x80
+PDOMapping=0x0
+
+[1007]
+ParameterName=Synchronous Window Length
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1008]
+ParameterName=Manufacturer Device Name
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+DefaultValue=CANopen Chip F40 V3
+PDOMapping=0x0
+
+[1009]
+ParameterName=Manufacturer Hardware Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+DefaultValue=4081.1
+PDOMapping=0x0
+
+[100A]
+ParameterName=Manufacturer Software Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+DefaultValue=V1.05 / V5.27
+PDOMapping=0x0
+
+[100C]
+ParameterName=Guard Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[100D]
+ParameterName=Life Time Factor
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1010]
+SubNumber=0x2
+ParameterName=Store Parameters
+ObjectType=0x8
+
+[1010sub0]
+ParameterName=Largest Sub-Index Supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x1
+PDOMapping=0x0
+
+[1010sub1]
+ParameterName=Save All Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1011]
+SubNumber=0x2
+ParameterName=Restore Default Parameters
+ObjectType=0x8
+
+[1011sub0]
+ParameterName=Largest Sub-Index Supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x1
+PDOMapping=0x0
+
+[1011sub1]
+ParameterName=Restore All Default Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1014]
+ParameterName=COB-ID Emergency Message
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80
+PDOMapping=0x0
+
+[1016]
+SubNumber=0x6
+ParameterName=Consumer Heartbeat Time
+ObjectType=0x8
+
+[1016sub0]
+ParameterName=Number Of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0x0
+
+[1016sub1]
+ParameterName=Consumer Heartbeat Time #1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1016sub2]
+ParameterName=Consumer Heartbeat Time #2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1016sub3]
+ParameterName=Consumer Heartbeat Time #3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1016sub4]
+ParameterName=Consumer Heartbeat Time #4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1016sub5]
+ParameterName=Consumer Heartbeat Time #5
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1017]
+ParameterName=Producer Heartbeat Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1200]
+SubNumber=0x3
+ParameterName=1. Server SDO Parameter
+ObjectType=0x9
+
+[1200sub0]
+ParameterName=Number Of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0x0
+
+[1200sub1]
+ParameterName=COB-ID Client -> Server (rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x600
+PDOMapping=0x0
+
+[1200sub2]
+ParameterName=COD-ID Server -> Client (tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x580
+PDOMapping=0x0
+
+[1201]
+SubNumber=0x4
+ParameterName=2. Server SDO Parameter
+ObjectType=0x9
+
+[1201sub0]
+ParameterName=Number Of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0x0
+
+[1201sub1]
+ParameterName=COB-ID Client -> Server (rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1201sub2]
+ParameterName=COP-ID Server -> Client (tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1201sub3]
+ParameterName=node ID of the SDO client
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0x0
+
+[1400]
+SubNumber=0x5
+ParameterName=1. Receive PDO parameter
+ObjectType=0x9
+
+[1400sub0]
+ParameterName=Largest Sub-Index Supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0x0
+
+[1400sub1]
+ParameterName=COB-Id Used By PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80000200
+PDOMapping=0x0
+
+[1400sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0x0
+
+[1400sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1400sub5]
+ParameterName=Eventtimer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1401]
+SubNumber=0x5
+ParameterName=2. Receive PDO parameter
+ObjectType=0x9
+
+[1401sub0]
+ParameterName=Largest Sub-Index Supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0x0
+
+[1401sub1]
+ParameterName=COB-ID Used By PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80000300
+PDOMapping=0x0
+
+[1401sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0x0
+
+[1401sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1401sub5]
+ParameterName=Eventtimer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1600]
+SubNumber=0x9
+ParameterName=1. Receive PDO Mapping Parameter
+ObjectType=0x9
+
+[1600sub0]
+ParameterName=Number Of Mapped Objects
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1600sub1]
+ParameterName=PDO Mapping 1. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1600sub2]
+ParameterName=PDO Mapping 2. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1600sub3]
+ParameterName=PDO Mapping 3. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1600sub4]
+ParameterName=PDO Mapping 4. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1600sub5]
+ParameterName=PDO Mapping 5. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1600sub6]
+ParameterName=PDO Mapping 6. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1600sub7]
+ParameterName=PDO Mapping 7. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1600sub8]
+ParameterName=PDO Mapping 8. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1601]
+SubNumber=0x9
+ParameterName=2. Receive PDO Mapping Parameter
+ObjectType=0x9
+
+[1601sub0]
+ParameterName=Number Of Mapped Objects
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1601sub1]
+ParameterName=PDO Mapping 1. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1601sub2]
+ParameterName=PDO Mapping 2. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1601sub3]
+ParameterName=PDO Mapping 3. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1601sub4]
+ParameterName=PDO Mapping 4. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1601sub5]
+ParameterName=PDO Mapping 5. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1601sub6]
+ParameterName=PDO Mapping 6. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1601sub7]
+ParameterName=PDO Mapping 7. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1601sub8]
+ParameterName=PDO Mapping 8. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1800]
+SubNumber=0x5
+ParameterName=1. Transmit PDO Parameter
+ObjectType=0x9
+
+[1800sub0]
+ParameterName=Largest Sub-Index Supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0x0
+
+[1800sub1]
+ParameterName=COB-ID Used By PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x180
+PDOMapping=0x0
+
+[1800sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0x0
+
+[1800sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=500
+PDOMapping=0x0
+
+[1800sub5]
+ParameterName=Eventtimer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1801]
+SubNumber=0x5
+ParameterName=2. Transmit PDO Parameter
+ObjectType=0x9
+
+[1801sub0]
+ParameterName=Largest Sub-Index Supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0x0
+
+[1801sub1]
+ParameterName=COB-ID Used By PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x280
+PDOMapping=0x0
+
+[1801sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0x0
+
+[1801sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=500
+PDOMapping=0x0
+
+[1801sub5]
+ParameterName=Eventtimer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1802]
+SubNumber=0x5
+ParameterName=3. Transmit PDO Parameter
+ObjectType=0x9
+
+[1802sub0]
+ParameterName=Largest Sub-Index Supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0x0
+
+[1802sub1]
+ParameterName=COB-ID Used By PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x380
+PDOMapping=0x0
+
+[1802sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0x0
+
+[1802sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=500
+PDOMapping=0x0
+
+[1802sub5]
+ParameterName=Eventtimer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1803]
+SubNumber=0x5
+ParameterName=4. Transmit PDO Parameter
+ObjectType=0x9
+
+[1803sub0]
+ParameterName=Largest Sub-Index Supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0x0
+
+[1803sub1]
+ParameterName=COB-ID Used By PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80000480
+PDOMapping=0x0
+
+[1803sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0x0
+
+[1803sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=500
+PDOMapping=0x0
+
+[1803sub5]
+ParameterName=Eventtimer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1A00]
+SubNumber=0x9
+ParameterName=1. Transmit PDO Mapping Parameter
+ObjectType=0x9
+
+[1A00sub0]
+ParameterName=Number Of Mapped Objects In PDO
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x2
+PDOMapping=0x0
+
+[1A00sub1]
+ParameterName=PDO Mapping 1. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x60000108
+PDOMapping=0x0
+
+[1A00sub2]
+ParameterName=PDO Mapping 2. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x60000208
+PDOMapping=0x0
+
+[1A00sub3]
+ParameterName=PDO Mapping 3. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A00sub4]
+ParameterName=PDO Mapping 4. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A00sub5]
+ParameterName=PDO Mapping 5. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A00sub6]
+ParameterName=PDO Mapping 6. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A00sub7]
+ParameterName=PDO Mapping 7. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A00sub8]
+ParameterName=PDO Mapping 8. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A01]
+SubNumber=0x9
+ParameterName=2. Transmit PDO Mapping Parameter
+ObjectType=0x9
+
+[1A01sub0]
+ParameterName=Number Of Mapped Objects In PDO
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x4
+PDOMapping=0x0
+
+[1A01sub1]
+ParameterName=PDO Mapping 1. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x64010110
+PDOMapping=0x0
+
+[1A01sub2]
+ParameterName=PDO Mapping 2. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x64010210
+PDOMapping=0x0
+
+[1A01sub3]
+ParameterName=PDO Mapping 3. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x64010310
+PDOMapping=0x0
+
+[1A01sub4]
+ParameterName=PDO Mapping 4. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x64010410
+PDOMapping=0x0
+
+[1A01sub5]
+ParameterName=PDO Mapping 5. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A01sub6]
+ParameterName=PDO Mapping 6. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A01sub7]
+ParameterName=PDO Mapping 7. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A01sub8]
+ParameterName=PDO Mapping 8. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A02]
+SubNumber=0x9
+ParameterName=3. Transmit PDO Mapping Parameter
+ObjectType=0x9
+
+[1A02sub0]
+ParameterName=Number Of Mapped Objects In PDO
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x4
+PDOMapping=0x0
+
+[1A02sub1]
+ParameterName=PDO Mapping 1. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x64010510
+PDOMapping=0x0
+
+[1A02sub2]
+ParameterName=PDO Mapping 2. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x64010610
+PDOMapping=0x0
+
+[1A02sub3]
+ParameterName=PDO Mapping 3. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x64010710
+PDOMapping=0x0
+
+[1A02sub4]
+ParameterName=PDO Mapping 4. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x64010810
+PDOMapping=0x0
+
+[1A02sub5]
+ParameterName=PDO Mapping 5. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A02sub6]
+ParameterName=PDO Mapping 6. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A02sub7]
+ParameterName=PDO Mapping 7. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A02sub8]
+ParameterName=PDO Mapping 8. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A03]
+SubNumber=0x9
+ParameterName=4. Transmit PDO Mapping Parameter
+ObjectType=0x9
+
+[1A03sub0]
+ParameterName=Number Of Mapped Objects In PDO
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[1A03sub1]
+ParameterName=PDO Mapping 1. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A03sub2]
+ParameterName=PDO Mapping 2. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A03sub3]
+ParameterName=PDO Mapping 3. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A03sub4]
+ParameterName=PDO Mapping 4. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A03sub5]
+ParameterName=PDO Mapping 5. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A03sub6]
+ParameterName=PDO Mapping 6. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A03sub7]
+ParameterName=PDO Mapping 7. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[1A03sub8]
+ParameterName=PDO Mapping 8. App. Object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0x0
+
+[6000]
+SubNumber=0x4
+ParameterName=Read Input 8 Bit
+ObjectType=0x8
+
+[6000sub0]
+ParameterName=Number of Input 8-Bit
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0x0
+
+[6000sub1]
+ParameterName=DI0_DI7
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+PDOMapping=0x1
+
+[6000sub2]
+ParameterName=DI8_DI15
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+PDOMapping=0x1
+
+[6000sub3]
+ParameterName=DI16_DI23
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+PDOMapping=0x1
+
+
+[6401]
+SubNumber=0x9
+ParameterName=Read Analogue Input 16-Bit
+ObjectType=0x9
+
+[6401sub0]
+ParameterName=Number of Analogue Input 16-Bit
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x8
+PDOMapping=0x0
+
+[6401sub1]
+ParameterName=AI0
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0x1
+
+[6401sub2]
+ParameterName=AI1
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0x1
+
+[6401sub3]
+ParameterName=AI2
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0x1
+
+[6401sub4]
+ParameterName=AI3
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0x1
+
+[6401sub5]
+ParameterName=AI4
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0x1
+
+[6401sub6]
+ParameterName=AI5
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0x1
+
+[6401sub7]
+ParameterName=AI6
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0x1
+
+[6401sub8]
+ParameterName=AI7
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0x1
+
+[6421]
+SubNumber=0x9
+ParameterName=Analogue Input Interrupt Trigger Selection
+ObjectType=0x8
+
+[6421sub0]
+ParameterName=Number of Analogue Input
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x8
+PDOMapping=0x0
+
+[6421sub1]
+ParameterName=AI0_InterruptTriggerSelection
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0x4
+PDOMapping=0x1
+
+[6421sub2]
+ParameterName=AI1_InterruptTriggerSelection
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0x4
+PDOMapping=0x1
+
+[6421sub3]
+ParameterName=AI2_InterruptTriggerSelection
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0x4
+PDOMapping=0x1
+
+[6421sub4]
+ParameterName=AI3_InterruptTriggerSelection
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0x4
+PDOMapping=0x1
+
+[6421sub5]
+ParameterName=AI4_InterruptTriggerSelection
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0x4
+PDOMapping=0x1
+
+[6421sub6]
+ParameterName=AI5_InterruptTriggerSelection
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0x4
+PDOMapping=0x1
+
+[6421sub7]
+ParameterName=AI6_InterruptTriggerSelection
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0x4
+PDOMapping=0x1
+
+[6421sub8]
+ParameterName=AI7_InterruptTriggerSelection
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0x4
+PDOMapping=0x1
+
+[6422]
+SubNumber=0x2
+ParameterName=Analogue Input Interrupt Source
+ObjectType=0x8
+
+[6422sub0]
+ParameterName=Number of Interrupt Source Banks
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x1
+PDOMapping=0x0
+
+[6422sub1]
+ParameterName=AI_InterruptSourceBank1
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0x1
+
+[6423]
+ParameterName=Analogue Input Global Interrupt Enable
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0
+
+[6424]
+SubNumber=0x9
+ParameterName=Analogue Input Interrupt Upper Limit Integer
+ObjectType=0x8
+
+[6424sub0]
+ParameterName=Number of Analogue Input
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x8
+PDOMapping=0x0
+
+[6424sub1]
+ParameterName=AI0_UpperLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6424sub2]
+ParameterName=AI1_UpperLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6424sub3]
+ParameterName=AI2_UpperLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6424sub4]
+ParameterName=AI3_UpperLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6424sub5]
+ParameterName=AI4_UpperLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6424sub6]
+ParameterName=AI5_UpperLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6424sub7]
+ParameterName=AI6_UpperLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6424sub8]
+ParameterName=AI7_UpperLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6425]
+SubNumber=0x9
+ParameterName=Analogue Input Interrupt Lower Limit Integer
+ObjectType=0x8
+
+[6425sub0]
+ParameterName=Number of Analogue Input
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x8
+PDOMapping=0x0
+
+[6425sub1]
+ParameterName=AI0_LowerLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6425sub2]
+ParameterName=AI1_LowerLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6425sub3]
+ParameterName=AI2_LowerLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6425sub4]
+ParameterName=AI3_LowerLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6425sub5]
+ParameterName=AI4_LowerLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6425sub6]
+ParameterName=AI5_LowerLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6425sub7]
+ParameterName=AI6_LowerLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6425sub8]
+ParameterName=AI7_LowerLimit
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=0x1
+
+[6426]
+SubNumber=0x9
+ParameterName=Analogue Input Interrupt Delta Unsigned
+ObjectType=0x8
+
+[6426sub0]
+ParameterName=Number of Analogue Input
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x8
+PDOMapping=0x0
+
+[6426sub1]
+ParameterName=AI0_Delta
+ObjectType=0x7
+DataType=0x0007
+AccessType=rww
+DefaultValue=0x5
+PDOMapping=0x1
+
+[6426sub2]
+ParameterName=AI1_Delta
+ObjectType=0x7
+DataType=0x0007
+AccessType=rww
+DefaultValue=0x5
+PDOMapping=0x1
+
+[6426sub3]
+ParameterName=AI2_Delta
+ObjectType=0x7
+DataType=0x0007
+AccessType=rww
+DefaultValue=0x5
+PDOMapping=0x1
+
+[6426sub4]
+ParameterName=AI3_Delta
+ObjectType=0x7
+DataType=0x0007
+AccessType=rww
+DefaultValue=0x5
+PDOMapping=0x1
+
+[6426sub5]
+ParameterName=AI4_Delta
+ObjectType=0x7
+DataType=0x0007
+AccessType=rww
+DefaultValue=0x5
+PDOMapping=0x1
+
+[6426sub6]
+ParameterName=AI5_Delta
+ObjectType=0x7
+DataType=0x0007
+AccessType=rww
+DefaultValue=0x5
+PDOMapping=0x1
+
+[6426sub7]
+ParameterName=AI6_Delta
+ObjectType=0x7
+DataType=0x0007
+AccessType=rww
+DefaultValue=0x5
+PDOMapping=0x1
+
+[6426sub8]
+ParameterName=AI7_Delta
+ObjectType=0x7
+DataType=0x0007
+AccessType=rww
+DefaultValue=0x5
+PDOMapping=0x1
+
+[67FE]
+SubNumber=0x2
+ParameterName=Error Behaviour
+ObjectType=0x8
+
+[67FEsub0]
+ParameterName=Number of Error Classes
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x1
+PDOMapping=0x0
+
+[67FEsub1]
+ParameterName=Communication Error
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0x0

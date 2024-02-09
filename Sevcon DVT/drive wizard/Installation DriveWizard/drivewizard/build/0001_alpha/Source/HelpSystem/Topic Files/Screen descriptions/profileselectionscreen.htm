@@ -1,0 +1,131 @@
+<!--
+(C) COPYRIGHT Sevcon 2007
+
+Project Reference UK0139
+
+FILE
+	$Revision:1.1$
+	$Version:$
+	$Author:ak$
+	$ProjectName:DriveWizard$ 
+
+	$RevDate:11/12/2007 11:27:08$
+	$ModDate:11/12/2007 11:05:22$
+
+ORIGINAL AUTHOR
+    Jude Wood
+
+DESCRIPTION
+	Drive wizard HTML help page.
+ 
+REFERENCES    
+
+MODIFICATION HISTORY
+    $Log:  59681: profileselectionscreen.htm 
+
+   Rev 1.1    11/12/2007 11:27:08  ak
+ TC keywords added to source for version control.
+
+
+
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/DWHelpTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Select Profile Screen</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="../../CSS%20Style%20Sheets/DWHelp.css" rel="stylesheet" type="text/css">
+<!-- InstanceParam name="ALinks" type="boolean" value="true" -->
+</head>
+
+<body>
+  <div align="right">    <img src="../../Topic%20Files/Help%20Images/DWlogoSmall.gif" alt="Drive WIzard logo" width="54" height="24">&nbsp;<a name="top"></a><img src="../../Topic%20Files/Help%20Images/SEVCON.gif" alt="Sevcon logo" width="115" height="16" align="left">
+  </div>
+  <hr>
+  <div id="Layer1" style="position:absolute; z-index:1; visibility: hidden; left: 0; top: 0;"></div>
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+<h1>Profile Selection Screen</h1>
+<p>The Select Vehicle Profile screen is displayed whenever you start Drive Wizard
+  and you have create done or more Vehicle Profiles. <br>
+  Once you successfully connect
+  to the CAN bus, Drive Wizard automatically closes this screen.<br> 
+  If Drive Wizard
+  subsequently
+  detects
+  that
+  one or more connected
+  CAN nodes may have changed either their Object Dictionary e.g. if a node has
+  been reprogrammed or that a Sevcon node login may have changed e.g. if a 
+  CAN node has restarted the Drive Wizard will attmept to stop any
+  current processes and redisplay the Select Vehicle Profile screen to prompt
+  you to
+  reconnect to the CAN bus.</p>
+<p><img src="../Help%20Images/SelectedProfilesScreen%20Img1.gif" alt="Select Vehicle profile screen" width="431" height="237" border="0" usemap="#Map"></p>
+<h2><a name="selectprofile"></a>Select Profile drop down list</h2>
+<p class="DWbodyText">Drive Wizard displays the your default Vehicle Profile (you can change this
+  in the <a href="options%20screen.htm#selectvehicleproifle">Options Screen</a>)
+  You can choose a different Vehicle Profile to connect with from the drop down
+  list.</p>
+<h2><a name="connect"></a> Connect button</h2>
+<p class="DWbodyText">When this button os clicked Drive Wizard
+    will attempt to connect to the CNA bus using the selected Vehicle Profile.
+  If you have opted to use virtual nodes then Drive Wizard will set up a virtual
+  system using the CAN nodes found when this  Vehicle Profile was last used.
+  If you successfully connect to the bus then Drive Wizard will automatically
+  close the Select Profiles screen and set up the System structure in the Main
+  Window Structure pane.<a href="../Getting%20Started/Screen%20layouts/drive%20wizard%20layout%20overview.htm#structurepane"> Structure
+  Pane</a></p>
+<table width="100%" border="0">
+  <tr>
+    <td width="10"><img src="../Help%20Images/docs_symbols/UM_note_symbol.gif" alt="note symbol" width="26" height="22"></td>
+    <td width="86%"><p class="DWbodyText">You may need to wait a few seconds for  Drive Wizard       to complete setting up and displaying the System structure</p></td>
+  </tr>
+</table>
+<p class="DWbodyText">If Drive Wizard is unable to find any connected CAN nodes then the Select
+  Profiles Screen will remain open for you to check the physical bus connections
+  and vehicle power and then to retry connection. Alternatively you can 
+  edit the Vehicle Profile. </p>
+<p><a name="editprofiles"></a>edit Vehicle Profiles button</p>
+<p class="DWbodyText">Use this button to switch to the <a href="options%20screen.htm">Options Screen</a> to add, delete and edit your
+  Vehicle Profiles</p>
+<h2><a name="workoffline"></a>work Offline button</h2>
+<p class="DWbodyText">Limited Drive Wizard functionality is available with no node s(real or virtual)
+  connected e.g. viewing a previously stored graph. Clicking this button will
+  Close the select Profiles screen. </p>
+<h2><a name="usevirtual" id="usevirtual"></a>Use virtual nodes checkbox</h2>
+<p class="DWbodyText">When this is checked Drive Wizard will set up a virtual System Structure
+  using the CAN nodes found last time you connected using this Vehicle Profile.
+  If it is unchecked the Drive Wizard will assume that you are connected to
+  a real CAN bus.</p>
+<h2><a name="userfeedback"></a>user feedback</h2>
+<p class="DWbodyText">The user instructions label displays the actions that Drive
+  Wizard is expecting you to do. <br>
+  Searching the CNA bus can take some time depening
+  on the connection settings
+  and the time  that Drive Wizard waits for CAN nodes to respond. The connection
+  progress bar provides an indication o the search progress.<br>
+  The status bar displays
+  Drive Wizard current activity or the results of Drive Wizards last action as
+  appropriate e.g. if a search has completed and no CNA
+  nodes have been found then Drive Wizard reports this here. 
+  <map name="Map">
+    <area shape="rect" coords="11,70,415,88" href="#" alt="Available Vehicle Profiles drop down list">
+    <area shape="rect" coords="0,102,144,122" href="#" alt="Use Virtual CAN nodes checkbox">
+    <area shape="rect" coords="10,133,112,181" href="#" alt="Connect to to CAN bus button">
+    <area shape="rect" coords="162,133,267,181" href="#" alt="Edit Vehicle Profiles button">
+    <area shape="rect" coords="311,133,414,182" href="#" alt="Work Offline button">
+    <area shape="rect" coords="1,23,263,47" href="#" alt="User Instructions">
+    <area shape="rect" coords="-2,188,426,212" href="#" alt="Connection Progress bar">
+    <area shape="rect" coords="1,213,431,235" href="#" alt="Status display">
+  </map>
+</p>
+<p align="right"><a href="#top">Top</a></p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

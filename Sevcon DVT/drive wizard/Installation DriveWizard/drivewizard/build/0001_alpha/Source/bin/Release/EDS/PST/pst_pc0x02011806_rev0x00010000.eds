@@ -1,0 +1,2528 @@
+
+;################################################################################
+;
+[FileInfo]
+;
+;################################################################################
+
+FileName=pst_sevcon_1p2.eds
+FileVersion= 1 
+FileRevision= 0 
+EDSVersion=1.0
+Description=CanOpen Info Set
+CreationTime=9:18AM
+CreationDate=5-11-2005
+CreatedBy=CAN_DICT_EDS_TOOL
+ModificationTime=9:18AM
+ModificationDate=5-11-2005
+ModifiedBy=jpl
+
+
+;################################################################################
+;
+[DeviceInfo]
+;
+;################################################################################
+
+VendorName=Tech/Ops SEVCON Ltd
+VendorNumber=0x0000001E
+ProductName=PST
+ProductNumber=0x02011806
+RevisionNumber=0x00010000
+OrderCode=pst_sevcon_1p2.eds
+SimpleBootUpMaster=0
+SimpleBootUpSlave=0
+Granularity=8
+DynamicChannelsSupported=0
+GroupMessaging=0
+NrOfRXPDO=1
+NrOfTXPDO=1
+LSS_Supported=0
+BaudRate_10=0
+BaudRate_20=0
+BaudRate_50=0
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=0
+BaudRate_1000=0
+
+
+;################################################################################
+;
+[MandatoryObjects]
+;
+;################################################################################
+
+SupportedObjects=3
+1=0x1000
+2=0x1001
+3=0x1018
+
+
+
+[1000]
+ParameterName=device_type
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00020192
+PDOMapping=0
+;SEVCONFIELD OBJECT=DEVICE_TYPE
+;SEVCONFIELD SECTION=Identity
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+
+[1001]
+ParameterName=error_register
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x05
+PDOMapping=1
+;SEVCONFIELD OBJECT = ERROR_REGISTER
+;SEVCONFIELD SECTION = EMERGENCY
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018]
+SubNumber= 5 
+ParameterName=identity_object
+ObjectType=9
+;SEVCONFIELD OBJECT=IDENTITY
+;SEVCONFIELD SECTION=Identity
+
+[1018sub0]
+ParameterName=identity_object
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x4
+PDOMapping=0
+
+[1018sub1]
+ParameterName=vendor_id
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018sub2]
+ParameterName=product_code
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018sub3]
+ParameterName=revision_number (can)
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00010000
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018sub4]
+ParameterName=serial_number
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+;################################################################################
+;
+[OptionalObjects]
+;
+;################################################################################
+
+SupportedObjects=46
+1=0x1002
+2=0x1003
+3=0x1005
+4=0x1010
+5=0x1011
+6=0x1014
+7=0x1017
+8=0x1400
+9=0x1600
+10=0x1800
+11=0x1A00
+12=0x6040
+13=0x6041
+14=0x604D
+15=0x6060
+16=0x6061
+17=0x6062
+18=0x6064
+19=0x6065
+20=0x6066
+21=0x6067
+22=0x6069
+23=0x606B
+24=0x606C
+25=0x606D
+26=0x606F
+27=0x6071
+28=0x6072
+29=0x6073
+30=0x6074
+31=0x6075
+32=0x6076
+33=0x6077
+34=0x6078
+35=0x6079
+36=0x607D
+37=0x6080
+38=0x6091
+39=0x60F6
+40=0x60F9
+41=0x60FA
+42=0x60FB
+43=0x60FD
+44=0x60FF
+45=0x6410
+46=0x6510
+
+
+
+[1002]
+ParameterName=manufacturer_status_register
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x01020306
+PDOMapping=0
+;SEVCONFIELD OBJECT=STATUSWORD
+;SEVCONFIELD SECTION=PST_STATUS
+;SEVCONFIELD NUMBER_FORMAT=BIT_SPLIT
+;SEVCONFIELD NUMBER_SPLIT=10
+;SEVCONFIELD SPLIT=0
+;SEVCONFIELD PARAMETERNAME=Reference run complete
+;SEVCONFIELD BITMASK=0x0001
+;SEVCONFIELD BITSHIFT=0x0000
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=1
+;SEVCONFIELD PARAMETERNAME=reference switch reached
+;SEVCONFIELD BITMASK=0x0002
+;SEVCONFIELD BITSHIFT=0x0001
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=2
+;SEVCONFIELD PARAMETERNAME=Limit switch active
+;SEVCONFIELD BITMASK=0x0040
+;SEVCONFIELD BITSHIFT=0x0006
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=3
+;SEVCONFIELD PARAMETERNAME=Request to steer
+;SEVCONFIELD BITMASK=0x0080
+;SEVCONFIELD BITSHIFT=0x0007
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=4
+;SEVCONFIELD PARAMETERNAME=Power up tests passed
+;SEVCONFIELD BITMASK=0x0100
+;SEVCONFIELD BITSHIFT=0x0008
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=5
+;SEVCONFIELD PARAMETERNAME=Sleep mode
+;SEVCONFIELD BITMASK=0x0400
+;SEVCONFIELD BITSHIFT=0x000a
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=Disabled
+;SEVCONFIELD 1=Active
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=6
+;SEVCONFIELD PARAMETERNAME=Active warning
+
+;SEVCONFIELD BITMASK=0x0800
+;SEVCONFIELD BITSHIFT=0x000b
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=7
+;SEVCONFIELD PARAMETERNAME=I2t limiting
+;SEVCONFIELD BITMASK=0x1000
+;SEVCONFIELD BITSHIFT=0x000c
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=8
+;SEVCONFIELD PARAMETERNAME=Active error
+;SEVCONFIELD BITMASK=0x2000
+;SEVCONFIELD BITSHIFT=0x000d
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=9
+;SEVCONFIELD PARAMETERNAME=Power stage enabled
+;SEVCONFIELD BITMASK=0x4000
+;SEVCONFIELD BITSHIFT=0x000d
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+
+
+
+[1003]
+SubNumber= 5 
+ObjectType=8
+ParameterName=pre_defined_error_field
+;SEVCONFIELD OBJECT=ERROR_BUFFER
+;SEVCONFIELD SECTION=PST_STATUS
+
+[1003sub0]
+ParameterName=pre_defined_error_field
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x00
+PDOMapping=0
+
+[1003sub1]
+ParameterName=standard_error_field_0
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[1003sub2]
+ParameterName=standard_error_field_1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[1003sub3]
+ParameterName=standard_error_field_2
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[1003sub4]
+ParameterName=standard_error_field_3
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[1005]
+ParameterName=COB_ID_SYNC_message
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x80
+PDOMapping=0
+;SEVCONFIELD OBJECT=COBID_SYNC
+;SEVCONFIELD SECTION=CANOpenSetup
+;SEVCONFIELD EEPROM=comm.sync_id
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+;SEVCONFIELD WRITE_IN_PREOPERATIONAL_ONLY=TRUE
+
+[1010]
+SubNumber= 2 
+ParameterName=store_parameters
+ObjectType=8
+;SEVCONFIELD OBJECT=STORE
+;SEVCONFIELD SECTION=CANOpenStore
+
+[1010sub0]
+ParameterName=store_parameters
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x1
+PDOMapping=0
+
+[1010sub1]
+ParameterName=save_all_parameters
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1011]
+SubNumber= 2 
+ParameterName=restore_parameters
+ObjectType=8
+;SEVCONFIELD OBJECT=RESTORE
+;SEVCONFIELD SECTION=CANOpenStore
+
+[1011sub0]
+ParameterName=restore_parameters
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x1
+PDOMapping=0
+
+[1011sub1]
+ParameterName=restore_all_default_parameters
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1014]
+ParameterName=cob_id_emergency_message
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=$NODEID+0x00000080
+PDOMapping=0
+;SEVCONFIELD OBJECT=COBID_EMCY
+;SEVCONFIELD SECTION=Emergency
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+;SEVCONFIELD WRITE_IN_PREOPERATIONAL_ONLY=TRUE
+
+[1017]
+ParameterName=producer_heartbeat_time
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+;SEVCONFIELD ACCESS_LEVEL=4
+;SEVCONFIELD UNITS=ms
+;SEVCONFIELD OBJECT=PRODUCER_HBEAT_TIME
+;SEVCONFIELD SECTION=Heartbeat
+
+
+[1400]
+SubNumber= 3 
+ParameterName=receive_pdo_parameter_RPDO1
+ObjectType=9
+;SEVCONFIELD OBJECT=PDO_COMMUNICATION
+;SEVCONFIELD SECTION=ReceivePDOComms
+
+[1400sub0]
+ParameterName=receive_pdo_parameter_RPDO1
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[1400sub1]
+ParameterName=COB_ID_used_by_RPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0xC0000201
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1400sub2]
+ParameterName=transmission_type_RPDO1
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0
+
+[1600]
+SubNumber= 5 
+ParameterName=receive_pdo_mapping_RPDO1
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_RPDO1
+;SEVCONFIELD SECTION=RECEIVEPDOMAPS
+
+
+[1600sub0]
+ParameterName=receive_pdo_mapping_RPDO1
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1600sub1]
+ParameterName=first_mapped_object_RPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x60400010
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1600sub2]
+ParameterName=second_mapped_object_RPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1600sub3]
+ParameterName=third_mapped_object_RPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0;
+SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1600sub4]
+ParameterName=fourth_mapped_object_RPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1800]
+SubNumber= 4 
+ParameterName=transmit_pdo_parameter_TPDO1
+ObjectType=9
+;SEVCONFIELD SECTION=TransmitPDOComms
+;SEVCONFIELD OBJECT=PST_TPDO1
+
+[1800sub0]
+ParameterName=transmit_pdo_parameter_TPDO1
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+
+[1800sub1]
+ParameterName=COB_ID_used_by_TPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0xC0000181
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1800sub2]
+ParameterName=transmission_type_TPDO1
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0
+
+[1800sub3]
+ParameterName=inhibit_time_TPDO1
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x00
+PDOMapping=0
+;SEVCONFIELD SCALING=0.1
+;SEVCONFIELD UNITS=ms
+
+[1A00]
+SubNumber= 5 
+ParameterName=transmit_pdo_mapping_TPDO1
+ObjectType=9
+;SEVCONFIELD OBJECT=TPDO_MAPPING
+;SEVCONFIELD SECTION=TransmitPDOMaps
+
+[1A00sub0]
+ParameterName=transmit_pdo_mapping_TPDO1
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+;SEVCONFIELD OBJECT=PST_TPDO_MAP1
+;SEVCONFIELD SECTION = TRANSMITPDOMAPS
+
+
+[1A00sub1]
+ParameterName=first_mapped_object_TPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x60410010
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1A00sub2]
+ParameterName=second_mapped_object_TPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1A00sub3]
+ParameterName=third_mapped_object_TPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1A00sub4]
+ParameterName=fourth_mapped_object_TPDO1
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[6040]
+ParameterName=controlword
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x0000
+PDOMapping=1
+;SEVCONFIELD OBJECT=CONTROLWORD
+;SEVCONFIELD SECTION=PST_CONTROL
+SEVCONFIELD NUMBER_FORMAT=BIT_SPLIT
+;SEVCONFIELD NUMBER_SPLIT=14
+;SEVCONFIELD SPLIT=0
+;SEVCONFIELD PARAMETERNAME=Operational mode
+;SEVCONFIELD BITMASK=0x0001
+;SEVCONFIELD BITSHIFT=0x0000
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=Normal
+;SEVCONFIELD 1=Monitor
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=1
+;SEVCONFIELD PARAMETERNAME=Power stage
+;SEVCONFIELD BITMASK=0x0002
+;SEVCONFIELD BITSHIFT=0x0001
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=Disable
+;SEVCONFIELD 1=Enable
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=2
+;SEVCONFIELD PARAMETERNAME=Aknowledge error
+;SEVCONFIELD BITMASK=0x0004
+;SEVCONFIELD BITSHIFT=0x0002
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=3
+;SEVCONFIELD PARAMETERNAME=
+Direction referecne
+
+;SEVCONFIELD BITMASK=0x0008
+;SEVCONFIELD BITSHIFT=0x0003
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=Left
+;SEVCONFIELD 1=Right
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=4
+;SEVCONFIELD PARAMETERNAME=Shutdown
+;SEVCONFIELD BITMASK=0x0010
+;SEVCONFIELD BITSHIFT=0x0004
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=5
+;SEVCONFIELD PARAMETERNAME=Activate torque control
+;SEVCONFIELD BITMASK=0x0040
+;SEVCONFIELD BITSHIFT=0x0006
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=6
+;SEVCONFIELD PARAMETERNAME=Activate velocity control
+;SEVCONFIELD BITMASK=0x0080
+;SEVCONFIELD BITSHIFT=0x0007
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=7
+;SEVCONFIELD PARAMETERNAME=Activate position control
+;SEVCONFIELD BITMASK=0x0100
+;SEVCONFIELD BITSHIFT=0x0008
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=8
+;SEVCONFIELD PARAMETERNAME=Activate reference run
+;SEVCONFIELD BITMASK=0x0200
+;SEVCONFIELD BITSHIFT=0x0009
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=9
+;SEVCONFIELD PARAMETERNAME=Sleep mode
+;SEVCONFIELD BITMASK=0x00400
+;SEVCONFIELD BITSHIFT=0x000a
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=Leave
+;SEVCONFIELD 1=Enter
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=10
+;SEVCONFIELD PARAMETERNAME=Save parameters to FLASH
+;SEVCONFIELD BITMASK=0x01000
+;SEVCONFIELD BITSHIFT=0x000c
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Save
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=11
+;SEVCONFIELD PARAMETERNAME=Load parameters from FLASH
+;SEVCONFIELD BITMASK=0x02000
+;SEVCONFIELD BITSHIFT=0x000d
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Load
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=12
+;SEVCONFIELD PARAMETERNAME=Load default parameters from CODE
+;SEVCONFIELD BITMASK=0x04000
+;SEVCONFIELD BITSHIFT=0x000e
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Load
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=13
+;SEVCONFIELD PARAMETERNAME=PST reset
+;SEVCONFIELD BITMASK=0x08000
+;SEVCONFIELD BITSHIFT=0x000f
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+
+
+
+[6041]
+ParameterName=statusword
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x0240
+PDOMapping=1
+;SEVCONFIELD OBJECT=STATUSWORD1
+;SEVCONFIELD SECTION=PST_STATUS
+;SEVCONFIELD NUMBER_FORMAT=BIT_SPLIT
+;SEVCONFIELD NUMBER_SPLIT=10
+;SEVCONFIELD SPLIT=0
+;SEVCONFIELD PARAMETERNAME=Reference run complete
+;SEVCONFIELD BITMASK=0x0001
+;SEVCONFIELD BITSHIFT=0x0000
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=1
+;SEVCONFIELD PARAMETERNAME=reference switch reached
+;SEVCONFIELD BITMASK=0x0002
+;SEVCONFIELD BITSHIFT=0x0001
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=2
+;SEVCONFIELD PARAMETERNAME=Limit switch active
+;SEVCONFIELD BITMASK=0x0040
+;SEVCONFIELD BITSHIFT=0x0006
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=3
+;SEVCONFIELD PARAMETERNAME=Request to steer
+;SEVCONFIELD BITMASK=0x0080
+;SEVCONFIELD BITSHIFT=0x0007
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=4
+;SEVCONFIELD PARAMETERNAME=Power up tests passed
+;SEVCONFIELD BITMASK=0x0100
+;SEVCONFIELD BITSHIFT=0x0008
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=5
+;SEVCONFIELD PARAMETERNAME=Sleep mode
+;SEVCONFIELD BITMASK=0x0400
+;SEVCONFIELD BITSHIFT=0x000a
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=Disabled
+;SEVCONFIELD 1=Active
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=6
+;SEVCONFIELD PARAMETERNAME=Active warning
+
+;SEVCONFIELD BITMASK=0x0800
+;SEVCONFIELD BITSHIFT=0x000b
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=7
+;SEVCONFIELD PARAMETERNAME=I2t limiting
+;SEVCONFIELD BITMASK=0x1000
+;SEVCONFIELD BITSHIFT=0x000c
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=8
+;SEVCONFIELD PARAMETERNAME=Active error
+;SEVCONFIELD BITMASK=0x2000
+;SEVCONFIELD BITSHIFT=0x000d
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+;SEVCONFIELD SPLIT=9
+;SEVCONFIELD PARAMETERNAME=Power stage enabled
+;SEVCONFIELD BITMASK=0x4000
+;SEVCONFIELD BITSHIFT=0x000d
+;SEVCONFIELD NUMBERFORMAT=2
+;SEVCONFIELD 0=No
+;SEVCONFIELD 1=Yes
+;SEVCONFIELD LOW_LIMIT=0
+;SEVCONFIELD HIGH_LIMIT=0x1
+
+[604D]
+ParameterName=pole_number
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x04
+PDOMapping=1
+;SEVCONFIELD OBJECT= PST_POLE_NUMBER
+;SEVCONFIELD SECTION = PST_STATUS
+
+
+[6060]
+ParameterName=modes_of_operation
+ObjectType=7
+DataType=0x0002
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x00
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_MODES_OF_OP
+;SEVCONFIELD SECTION = PST_MODESOFOPERATION
+
+[6061]
+ParameterName=modes_of_operation_display
+ObjectType=7
+DataType=0x0002
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x03
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_MODES_OF_OP_DISPLAY
+;SEVCONFIELD SECTION= PST_MODESOFOPERATION
+
+[6062]
+ParameterName=position_demand_value
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x01
+PDOMapping=1
+;SEVCONFIELD UNITS=degrees
+;SEVCONFIELD SCALING=5.493E-3
+;SEVCONFIELD SECTION=PST_POS_CONTROL_GENERAL
+;SEVCONFIELD OBJECT=PST_POS_DEMAND_VALUE
+
+[6064]
+ParameterName=position_actual_value
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x03
+PDOMapping=1
+;SEVCONFIELD UNITS=degrees
+;SEVCONFIELD SCALING=5.493E-3
+;SEVCONFIELD SECTION=PST_POS_CONTROL_GENERAL
+;SEVCONFIELD OBJECT=PST_POS_ACTUAL_VALUE
+
+[6065]
+ParameterName=following_error_window
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x000079E7
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_FOLLOWING_ERROR_WINDOW
+;SEVCONFIELD SECTION = PST_POS_CONTROL_GENERAL
+
+[6066]
+ParameterName=following_error_time_out
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x0000
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_FOLLOWING_ERROR_TIMEOUT
+;SEVCONFIELD SECTION = PST_POS_CONTROL_GENERAL
+
+[6067]
+ParameterName=position_window
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x000001E7
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_POS_WINDOW
+;SEVCONFIELD SECTION = PST_POS_CONTROL_GENERAL
+
+[6069]
+ParameterName=velocity_sensor_actual_value
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x08
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_VELOCITY_SENSOR_VALUE
+;SEVCONFIELD SECTION=PST_VELOCITYCONTROL
+
+[606B]
+ParameterName=velocity_demand_value
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x00000000
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_VELOCITY_DEMAND
+;SEVCONFIELD SECTION=PST_VELOCITYCONTROL
+
+[606C]
+ParameterName=velocity_actual_value
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x10
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_VELOCITY_ACTUAL_VALUE
+;SEVCONFIELD SECTION = PST_VELOCITYCONTROL
+
+[606D]
+ParameterName=velocity_window
+ObjectType=7
+DataType=0x0004
+LowLimit=0x0000
+HighLimit=0x1388
+AccessType=rww
+DefaultValue=0x00000032
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_VELOCITY_WINDOW
+;SEVCONFIELD SECTION = PST_VELOCITYCONTROL
+
+[606F]
+ParameterName=velocity_treshold
+ObjectType=7
+DataType=0x0004
+LowLimit=0x0000
+HighLimit=0x1388
+AccessType=rww
+DefaultValue=0x00000010
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_VELOCITY_THRESHHOLD
+;SEVCONFIELD SECTION = PST_VELOCITYCONTROL
+
+[6071]
+ParameterName=target_torque
+ObjectType=7
+DataType=0x0003
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x0000
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_TARGET_TORQUE
+;SEVCONFIELD SECTION = PST_TORQUEASSIST
+
+[6072]
+ParameterName=max_torque
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x1770
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_MAX_TORQUE
+;SEVCONFIELD SECTION = PST_TORQUEASSIST
+
+[6073]
+ParameterName=max_current
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x1770
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_MAX_CURRENT
+;SEVCONFIELD SECTION = PST_ELEC_PARAMS
+
+[6074]
+ParameterName=torque_demand_value
+ObjectType=7
+DataType=0x0003
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x0000
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_TORQUE_DEMAND_VALUE
+;SEVCONFIELD SECTION = PST_TORQUEASSIST
+
+[6075]
+ParameterName=motor_rated_current
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x00002710
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_MOTOR_RATED_CURRENT
+;SEVCONFIELD SECTION = PST_ELEC_PARAMS
+
+[6076]
+ParameterName=motor_rated_torque
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x00002710
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_MOTOR_RATED_TORQUE
+;SEVCONFIELD SECTION = PST_TORQUEASSIST
+
+[6077]
+ParameterName=torque_actual_value
+ObjectType=7
+DataType=0x0003
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x17
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_TORQUE_ACTUAL_VALUE
+;SEVCONFIELD SECTION = PST_TORQUEASSIST
+
+
+[6078]
+ParameterName=current_actual_value
+ObjectType=7
+DataType=0x0003
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x18
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_CURRENT_ACTUAL_VALUE
+;SEVCONFIELD SECTION = PST_ELEC_PARAMS
+
+
+[6079]
+ParameterName=DC_link_circuit_voltage
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x19
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_DC_LINK_CIRCUIT_VOLTS
+;SEVCONFIELD SECTION = PST_ELEC_PARAMS
+
+
+[607D]
+SubNumber= 3 
+ParameterName=software_position_limit
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_SW_POSITION_LIMIT
+;SEVCONFIELD SECTION = PST_POSITIONLIMITS
+
+
+[607Dsub0]
+ParameterName=software_position_limit
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[607Dsub1]
+ParameterName=max_position_limit
+ObjectType=7
+DataType=0x0004
+LowLimit=0x8001
+HighLimit=0x7FFF
+AccessType=rw
+DefaultValue=0x00007FFF
+PDOMapping=0
+
+[607Dsub2]
+ParameterName=min_position_limit
+ObjectType=7
+DataType=0x0004
+LowLimit=0x8000
+HighLimit=0x7FFE
+AccessType=rw
+DefaultValue=0xFFFF8000
+PDOMapping=0
+
+[6080]
+ParameterName=max_motor_speed
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x0BB8
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_MAX_MOTOR_SPEED
+;SEVCONFIELD SECTION = PST_MOTOR
+
+[6091]
+SubNumber= 3 
+ParameterName=gear_ratio
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_GEAR_RATIO
+;SEVCONFIELD SECTION = PST_MECHANICAL
+
+[6091sub0]
+ParameterName=gear_ratio
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[6091sub1]
+ParameterName=motor_revolutions
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x000000E0
+PDOMapping=1
+
+[6091sub2]
+ParameterName=shaft_revolutions
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x00000001
+PDOMapping=1
+
+[60F6]
+SubNumber= 3 
+ParameterName=torque_control_parameters
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_TORQUE_CONTROL_PARAMS
+;SEVCONFIELD SECTION = PST_TORQUEASSIST
+
+[60F6sub0]
+ParameterName=torque_control_parameters
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[60F6sub1]
+ParameterName=torque_control_gain
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x0100
+PDOMapping=0
+
+[60F6sub2]
+ParameterName=torque_control_time
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x03E8
+PDOMapping=0
+
+[60F9]
+SubNumber= 4 
+ParameterName=velocity_control_parameter_set
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_VELOCITY_CONTROL_PARAM_SET
+;SEVCONFIELD SECTION = PST_VELOCITYCONTROL
+
+[60F9sub0]
+ParameterName=velocity_control_parameter_set
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x4
+PDOMapping=0
+
+[60F9sub1]
+ParameterName=velocity_control_gain
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x0200
+PDOMapping=0
+
+[60F9sub2]
+ParameterName=velocity_control_time
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x0078
+PDOMapping=0
+
+[60F9sub4]
+ParameterName=velocity_control_filter_time
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[60FA]
+ParameterName=control_effort
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x01
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_CONTROL_EFFORT
+;SEVCONFIELD SECTION = PST_CONTROL
+
+[60FB]
+SubNumber= 4 
+ParameterName=position_control_parameter_set
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_POS_CONTROL_PARAM_SET
+;SEVCONFIELD SECTION = PST_ANALOGPOSCONTROL
+
+[60FBsub0]
+ParameterName=position_control_parameter_set
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0
+
+[60FBsub1]
+ParameterName=position_control_gain
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x0500
+PDOMapping=0
+
+[60FBsub4]
+ParameterName=position_control_v_max
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x000007D0
+PDOMapping=0
+
+[60FBsub5]
+ParameterName=position_error_tolerance_window
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x00000030
+PDOMapping=0
+
+[60FD]
+ParameterName=digital_inputs
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rwr
+DefaultValue=0x00000000
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_DIGITAL_INPUTS
+;SEVCONFIELD SECTION = DICONFIGURATION
+
+[60FF]
+ParameterName=target_velocity
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x00000000
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_TARGET_VELOCITY
+;SEVCONFIELD SECTION = PST_VELOCITYCONTROL
+
+[6410]
+SubNumber= 7 
+ParameterName=motor_data
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_MOTOR_DATA
+;SEVCONFIELD SECTION= PST_MOTOR
+
+
+[6410sub0]
+ParameterName=motor_data
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0xA0
+PDOMapping=0
+
+[6410sub3]
+ParameterName=iit_time_motor
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x1388
+PDOMapping=0
+
+[6410sub4]
+ParameterName=iit_ratio_motor
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x0000
+PDOMapping=0
+
+[6410sub15]
+ParameterName=motor_nominal_voltage
+ObjectType=7
+DataType=0x0007
+LowLimit=0x0
+HighLimit=0x0009FFF6
+AccessType=rw
+DefaultValue=0x00005DC0
+PDOMapping=0
+
+[6410sub16]
+ParameterName=motor_nominal_speed
+ObjectType=7
+DataType=0x0007
+LowLimit=0x0
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x00325AA0
+PDOMapping=0
+
+[6410sub17]
+ParameterName=motor_resistor
+ObjectType=7
+DataType=0x0007
+LowLimit=0x0
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x00000064
+PDOMapping=0
+
+[6410subA0]
+ParameterName=hall_sensor_state
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x01
+PDOMapping=0
+
+[6510]
+SubNumber= 10 
+ParameterName=drive_data
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_DRIVE_DATA
+;SEVCONFIELD SECTION = PST_STATUS
+
+[6510sub0]
+ParameterName=drive_data
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0xD0
+PDOMapping=0
+
+[6510sub1]
+ParameterName=serial_number
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[6510sub2]
+ParameterName=drive_code
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=
+PDOMapping=0
+
+[6510sub11]
+ParameterName=limit_switch_polarity
+ObjectType=7
+DataType=0x0003
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[6510sub14]
+ParameterName=homing_switch_polarity
+ObjectType=7
+DataType=0x0003
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x0001
+PDOMapping=0
+
+[6510sub31]
+ParameterName=power_stage_temperature
+ObjectType=7
+DataType=0x0003
+LowLimit=0x8000
+HighLimit=0x7FFF
+AccessType=ro
+DefaultValue=0x01
+PDOMapping=0
+
+[6510subA1]
+ParameterName=drive_type
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x000007D0
+PDOMapping=0
+
+[6510subA9]
+ParameterName=firmware_main_version
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00000001
+PDOMapping=0
+
+[6510subAA]
+ParameterName=firmware_custom_version
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x000186A0
+PDOMapping=0
+
+[6510subD0]
+ParameterName=service_counter_time
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+;################################################################################
+;
+[ManufacturerObjects]
+;
+;################################################################################
+
+SupportedObjects=26
+1=0x2014
+2=0x2021
+3=0x2070
+4=0x2400
+5=0x2401
+6=0x2415
+7=0x3000
+8=0x3001
+9=0x3002
+10=0x3003
+11=0x3004
+12=0x3005
+13=0x3006
+14=0x3040
+15=0x3095
+16=0x30A0
+17=0x30A5
+18=0x30C0
+19=0x30C1
+20=0x30C5
+21=0x30E0
+22=0x30E5
+23=0x30E6
+24=0x30F0
+25=0x30F1
+26=0x30FF
+
+
+
+[2014]
+SubNumber= 3 
+ParameterName=tpdo1_transmit_mask
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_TPDO1_MASK
+;SEVCONFIELD SECTION = TRANSMITPDOCOMMS
+
+[2014sub0]
+ParameterName=tpdo1_transmit_mask
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[2014sub1]
+ParameterName=tpdo1_transmit_mask_low
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0xFFFFFFFF
+PDOMapping=0
+
+[2014sub2]
+ParameterName=tpdo1_transmit_mask_high
+ObjectType=7
+DataType=0x0007
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0xFFFFFFFF
+PDOMapping=0
+
+[2021]
+ParameterName=position_encoder_selection
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x0002
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+;SEVCONFIELD OBJECT=PST_POS_ENCODER_SELECTION
+;SEVCONFIELD SECTION = PST_DIGITALPOSCONTROL
+
+[2070]
+SubNumber= 4 
+ParameterName=target_selector
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_TARGET_SELECTOR
+;SEVCONFIELD SECTION = PST_MODESOFOPERATION
+
+[2070sub0]
+ParameterName=target_selector
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0
+
+[2070sub3]
+ParameterName=target_selector_torque
+ObjectType=7
+DataType=0x0006
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x0004
+PDOMapping=0
+
+[2070sub4]
+ParameterName=target_selector_velocity
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x0006
+AccessType=rw
+DefaultValue=0x0004
+PDOMapping=0
+
+[2070sub5]
+ParameterName=target_selector_position
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x0006
+AccessType=rw
+DefaultValue=0x0001
+PDOMapping=0
+
+[2400]
+SubNumber= 3 
+ParameterName=analog_input_voltages
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_ANALOG_IP_VOLTS
+;SEVCONFIELD SECTION = PST_ANALOGPOSCONTROL
+
+[2400sub0]
+ParameterName=analog_input_voltages
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[2400sub1]
+ParameterName=analog_input_voltage_ch_0
+ObjectType=7
+DataType=0x0003
+LowLimit=0x0000
+HighLimit=0x1388
+AccessType=rwr
+DefaultValue=0x0
+PDOMapping=1
+
+[2400sub2]
+ParameterName=analog_input_voltage_ch_1
+ObjectType=7
+DataType=0x0003
+LowLimit=0x0000
+HighLimit=0x1388
+AccessType=rwr
+DefaultValue=0x0
+PDOMapping=1
+
+[2401]
+SubNumber= 2 
+ParameterName=analog_input_offsets
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_ANALOG_IP_OFFSETS
+;SEVCONFIELD SECTION = PST_ANALOGPOSCONTROL
+
+[2401sub0]
+ParameterName=analog_input_offsets
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x1
+PDOMapping=0
+
+[2401sub1]
+ParameterName=analog_input_offset
+ObjectType=7
+DataType=0x0004
+LowLimit=0xEC78
+HighLimit=0x1388
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[2415]
+SubNumber= 2 
+ParameterName=current_limitation
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_CURRENT_LIMIT
+;SEVCONFIELD SECTION = PST_ELEC_PARAMS
+
+[2415sub0]
+ParameterName=current_limitation
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+
+[2415sub3]
+ParameterName=act_current_limit
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x0000EA60
+PDOMapping=0
+
+[3000]
+ParameterName=cmd_word_default
+ObjectType=7
+DataType=0x0007
+LowLimit=0x0
+HighLimit=0xFFFFFFFF
+AccessType=rw
+DefaultValue=0x000001C8
+PDOMapping=0
+;SEVCONFIELD OBJECT=PST_CMD_WORD_DEFAULT
+;SEVCONFIELD SECTION = PST_CONTROL
+
+[3001]
+ParameterName=configuration_word
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0
+HighLimit=0xFFFF
+AccessType=rww
+DefaultValue=0x455A
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_CONFIG_WORD
+;SEVCONFIELD SECTION = PST_CONTROL
+
+[3002]
+ParameterName=actual_command_word
+ObjectType=7
+DataType=0x0007
+LowLimit=0x0
+HighLimit=0xFFFFFFFF
+AccessType=rww
+DefaultValue=0x000001C8
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_ACTUAL_CMD_WORD
+;SEVCONFIELD SECTION = PST_CONTROL
+
+[3003]
+ParameterName=error_word
+ObjectType=7
+DataType=0x0007
+LowLimit=0x0
+HighLimit=0xFFFFFFFF
+AccessType=rwr
+DefaultValue=0x00000000
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_ERROR_WORD
+;SEVCONFIELD SECTION = PST_STATUS
+
+[3004]
+ParameterName=error_mask
+ObjectType=7
+DataType=0x0007
+LowLimit=0x0
+HighLimit=0xFFFFFFFF
+AccessType=rw
+DefaultValue=0x83002604
+PDOMapping=0
+;SEVCONFIELD OBJECT=PST_ERROR_MASK
+;SEVCONFIELD SECTION = PST_STATUS
+
+[3005]
+ParameterName=warning_auto_restart
+ObjectType=7
+DataType=0x0007
+LowLimit=0x0
+HighLimit=0xFFFFFFFF
+AccessType=rw
+DefaultValue=0xFFFFFFFF
+PDOMapping=0
+;SEVCONFIELD OBJECT=PST_WARNING_AUTO_RESTART
+;SEVCONFIELD SECTION = PST_STATUS
+
+[3006]
+ParameterName=warning_restart_max
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0
+HighLimit=0x0100
+AccessType=rw
+DefaultValue=0x0010
+PDOMapping=0
+;SEVCONFIELD OBJECT=PST_WARNING_RESTART_MAX
+;SEVCONFIELD SECTION = PST_STATUS
+
+[3040]
+SubNumber= 8 
+ParameterName=reference_run_data
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_REF_RUN_DATA
+;SEVCONFIELD SECTION = PST_VELOCITYCONTROL
+
+[3040sub0]
+ParameterName=reference_run_data
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x12
+PDOMapping=0
+
+[3040sub1]
+ParameterName=velocity_during_reference_search
+ObjectType=7
+DataType=0x0003
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0xFC18
+PDOMapping=0
+
+[3040sub2]
+ParameterName=velocity_during_target_search
+ObjectType=7
+DataType=0x0003
+LowLimit=
+HighLimit=
+AccessType=rw
+DefaultValue=0x03E8
+PDOMapping=0
+
+[3040sub3]
+ParameterName=offset_target_to_reference
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x016C
+PDOMapping=0
+
+[3040sub4]
+ParameterName=positioning_target_time
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[3040sub10]
+ParameterName=reference_timeout
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x03E8
+PDOMapping=0
+
+[3040sub11]
+ParameterName=target_tolerance_span
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x0078
+PDOMapping=0
+
+[3040sub12]
+ParameterName=reference_method
+ObjectType=7
+DataType=0x0005
+LowLimit=0x0
+HighLimit=0xFF
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[3095]
+SubNumber= 9 
+ParameterName=analog_limits
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_ANALOG_LIMITS
+;SEVCONFIELD SECTION = PST_ANALOGPOSCONTROL
+
+[3095sub0]
+ParameterName=analog_limits
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x8
+PDOMapping=0
+
+[3095sub1]
+ParameterName=minimum_value_analog_0
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x1770
+AccessType=rw
+DefaultValue=0x018F
+PDOMapping=0
+
+[3095sub2]
+ParameterName=maximum_value_analog_0
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x1770
+AccessType=rw
+DefaultValue=0x12BF
+PDOMapping=0
+
+[3095sub3]
+ParameterName=minimum_value_analog_1
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x1770
+AccessType=rw
+DefaultValue=0x018F
+PDOMapping=0
+
+[3095sub4]
+ParameterName=maximum_value_analog_1
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x1770
+AccessType=rw
+DefaultValue=0x12BF
+PDOMapping=0
+
+[3095sub5]
+ParameterName=minimum_value_analog_difference
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x1770
+AccessType=rw
+DefaultValue=0x63
+PDOMapping=0
+
+[3095sub6]
+ParameterName=maximum_value_analog_difference
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x1770
+AccessType=rw
+DefaultValue=0x137F
+PDOMapping=0
+
+[3095sub7]
+ParameterName=value_for_analog_sum
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x1770
+AccessType=rw
+DefaultValue=0x1388
+PDOMapping=0
+
+[3095sub8]
+ParameterName=maximum_analog_difference
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x1770
+AccessType=rw
+DefaultValue=0x10E5
+PDOMapping=0
+
+[30A0]
+SubNumber= 4 
+ParameterName=current_analog_scaling
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_CURRENT_ANALOG_SCALING
+;SEVCONFIELD SECTION = PST_ELEC_PARAMS
+
+[30A0sub0]
+ParameterName=current_analog_scaling
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x4
+PDOMapping=0
+
+[30A0sub1]
+ParameterName=current_ain_dt1_gain
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x7FFF
+AccessType=rw
+DefaultValue=0x0400
+PDOMapping=0
+
+[30A0sub2]
+ParameterName=current_ain_dt1_time
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0064
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x4E20
+PDOMapping=0
+
+[30A0sub4]
+ParameterName=current_ain_dt1_filter_time
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0064
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x4E20
+PDOMapping=0
+
+[30A5]
+SubNumber= 3 
+ParameterName=analog_current_value_data_field
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_ANALOG_CURRENT_VALUE_DATA_FIELD
+;SEVCONFIELD SECTION = PST_ANALOGPOSCONTROL
+
+[30A5sub0]
+ParameterName=analog_current_value_data_field
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[30A5sub1]
+ParameterName=analog_current_value_adjustment
+ObjectType=7
+DataType=0x0004
+LowLimit=0x000A
+HighLimit=0x9FFF6
+AccessType=rw
+DefaultValue=0x0000EA60
+PDOMapping=0
+
+[30A5sub2]
+ParameterName=analog_current_value_zero_range
+ObjectType=7
+DataType=0x0004
+LowLimit=0x000A
+HighLimit=0x9FFF6
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+
+[30C0]
+ParameterName=velocity_actual_value_estimated
+ObjectType=7
+DataType=0x0003
+LowLimit=0x8000
+HighLimit=0x7FFF
+AccessType=rwr
+DefaultValue=0x0000
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_VELOCITY_ACTUAL_VALUE_ESTIMATED
+;SEVCONFIELD SECTION = PST_VELOCITYCONTROL
+
+[30C1]
+SubNumber= 4 
+ParameterName=phase_cut_detection
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_PHASE_CUT_DETECTION
+;SEVCONFIELD SECTION = PST_VELOCITYCONTROL
+
+[30C1sub0]
+ParameterName=phase_cut_detection
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+
+[30C1sub1]
+ParameterName=phase_cut_velocity_tolerance
+ObjectType=7
+DataType=0x0003
+LowLimit=0x0000
+HighLimit=0x7FFF
+AccessType=rw
+DefaultValue=0x000003B6
+PDOMapping=0
+
+[30C1sub2]
+ParameterName=phase_cut_velocity
+ObjectType=7
+DataType=0x0003
+LowLimit=0x0000
+HighLimit=0x7FFF
+AccessType=rw
+DefaultValue=0x0000012C
+PDOMapping=0
+
+[30C1sub3]
+ParameterName=phase_cut_filter_time
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0064
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x9C40
+PDOMapping=0
+
+[30C5]
+SubNumber= 3 
+ParameterName=analog_velocity_value_data_field
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_ANALOG_VELOCITY_VALUE_DATA_FIELD
+;SEVCONFIELD SECTION = PST_VELOCITYCONTROL
+
+[30C5sub0]
+ParameterName=analog_velocity_value_data_field
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[30C5sub1]
+ParameterName=analog_velocity_value_adjustment
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0xFFFF
+AccessType=rww
+DefaultValue=0x0BB8
+PDOMapping=1
+
+[30C5sub2]
+ParameterName=analog_velocity_value_zero_range
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[30E0]
+ParameterName=user_target_position
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=rww
+DefaultValue=0x00000000
+PDOMapping=1
+;SEVCONFIELD OBJECT=PST_USER_TARGET_POSITION
+;SEVCONFIELD SECTION = PST_POS_CONTROL_GENERAL
+
+[30E5]
+SubNumber= 3 
+ParameterName=analog_position_value_data_field
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_ANALOG_POS_VALUE_DATA_FIELD
+;SEVCONFIELD SECTION = PST_ANALOGPOSCONTROL
+
+[30E5sub0]
+ParameterName=analog_position_value_data_field
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[30E5sub1]
+ParameterName=analog_position_value_adjustment
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0xFFFF
+AccessType=rww
+DefaultValue=0x8000
+PDOMapping=1
+
+[30E5sub2]
+ParameterName=analog_position_value_zero_range
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x016C
+PDOMapping=0
+
+[30E6]
+SubNumber= 3 
+ParameterName=barrier_data_field
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_BARRIER_DATA_FIELD
+;SEVCONFIELD SECTION = PST_ANALOGPOSCONTROL
+
+[30E6sub0]
+ParameterName=barrier_data_field
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[30E6sub1]
+ParameterName=movement_barrier
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x8000
+PDOMapping=0
+
+[30E6sub2]
+ParameterName=analog_setpoint_barrier
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x471C
+PDOMapping=0
+
+[30F0]
+SubNumber= 3 
+ParameterName=encoder_value_data_field
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_ENCODER_VALUE_DATA_FIELD
+;SEVCONFIELD SECTION = PST_DIGITALDELTACONTROL
+
+[30F0sub0]
+ParameterName=encoder_value_data_field
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[30F0sub1]
+ParameterName=encoder_velocity_value_adjustment
+ObjectType=7
+DataType=0x0004
+LowLimit=0xFFFF8000
+HighLimit=0x7FFF
+AccessType=rw
+DefaultValue=0x00000010
+PDOMapping=0
+
+[30F0sub2]
+ParameterName=encoder_position_value_adjustment
+ObjectType=7
+DataType=0x0004
+LowLimit=0x0000
+HighLimit=0xFFFF
+AccessType=rw
+DefaultValue=0x00000001
+PDOMapping=0
+
+[30F1]
+SubNumber= 3 
+ParameterName=encoder_set_points
+ObjectType=8
+;SEVCONFIELD OBJECT=PST_ENCODER_SET_POINTS
+;SEVCONFIELD SECTION = PST_DIGITALDELTACONTROL
+
+[30F1sub0]
+ParameterName=encoder_set_points
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[30F1sub1]
+ParameterName=encoder_velocity_demand_value
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x0000
+PDOMapping=0
+
+[30F1sub2]
+ParameterName=encoder_position_demand_value
+ObjectType=7
+DataType=0x0004
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[30FF]
+SubNumber= 3 
+ParameterName=progressive_steering_parameter
+ObjectType=9
+;SEVCONFIELD OBJECT=PST_PROGRESSIVE_STEER
+;SEVCONFIELD SECTION = PST_CONTROL
+
+[30FFsub0]
+ParameterName=progressive_steering_parameter
+ObjectType=7
+DataType=0x0005
+LowLimit=
+HighLimit=
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[30FFsub1]
+ParameterName=progressive_steering_pointer
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x0021
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[30FFsub2]
+ParameterName=progressive_steering_value
+ObjectType=7
+DataType=0x0006
+LowLimit=0x0000
+HighLimit=0x8000
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+
+
+;################################################################################
+;
+[Comments]
+Lines=0
+;
+;################################################################################
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=0
+Dummy0004=0
+Dummy0005=0
+Dummy0006=0
+Dummy0007=0

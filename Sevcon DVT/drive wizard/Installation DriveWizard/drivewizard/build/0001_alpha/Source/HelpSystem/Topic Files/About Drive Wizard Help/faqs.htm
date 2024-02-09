@@ -1,0 +1,192 @@
+<!--
+(C) COPYRIGHT Sevcon 2007
+
+Project Reference UK0139
+
+FILE
+	$Revision:1.2$
+	$Version:$
+	$Author:ak$
+	$ProjectName:DriveWizard$ 
+
+	$RevDate:11/12/2007 11:22:16$
+	$ModDate:11/12/2007 10:54:56$
+
+ORIGINAL AUTHOR
+    Jude Wood
+
+DESCRIPTION
+	Drive wizard HTML help page.
+ 
+REFERENCES    
+
+MODIFICATION HISTORY
+    $Log:  59584: faqs.htm 
+
+   Rev 1.2    11/12/2007 11:22:16  ak
+ TC keywords added to source for version control.
+
+
+
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/DWHelpTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>FAQs</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="../../CSS%20Style%20Sheets/DWHelp.css" rel="stylesheet" type="text/css">
+<!-- InstanceParam name="ALinks" type="boolean" value="true" -->
+</head>
+
+<body>
+  <div align="right">    <img src="../../Topic%20Files/Help%20Images/DWlogoSmall.gif" alt="Drive WIzard logo" width="54" height="24">&nbsp;<a name="top"></a><img src="../../Topic%20Files/Help%20Images/SEVCON.gif" alt="Sevcon logo" width="115" height="16" align="left">
+  </div>
+  <hr>
+  <div id="Layer1" style="position:absolute; z-index:1; visibility: hidden; left: 0; top: 0;"></div>
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+<h1>Frequently asked Questions
+</h1>
+<h2>Connection </h2>
+<ul>
+  <li><a href="#A1">I have installed Drive Wizard . Now how do I connect to my vehicle</a>
+    
+  
+  </li>
+</ul>
+<h2>Guided Processes</h2>
+<ul>
+  <li><a href="#A2">The icon for the guided process I want to use is not visible</a>
+  </li>
+  <li><a href="#A4">Drive Wizard allows me to open a Guided Process but prevents
+        me from changing any values</a>
+    <p></p>
+    </li>
+</ul>
+<h2>Structure Pane View</h2>
+  <ul>
+    <li><a href="#A5">Drive Wizard has found my CAN node but is not showing any
+          infromation under the CAN node icon</a></li>
+    <li><a href="#A6">Drive Wizard is showing the wrong Object dictionary structure
+          under my CAN node icon</a></li>
+    <li><a href="#A2">The icon for the guided process I want to use is not 
+          visible</a></li>
+    <li><a href="#A7">Drive Wizard prevents me from dragging an icon in the System Structure</a></li>
+    <li><a href="#A8">Drive Wizard prevents me from dropping an icon onto my
+        destination</a></li>
+  </ul>
+  <hr>
+<h2>Connection</h2>
+<h3><a name="A1"></a>I have installed Drive Wizard . Now how do I connect to my vehicle</h3>
+<p class="DWbodyText">See <a href="../Getting%20Started/the%20first%20time%20you%20run%20drive%20wizard.htm">The
+    First time you use Drive Wizard</a></p>
+<hr>
+<h2>Guided Processes</h2>
+<h3><a name="A2"></a>The icon for the guided process I want to use is not visible<br>
+  <a name="A4"></a>Drive Wizard allows me to open a guided Process but prevents
+me from changing any values</h3>
+<h3 class="DWbodyText">Drive Wizard displays the icons and or limits access
+    to Guided Processes dependent on the current system
+  configuration and the  users login level.<br>
+  If
+        you
+      were expecting to see a Guided
+      Process icon then
+ you should check the following:</h3>
+<p class="DWbodyText"><strong>Do I have enough access to perfrom this Guided Process? </strong><br>
+  Some processes require
+  a minimum Sevcon controller login level.
+    This Sevcon is done automatically by Drive Wizard when you Click the Connect
+    button.in
+  the <a href="../Screen%20descriptions/profileselectionscreen.htm">Select
+  Profiles Screen</a>. If in doubt check your system access in the Main Window
+  Status bar and re-connect using the <a href="../Screen%20descriptions/options%20screen.htm">Options
+screen Vehicle Profiles Tab</a></p>
+<p class="DWbodyText"><strong>Is this Guided Process applicable to this CANopen
+    node?</strong><br>
+  Some processes are only applicable to Sevcon controllers running application
+    software. Look at the CAN node icon in the Structure
+    Pane<br>
+    Is this controller running Boot Loader or Self Characterization software?
+    If so, it may need to be re-programmed.</p>
+<p class="DWbodyText"><strong>Does the CAN node need to be the CAN bus
+    master</strong>.<br>
+    A CAN node that is a bus master is indicated by a red outline on its icon.
+    All other CAN nodes have a gray outline</p>
+<p class="DWbodyText"><strong>Is this guided Process applicable to this type
+    of CAN node.</strong> <br>
+  Some processes e.g. self
+  characterization are only applicable to a motor controller and would not be
+displayed e.g. for a pump controller</p>
+<p class="DWbodyText"><strong>Does this Guided Process require the system to
+    be in pre-operational state?</strong><br>
+  Some processes require all connected nodes to be in the pre-operational state.
+     Try using the toolbar icon
+    to
+    request the CNA bus master to force the system to pre-operational. </p>
+<p class="DWbodyText"><strong>Is anther Guided Process already running ?</strong><br>
+  Some Guided Processes either change the System Structure and/or should not
+    be interrupted e.g. reprogramming CAN nodes. Drive Wizard will prevent you
+    from
+    running
+    other processes while these processes are running.</p>
+<hr>
+<h2>Structure Pane View</h2>
+<h3><span class="DWbodyText"><a name="A5"></a></span>Drive Wizard has found my CAN node but is not showing any
+  infromation under
+the CAN node icon</h3>
+<p class="DWbodyText">A CAN nodes Object
+    Dictionary can only be displayed if
+  Drive Wizard can access a matching EDS for
+  the CAN node. If this is a Sevcon CAN node then click on the CAN Node icon
+  in the Structure Panel record the CiA Vendor ID, the Product Code and the revision
+  number. The contact the supplier of the CAN Node and quote these values. For
+  Sevcon CAN Nodes <a href="mailto:jude.wood@sevcon.com?Subject=EDS request">contact
+ the Drive Wizard Team</a></p>
+<h3><span class="DWbodyText"><a name="A6"></a></span>Drive Wizard is showing
+  the wrong Object Dictionary structure under my CAN node icon</h3>
+<p class="DWbodyText">The EDS provides infromation on every Object Dictionary
+  parameter for  a matching CAN node. The
+  EDS 
+  is
+  a flat structure and therefore  with large Object Dictionaries it can be difficult
+  to locate a particular object. To overcome this, Drive Wizard applies
+  an XML based tree structure to CAN nodes that have an associated EDS. <br>
+  Sevcon
+  controllers have detailed XML structures based on the function of each Object
+  Dictionary object. This  infromation is not available for non-Sevcon
+  CAN nodes and so Drive Wizard applies an XML structure based on the generic
+  CANopen Object Dictionary structure. If you see a generic structure under a
+  Sevcon node icon then the most likely reason is that an XML file has been deleted
+  from your system. <a href="mailto:jude.wood@sevcon.com?Subject=XML file request">Contact
+  the Drive Wizard Team</a> for a replacement quoting the
+  CiA Vendor ID , product code and revision number of the CAN node.</p>
+<h3><span class="DWbodyText"><a name="A7"></a></span>Drive Wizard prevents me from dragging
+  an icon in the System Structure</h3>
+<p class="DWbodyText">When you try to drag an icon Drive Wizard checks whether
+  any suitable destinations exist for the current system (this is dependent on
+  the vehicle mode, other active Drive Wizard processes and the user login
+  level). If no suitable destinations exist then Drive Wizard will inhibit Drag&amp;Drop
+  for this icon. Drive Wizard will display the inhibit reason in the Status bar. <br>
+  Attempting to Drag an icon too quickly can occasionally prevent Drive Wizard
+  from seeing the Drag&amp;Drop Request. If Drive Wizard does not display the Drag&amp;Drop
+  inhibit
+  explanation in the status bar then try Clicking and Dragging slightly slower. </p>
+<h3><span class="DWbodyText"><a name="A8"></a></span>Drive Wizard prevents me
+  from dropping an icon onto my destination</h3>
+<p class="DWbodyText">When you drag an icon over a potential drop site Drive
+  Wizard will evaluate when the this is a suitable destination. this is dependent
+  on
+  the vehicle modes, other active Drive Wizard processes and the user login
+  level). If this is not a suitable destination then Drive Wizard will display
+  the inhibit
+  reason in the status bar.</p>
+<p align="right"><a href="#top">Top</a></p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

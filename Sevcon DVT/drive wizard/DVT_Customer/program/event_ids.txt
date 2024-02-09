@@ -1,0 +1,12 @@
+0x4883 SRO Fault
+
+0x4884 Sequence Fault
+
+0x45c4 High battery
+
+0x45c5 High capacitor
+
+0x5101 Line Contactor o/c
+
+0x4681 Preop
+

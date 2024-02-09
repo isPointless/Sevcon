@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DWSevconProducts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sevconProductRanges>
+    <ProductRange>
+      <Range>&lt;Unknown Product&gt;</Range>
+      <RangeID>0</RangeID>
+      <sevconProductVariants>
+        <ProductVariant>
+          <Variant>&lt;Unknown Variant&gt;</Variant>
+          <VariantID>0</VariantID>
+        </ProductVariant>
+      </sevconProductVariants>
+    </ProductRange>
+    <ProductRange>
+      <Range>espAC</Range>
+      <RangeID>1</RangeID>
+      <sevconProductVariants>
+        <ProductVariant>
+          <Variant>&lt;Unknown Variant&gt;</Variant>
+          <VariantID>0</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant>AC</Variant>
+          <VariantID>1</VariantID>
+        </ProductVariant>
+      </sevconProductVariants>
+    </ProductRange>
+    <ProductRange>
+      <Range>PST</Range>
+      <RangeID>2</RangeID>
+      <sevconProductVariants>
+        <ProductVariant>
+          <Variant>&lt;Unknown Variant&gt;</Variant>
+          <VariantID>0</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant />
+	    <VariantID>1</VariantID>
+        </ProductVariant>
+      </sevconProductVariants>
+    </ProductRange>
+    <ProductRange>
+      <Range>Display</Range>
+      <RangeID>3</RangeID>
+      <sevconProductVariants>
+        <ProductVariant>
+          <Variant>&lt;Unknown Variant&gt;</Variant>
+          <VariantID>0</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant />
+          <VariantID>1</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant>GpAC</Variant>
+          <VariantID>2</VariantID>
+        </ProductVariant>
+      </sevconProductVariants>
+    </ProductRange>
+    <ProductRange>
+      <Range>Nano</Range>
+      <RangeID>4</RangeID>
+      <sevconProductVariants>
+        <ProductVariant>
+          <Variant>&lt;Unknown Variant&gt;</Variant>
+          <VariantID>0</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant>AC</Variant>
+          <VariantID>1</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant>AC+DC</Variant>
+          <VariantID>2</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant>AC+DC</Variant>
+          <VariantID>3</VariantID>
+        </ProductVariant>
+      </sevconProductVariants>
+    </ProductRange>
+    <ProductRange>
+      <Range>HipAC10</Range>
+      <RangeID>5</RangeID>
+      <sevconProductVariants>
+        <ProductVariant>
+          <Variant>&lt;Unknown Variant&gt;</Variant>
+          <VariantID>0</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant>AC</Variant>
+          <VariantID>1</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant>GpAC</Variant>
+          <VariantID>2</VariantID>
+        </ProductVariant>
+      </sevconProductVariants>
+    </ProductRange>
+    <ProductRange>
+      <Range>Dual Motor</Range>
+      <RangeID>6</RangeID>
+      <sevconProductVariants>
+        <ProductVariant>
+          <Variant>&lt;Unknown Variant&gt;</Variant>
+          <VariantID>0</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant>AC</Variant>
+          <VariantID>1</VariantID>
+        </ProductVariant>
+      </sevconProductVariants>
+    </ProductRange>
+    <ProductRange>
+      <Range>Gen4</Range>
+      <RangeID>7</RangeID>
+      <sevconProductVariants>
+        <ProductVariant>
+          <Variant>&lt;Unknown Variant&gt;</Variant>
+          <VariantID>0</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant>AC</Variant>
+          <VariantID>1</VariantID>
+        </ProductVariant>
+      </sevconProductVariants>
+    </ProductRange>
+    <ProductRange>
+      <Range>Calibrator</Range>
+      <RangeID>8</RangeID>
+      <sevconProductVariants>
+        <ProductVariant>
+          <Variant>&lt;Unknown Variant&gt;</Variant>
+          <VariantID>0</VariantID>
+        </ProductVariant>
+        <ProductVariant>
+          <Variant />
+          <VariantID>1</VariantID>
+        </ProductVariant>
+      </sevconProductVariants>
+    </ProductRange>
+  </sevconProductRanges>
+</DWSevconProducts>

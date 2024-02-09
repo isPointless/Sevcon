@@ -1,0 +1,20 @@
+# initialise the protocol cobids
+co_map_cobid_to_protocol pdo  0x0181
+co_map_cobid_to_protocol pdo  0x0281
+co_map_cobid_to_protocol pdo  0x0381
+co_map_cobid_to_protocol pdo  0x0481
+co_map_cobid_to_protocol pdo  0x0182
+co_map_cobid_to_protocol pdo  0x0282
+co_map_cobid_to_protocol pdo  0x0382
+co_map_cobid_to_protocol pdo  0x0482
+co_map_cobid_to_protocol pdo  0x0483
+co_map_cobid_to_protocol sync 0x0080
+
+
+#
+# customer passwords. Change as necessary for individual customers
+#
+set customer_passwords(1)   0xc8eb
+set customer_passwords(2)   0xb607
+set customer_passwords(3)   0x6b54
+set customer_passwords(4)   0x4bdf

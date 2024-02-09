@@ -1,0 +1,100 @@
+% Self-Characterisation Wizard Test Profile
+% =========================================
+
+% General parameters
+% ------------------
+Gen.SpeedFactor = 2.0
+Gen.TorqueFactor = 4.0
+Gen.Powerfactor = 2.1
+
+
+% DCTT_OL parameters
+% ------------------
+% OL.Id_max       The current limit to be applied during the DCTT_OL
+%                 test.  It is represented as a fraction of the motor's
+%                 Is_rated.
+OL.Id_max = 1.2
+% OL.nIter        The number of times the test is iterated
+OL.nIter = 2
+% number of valid point pairs
+OL.Npts = 4
+OL.Vd1 = 0.33
+OL.Ns1 = 12
+OL.Vd2 = 0.0
+OL.Ns2 = 90
+OL.Vd3 = -0.33
+OL.Ns3 = 12
+OL.Vd4 = 0.0
+OL.Ns4 = 120
+%OL.Vd1 = 0.0
+%OL.Ns1 = 1000
+%OL.Vd2 = 0.0
+%OL.Ns2 = 1000
+%OL.Vd3 = -0.0
+%OL.Ns3 = 1000
+%OL.Vd4 = 0.0
+%OL.Ns4 = 1000
+%OL.Vd1 = 0.0
+%OL.Ns1 = 200
+%OL.Vd2 = 0.33
+%OL.Ns2 = 12
+%OL.Vd3 = 0.0
+%OL.Ns3 = 200
+%OL.Vd4 = -0.33
+%OL.Ns4 = 12
+% spare pairs
+OL.Vd5 = 0
+OL.Ns5 = 1
+OL.Vd6 = 0
+OL.Ns6 = 1
+OL.Vd7 = 0
+OL.Ns7 = 1
+OL.Vd8 = 0
+OL.Ns8 = 1
+% OL.nReps        The number of times the points are repeated
+%	          in the DSP
+OL.nReps = 3
+
+
+% DCTT_CL parameters
+% ------------------
+% Test parameters for closed loop test A
+CLA.Id1 = 0.33
+CLA.Ns1 = 3000
+CLA.Id2 = -0.33
+CLA.Ns2 = 3000
+% Test parameters for closed loop test B
+CLB.Id1 = -0.32
+CLB.Ns1 = 2000
+CLB.Id2 = 0.32
+CLB.Ns2 = 3000
+
+
+% NLT parameters
+% --------------
+% NLT.w_rate      The ws rate limit during the NLT test [pu rad/s / s]
+%
+% NLT.nsamples    The number of samples (i.e. time) for each test point
+%
+% NLT.settle1     Number of samples for motor to settle after flux change
+%
+% NLT.settle2     Maximum average slip ratio for motor to be at steady-state
+%
+% NLT.maxIdq_ratio  The Id/Iq threshold used to determine if a motor
+%                   really is operating under no-load conditions.
+NLT.w_rate = 0.15
+NLT.nsamples = 2000
+NLT.settle1 = 5000
+NLT.settle2 = 4000
+NLT.maxIdq_ratio = 0.6
+% number of speed points
+NLT.Npts = 4
+NLT.ws1 = 0.3
+NLT.ws2 = 0.5
+NLT.ws3 = 0.7
+NLT.ws4 = 1.0
+% spare slots
+NLT.ws5 = 0
+NLT.ws6 = 0
+NLT.ws7 = 0
+NLT.ws8 = 0

@@ -1,0 +1,14 @@
+% Self-Characterisation Wizard Powerframe Profile
+% ===============================================
+
+% Battery parameters
+% ------------------
+% 
+Batt.Vb_min = 44
+Batt.Vb_nom = 80
+Batt.Vb_max = 116
+
+% Current parameters
+% ------------------
+% 
+PFrame.Is_max = 300

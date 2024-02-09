@@ -1,0 +1,141 @@
+<!--
+(C) COPYRIGHT Sevcon 2007
+
+Project Reference UK0139
+
+FILE
+	$Revision:1.2$
+	$Version:$
+	$Author:ak$
+	$ProjectName:DriveWizard$ 
+
+	$RevDate:11/12/2007 11:22:16$
+	$ModDate:11/12/2007 10:55:32$
+
+ORIGINAL AUTHOR
+    Jude Wood
+
+DESCRIPTION
+	Drive wizard HTML help page.
+ 
+REFERENCES    
+
+MODIFICATION HISTORY
+    $Log:  59586: glossary.htm 
+
+   Rev 1.2    11/12/2007 11:22:16  ak
+ TC keywords added to source for version control.
+
+
+
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/DWHelpTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Glossary</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="../../CSS%20Style%20Sheets/DWHelp.css" rel="stylesheet" type="text/css">
+<!-- InstanceParam name="ALinks" type="boolean" value="true" -->
+</head>
+
+<body>
+  <div align="right">    <img src="../../Topic%20Files/Help%20Images/DWlogoSmall.gif" alt="Drive WIzard logo" width="54" height="24">&nbsp;<a name="top"></a><img src="../../Topic%20Files/Help%20Images/SEVCON.gif" alt="Sevcon logo" width="115" height="16" align="left">
+  </div>
+  <hr>
+  <div id="Layer1" style="position:absolute; z-index:1; visibility: hidden; left: 0; top: 0;"></div>
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+<h1>glossary</h1>
+<ul>
+  <li><a href="#canopenterms">CANopen terms</a></li>
+  <li>    <a href="#drivewizardscreenareas">Drive Wizard screen areas</a></li>
+  <li>    <a href="#drivewizarddatastructures">Drive WIzard Data structures</a> </li>
+  </ul>
+<h2><a name="canopenterms"></a>CANopen terms</h2>
+<h3><a name="EDS"></a>EDS</h3>
+<h2 class="DWbodyText">Electronic Data Sheet. A file that describes the type, size, location
+    and name of every parameter in a CANopen node's Object dictionary. Optionally
+    minimum
+    and maximum limits and a default valaue can be defined for parameters. Comments
+    can be includeded. Sevcon EDS files contain addiotnal comment based fields
+   marked 'SEVCONFIELD' to provide addtional functionaltiy.</h2>
+<h3><a name="DCF"></a>DCF</h3>
+<p class="DWbodyText">Device Configuration File. A file based on EDS format that gives a vlaue for
+  each Objrect Dictionary parameter contianed. A refernce to its source EDS file
+  is included.</p>
+<h3><a name="OD"></a>Object Dictionary</h3>
+<p class="DWbodyText">A area onf memory on a CANopen node that can be accessed by other CANopen
+  nodes. The key to accessing specific parameters within this Object Dcitionanry
+  is provided by the CANopen node's EDS file</p>
+<h3><a name="NMTstate"></a>NMT State</h3>
+<p class="DWbodyText">A CANopen node will be in one of the following NMT states:</p>
+<table width="100%" border="1" cellpadding="3" bordercolor="#000000" class="DWbodyText">
+  <tr>
+    <td bordercolor="#666666"><h3>NMT LED</h3></td>
+    <td bordercolor="#666666"><h3>State</h3></td>
+    <td bordercolor="#666666"><h3>Description</h3></td>
+  </tr>
+  <tr bordercolor="#FFFFFF">
+    <td width="12%"><img src="../Help%20Images/systemStructIcons/newCANNodeSlaveOffOff2.png" alt="bootup CAN Node icon" width="24" height="24"></td>
+    <td width="16%">Boot up/Initialisation</td>
+    <td width="72%">Transient state occuring after power up</td>
+  </tr>
+  <tr bordercolor="#FFFFFF">
+    <td><img src="../Help%20Images/systemStructIcons/animPreOP.gif" alt="Pre-operational CAN node icon" width="24" height="24"></td>
+    <td>Pre-Operational</td>
+    <td>No PDOs are transmitted/received by node. Sevcon nodes prevent motro
+      movement. Used for configuration that requires the motor to be 'offline' </td>
+  </tr>
+  <tr bordercolor="#FFFFFF">
+    <td><img src="../Help%20Images/systemStructIcons/newCANNodeSlaveOnOff2.png" alt="Operational  CAN node icon" width="24" height="24"></td>
+    <td>Operational</td>
+    <td>Normal operation</td>
+  </tr>
+  <tr bordercolor="#FFFFFF">
+    <td><img src="../Help%20Images/systemStructIcons/newCANNodeSlaveOffOff2.png" alt="Stopped CAN node icon" width="24" height="24"></td>
+    <td>Stopped</td>
+    <td>Node performs no commumication other than heartbeats/node guarding</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="drivewizardscreenareas"></a>Drive Wizard Screen areas</h2>
+<p>Structure Pane</p>
+<p>Detail Pane</p>
+<p>&nbsp;</p>
+<h2><a name="drivewizarddatastructures"></a>Drive Wizard Data Structures</h2>
+<h3><a name="parametertable"></a>Parameter Table<br>
+  <span class="DWbodyText">Drive WIzard stores a Parameter table for each connected
+  CANopen node. The Parameter Table combines information form the EDS and the
+  node. when yo click
+    on a icon in the structure view that represents part of the Object Dictionary
+    that Drive Wizard applies a row filter to the Parameter Table to show only
+    these Object Dictionary items that sit under the selected icon. A column
+    filter is applied to the Parameter Table dependent on the the current user
+    access level The aim is to show only the columns that you are interested
+    in.</span></h3>
+<h3><a name="systemstructure"></a>System Structure<br>
+  <span class="DWbodyText">  The data and Guided Processes
+  associated with both the vehicle and individual connected nodes organized into
+  a Tree View and displayed in the
+  Structure Pane.</span></h3>
+<p>Types of Sevocn Software:</p>
+<p>Sevocn CAN nodes will be running one of the following softwar etypes</p>
+<p>Controller Applciation software </p>
+<p>Non-Controller application software</p>
+<p>Controller boot loader Software</p>
+<p>Controller Self characterization software</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="right"><a href="#top">Top</a></p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

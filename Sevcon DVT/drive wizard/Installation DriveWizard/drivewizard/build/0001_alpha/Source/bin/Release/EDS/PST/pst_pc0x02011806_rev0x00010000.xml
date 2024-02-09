@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DWTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DateTimeValue="2005-09-08" TreeVersion="1.00">
+  <Heading1Group>
+    <Heading1 Title="CANopen Setup">
+      <EDSSections />
+      <Heading2Group>
+        <Heading2 Title="Emergency">
+          <EDSSections>
+            <Section>EMERGENCY</Section>
+          </EDSSections>
+          <Heading3Group />
+        </Heading2>
+        <Heading2 Title="NMT Error Control">
+          <EDSSections />
+          <Heading3Group>
+            <Heading3 Title="Heartbeat">
+              <EDSSections>
+                <Section>HEARTBEAT</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Guarding">
+              <EDSSections>
+                <Section>GUARDING</Section>
+              </EDSSections>
+            </Heading3>
+          </Heading3Group>
+        </Heading2>
+        <Heading2 Title="General">
+          <EDSSections />
+          <Heading3Group>
+            <Heading3 Title="Store">
+              <EDSSections>
+                <Section>CANOPENSTORE</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Set up">
+              <EDSSections>
+                <Section>CANOPENSETUP</Section>
+              </EDSSections>
+            </Heading3>
+          </Heading3Group>
+        </Heading2>
+      </Heading2Group>
+    </Heading1>
+    <Heading1 Title="PDOs">
+      <EDSSections />
+      <Heading2Group>
+        <Heading2 Title="Receive">
+          <EDSSections />
+          <Heading3Group>
+            <Heading3 Title="Communications">
+              <EDSSections>
+                <Section>ReceivePDOComms</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="PDO Maps">
+              <EDSSections>
+                <Section>ReceivePDOMaps</Section>
+              </EDSSections>
+            </Heading3>
+          </Heading3Group>
+        </Heading2>
+        <Heading2 Title="Transmit">
+          <EDSSections />
+          <Heading3Group>
+            <Heading3 Title="Communications">
+              <EDSSections>
+                <Section>TRANSMITPDOCOMMS</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="PDO Maps">
+              <EDSSections>
+                <Section>TRANSMITPDOMAPS</Section>
+              </EDSSections>
+            </Heading3>
+          </Heading3Group>
+        </Heading2>
+      </Heading2Group>
+    </Heading1>
+    <Heading1 Title="Local I/O">
+      <EDSSections />
+      <Heading2Group>
+        <Heading2 Title="Digital IP">
+          <EDSSections />
+          <Heading3Group>
+            <Heading3 Title="Config">
+              <EDSSections>
+                <Section>DICONFIGURATION</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Status">
+              <EDSSections>
+                <Section>DISTATUS</Section>
+              </EDSSections>
+            </Heading3>
+          </Heading3Group>
+        </Heading2>
+        <Heading2 Title="Digital OP">
+          <EDSSections />
+          <Heading3Group>
+            <Heading3 Title="Config">
+              <EDSSections>
+                <Section>DOCONFIGURATION</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Status">
+              <EDSSections>
+                <Section>DOSTATUS</Section>
+              </EDSSections>
+            </Heading3>
+          </Heading3Group>
+        </Heading2>
+        <Heading2 Title="Analogue IP">
+          <EDSSections />
+          <Heading3Group>
+            <Heading3 Title="Config">
+              <EDSSections>
+                <Section>AICONFIGURATION</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Status">
+              <EDSSections>
+                <Section>AISTATUS</Section>
+              </EDSSections>
+            </Heading3>
+          </Heading3Group>
+        </Heading2>
+        <Heading2 Title="Analogue OP">
+          <EDSSections />
+          <Heading3Group>
+            <Heading3 Title="Config">
+              <EDSSections>
+                <Section>AOCONFIGURATION</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Status">
+              <EDSSections>
+                <Section>AOSTATUS</Section>
+              </EDSSections>
+            </Heading3>
+          </Heading3Group>
+        </Heading2>
+      </Heading2Group>
+    </Heading1>
+    <Heading1 Title="Status">
+      <EDSSections>
+        <Section>PST_STATUS</Section>
+      </EDSSections>
+      <Heading2Group />
+    </Heading1>
+    <Heading1 Title="Control">
+      <EDSSections>
+        <Section>PST_CONTROL</Section>
+      </EDSSections>
+      <Heading2Group />
+    </Heading1>
+    <Heading1 Title="Steering Control Modes">
+      <EDSSections />
+      <Heading2Group>
+        <Heading2 Title="Modes of Operation">
+          <EDSSections>
+            <Section>PST_MODESOFOPERATION</Section>
+          </EDSSections>
+          <Heading3Group />
+        </Heading2>
+        <Heading2 Title="Position control">
+          <EDSSections />
+          <Heading3Group>
+            <Heading3 Title="General">
+              <EDSSections>
+                <Section>PST_POS_CONTROL_GENERAL</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Digital Position Control">
+              <EDSSections>
+                <Section>PST_DIGITALPOSCONTROL</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Analogue Position control">
+              <EDSSections>
+                <Section>PST_ANALOGPOSCONTROL</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Digital Delta Position Control">
+              <EDSSections>
+                <Section>PST_DIGITALDELTACONTROL</Section>
+              </EDSSections>
+            </Heading3>
+            <Heading3 Title="Position Limits">
+              <EDSSections>
+                <Section>PST_POSITIONLIMITS</Section>
+              </EDSSections>
+            </Heading3>
+          </Heading3Group>
+        </Heading2>
+        <Heading2 Title="Torque assist Mode">
+          <EDSSections>
+            <Section>PST_TORQUEASSIST</Section>
+          </EDSSections>
+          <Heading3Group />
+        </Heading2>
+        <Heading2 Title="Velocity Control">
+          <EDSSections>
+            <Section>PST_VELOCITYCONTROL</Section>
+          </EDSSections>
+          <Heading3Group />
+        </Heading2>
+      </Heading2Group>
+    </Heading1>
+    <Heading1 Title="Electrical params">
+      <EDSSections>
+        <Section>PST_ELEC_PARAMS</Section>
+      </EDSSections>
+      <Heading2Group />
+    </Heading1>
+    <Heading1 Title="Mechanical params">
+      <EDSSections>
+        <Section>PST_MECHANICAL</Section>
+      </EDSSections>
+      <Heading2Group />
+    </Heading1>
+    <Heading1 Title="Motor params">
+      <EDSSections>
+        <Section>PST_MOTOR</Section>
+      </EDSSections>
+      <Heading2Group>
+        <Heading2 Title="Motor params">
+          <EDSSections />
+          <Heading3Group />
+        </Heading2>
+      </Heading2Group>
+    </Heading1>
+  </Heading1Group>
+</DWTree>

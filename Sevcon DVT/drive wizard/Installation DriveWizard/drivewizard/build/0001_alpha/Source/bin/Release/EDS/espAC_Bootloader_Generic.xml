@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DWTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DateTimeValue="2008-05-19">
+  <treeStruct Title="Sevcon Device">
+    <XMLSections>
+      <XMLSection Title="Identity">
+        <XMLSections>
+          <XMLSection Title="IDENTITY" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Bootloader">
+        <XMLSections>
+          <XMLSection Title="BOOTLOADER" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Internal ROM">
+        <XMLSections>
+          <XMLSection Title="BOOTLOADER_INTERNAL_ROM" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="External ROM">
+        <XMLSections>
+          <XMLSection Title="BOOTLOADER_EXTERNAL_ROM" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Eeprom">
+        <XMLSections>
+          <XMLSection Title="BOOTLOADER_EEPROM" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="DSP">
+        <XMLSections>
+          <XMLSection Title="BOOTLOADER_DSP_ROM" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Hardware and Software Versions">
+        <XMLSections>
+          <XMLSection Title="BOOTLOADER_VERSIONS" />
+        </XMLSections>
+      </XMLSection>
+    </XMLSections>
+  </treeStruct>
+  <VendorIDs>
+    <vendorID>
+      <vendorNoValue>0x0000001e</vendorNoValue>
+      <productCodeGroup>
+        <productCode>
+          <prodCodeValue>0x01FF****</prodCodeValue>
+          <revsionNumberGroup>
+            <revisionNumber>
+              <revNoValue>0x********</revNoValue>
+            </revisionNumber>
+          </revsionNumberGroup>
+        </productCode>
+        <productCode>
+          <prodCodeValue>0x04FF****</prodCodeValue>
+          <revsionNumberGroup>
+            <revisionNumber>
+              <revNoValue>0x********</revNoValue>
+            </revisionNumber>
+          </revsionNumberGroup>
+        </productCode>
+        <productCode>
+          <prodCodeValue>0x03ff****</prodCodeValue>
+          <revsionNumberGroup>
+            <revisionNumber>
+              <revNoValue>0x********</revNoValue>
+            </revisionNumber>
+          </revsionNumberGroup>
+        </productCode>
+        <productCode>
+          <prodCodeValue>0x07FF****</prodCodeValue>
+          <revsionNumberGroup>
+            <revisionNumber>
+              <revNoValue>0x********</revNoValue>
+            </revisionNumber>
+          </revsionNumberGroup>
+        </productCode>
+      </productCodeGroup>
+    </vendorID>
+  </VendorIDs>
+</DWTree>

@@ -1,0 +1,244 @@
+<!--
+(C) COPYRIGHT Sevcon 2007
+
+Project Reference UK0139
+
+FILE
+	$Revision:1.3$
+	$Version:$
+	$Author:ak$
+	$ProjectName:DriveWizard$ 
+
+	$RevDate:11/12/2007 11:27:06$
+	$ModDate:11/12/2007 11:05:46$
+
+ORIGINAL AUTHOR
+    Jude Wood
+
+DESCRIPTION
+	Drive wizard HTML help page.
+ 
+REFERENCES    
+
+MODIFICATION HISTORY
+    $Log:  59220: options screen.htm 
+
+   Rev 1.3    11/12/2007 11:27:06  ak
+ TC keywords added to source for version control.
+
+
+
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/DWHelpTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Options:vehicle profiles</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="../../CSS%20Style%20Sheets/DWHelp.css" rel="stylesheet" type="text/css">
+<!-- InstanceParam name="ALinks" type="boolean" value="true" -->
+</head>
+
+<body>
+  <div align="right">    <img src="../../Topic%20Files/Help%20Images/DWlogoSmall.gif" alt="Drive WIzard logo" width="54" height="24">&nbsp;<a name="top"></a><img src="../../Topic%20Files/Help%20Images/SEVCON.gif" alt="Sevcon logo" width="115" height="16" align="left">
+  </div>
+  <hr>
+  <div id="Layer1" style="position:absolute; z-index:1; visibility: hidden; left: 0; top: 0;"></div>
+  <!-- InstanceBeginEditable name="EditRegion3" --><h1>Options screen</h1>
+  <p>  
+<li> <a href="#vehicleprofiles">Vehicle Profiles</a></li>
+<li><a href="#language">Language </a></li>
+<hr>
+<h1><a name="vehicleprofiles"></a>Options Screen: Vehicle Profiles Tab</h1>
+<p align="center"><img src="../Help%20Images/screen%20shots/OptionsScreen%20VehicleProfiles%20Img1.gif" alt="Vehicle Profiles Tab" width="828" height="634" border="0" usemap="#Map">
+  <map name="Map">
+  <area shape="rect" coords="21,86,638,201" href="#selectvehicleproifle" alt="Profile Selection">
+  <area shape="rect" coords="126,257,405,279" href="#" alt="Change the name of the highlighted Vehicle Profile">
+  <area shape="rect" coords="125,280,261,303" href="#" alt="Enter the your organisations Customer Identity code">
+  <area shape="rect" coords="359,281,492,302" href="#" alt="Enter your user passcode">
+  <area shape="rect" coords="645,87,797,126" href="#addnewprofile" alt="Add new profile button">
+  <area shape="rect" coords="646,136,798,175" href="#" alt="Delete the highlighted Vehicle Profile button">
+  <area shape="rect" coords="630,373,790,387" href="#" alt="Virtual Nodes checkbox">
+  <area shape="rect" coords="20,370,236,393" href="#baudrate" alt="Change baud rate dropdown list">
+  <area shape="rect" coords="254,378,522,391" href="#baudrate" alt="Search for all nodes at this baud checkbox">
+  <area shape="rect" coords="22,400,805,528" href="#connectasvirtualnodes" alt="Connected nodes table">
+  <area shape="rect" coords="575,545,694,570" href="#testconnection" alt="Tes tConnection button">
+  <area shape="rect" coords="702,546,814,570" href="#" alt="Close button">
+  <area shape="rect" coords="1,0,107,24" href="#" alt="Vehicle Profiles tab">
+  <area shape="rect" coords="107,4,172,22" href="#language" alt="Language tab">
+  </map>
+</p>
+<li><a href="#addnewprofile">Available Vehicle Profiles</a></li>
+<br>
+ <li><a href="#profilename">Selected profile: User settings</a></li>
+  <li><a href="#baudrate">Selected Profile: CAN bus connection settings</a></li>
+   
+ 
+  <p align="left" class="DWbodyText">Drive Wizard uses CAN bus and Sevcon controller login parameters
+  when connecting to a vehicle. Instead of requireing you to re-enter this infromation
+    every time, Drive Wizard stores this infromation in a Vehicle Profile.<br> 
+  You can create
+  a Vehicle Profile for every truck type that you need to connect to. Then ,
+  next time you run Drive Wizard you can choose yourr Vehicle Profile
+  profile from the drop down list
+  in the<a href="profileselectionscreen.htm"> Select
+Profiles Screen</a></p>
+  <h2 align="left"><a name="availalbevehicleprofiles"></a>Modifying the list of
+  available Vehicle Profiles</h2>
+<h3 align="left"><a name="addnewprofile"></a>Add new Profile</h3>
+<p align="left" class="DWbodyText">When you Click this button Drive Wizard creates a new Vehicle
+  profile with default values. </p>
+<h3 align="left"><a name="selectvehicleproifle"></a> Select Vehicle Profile</h3>
+<p align="left" class="DWbodyText">The highlighted Profile name is the one currently being used
+  by Drive Wizard. Use this control to switch between your Vehicle Profiles to
+  edit or test them. <br>
+  If
+  you
+  tick the
+  checkbox
+  next to
+  a profile
+  then
+  drive
+  Wizard will display this as your default profile in the <a href="profileselectionscreen.htm">Select
+  Profiles Screen</a> next time
+you run Drive Wizard</p>
+<h3 align="left"><a name="deleteselectedprofile"></a>Delete Selected Profile</h3>
+<p align="left" class="DWbodyText">This control allows to to get rid of Vehicle Profiles that you
+  no longer need. When you Click this button Drive Wizard will ask you to confirm
+  that you want to remove the profile highlighted in Vehicle Profile
+  list. </p>
+<table width="100%" border="0">
+  <tr>
+    <td width="10%"><img src="../Help%20Images/docs_symbols/UM_caution_symbol.gif" alt="caution symbol" width="29" height="22"></td>
+    <td width="90%" class="DWbodyText">Deleting a Vehicle Profile is permanent</td>
+  </tr>
+</table>
+<hr>
+<h2><a name="selectedprofileusersettings"></a>Modifying the selected profile:
+  user settings</h2>
+<p><a name="profilename"></a>Naming your Vehicle Profiles</p>
+<p align="left" class="DWbodyText">When you first create a Vehicle Profile it will be given a name
+  like &quot;new profile0&quot;. You should replace this by entering a  name
+  here that describes your vehicle type and then press return.
+  <br>
+  Drive Wizard will automatically update the Vehicle Profile name and the name
+  of the disk file for this Vehicle Profile (see <a href="../Getting%20Started/Vehicle%20Profiles/copying%20and%20emailing%20vehicle%20profiles.htm">Copying
+  and Emailing Vehicle Profiles</a>). You can  use this control to change a Vehicle
+Profile at any time</p>
+<h3 align="left"><a name="customerid"></a>Customer ID and User Passcode</h3>
+<p align="left" class="DWbodyText">TODO - explanation of why these are necessary - safety, customer
+  commercial protection etc</p>
+<table width="100%" border="0">
+  <tr>
+    <td width="10"><img src="../Help%20Images/docs_symbols/UM_note_symbol.gif" alt="note symbol" width="26" height="22"></td>
+    <td width="88%" class="DWbodyText">When using development Sevcon controllers enter '0' (zero)
+      for the customer ID and an integer between 1 and 5 for the User Passcode.<br>
+Entering 1 will login you in with minimal access ( User) , 5 will give you maximum
+access (Sevcon engineer)</td>
+  </tr>
+</table>
+<p align="left">&nbsp;</p>
+<table width="100%" border="0">
+  <tr>
+    <td width="10"><img src="../Help%20Images/docs_symbols/UM_warning_symbol.gif" alt="Warning symbol" width="29" height="22" align="top"></td>
+    <td width="88%" class="DWbodyText">Changing  Object Dictionary parameters can affect
+      vehicle perfromance and safety and should only be attempted by expert users.
+      Use
+      Drive Wizard
+      guided processes to change the vehicle set up. </td>
+  </tr>
+</table>
+<hr>
+<h2 align="left"><a name="selectedprofilebussettings"></a>Modifying the Selected
+  Profile: Connection settings</h2>
+<h3 align="left"><a name="baudrate"></a>Baud Rate Controls</h3>
+<p align="left"><span class="DWbodyText">Select the baud rate of the vehicle from the drop down list.
+  </span><br>
+</p>
+<p align="left"><img src="../Help%20Images/screen%20shots/OptionsScreen%20VehicleProfiles%20Img2.gif" alt="baud rate selection" width="229" height="239"> </p>
+<p align="left" class="DWbodyText">'If you do not know the baud rate
+    then select 'autodetect baud'. Drive Wizard will monitor the can bus for
+a few seconds to detect any CAN devices transmitting heartbeat messages. </p>
+<p align="left" class="DWbodyText">If Drive Wizard is unable to auto detect the baud rate e.g. if
+  the connected devices do not transmit heartbeats, then you will have to try
+  connecting at each possible baud rate</p>
+<table width="100%" border="0">
+  <tr>
+    <td width="10"><img src="../Help%20Images/docs_symbols/UM_caution_symbol.gif" alt="caution symbol" width="29" height="22"></td>
+    <td width="88%" class="DWbodyText"> CAN devices
+      register an error whenever a CAN node attempts to communicate at the
+      wrong baud rate. CAN nodes registering high numbers of errors
+      will go 'off bus.
+      If you have tested at  more than one baud rate then , once you have found
+      the correct baud rate, you should cycle vehicle power to clear these errors
+      and then
+      re-connect
+      using
+      this baud
+      rate.</td>
+  </tr>
+</table>
+<p align="left" class="DWbodyText">When first connecting a Vehicle profile you should leave &quot;Search
+  for all connected nodes at this Baud&quot; checked. Once you have
+  successfully connected you should uncheck this to speed up reconnection (
+  drive Wizard will only look for the previously connected nodes) . If the CAN
+  node ID of any connected CNA node changes then you should recheck this
+  control before reconnecting.</p>
+<h3 align="left"><a name="connectasvirtualnodes"></a>Connecting as Virtual Nodes</h3>
+<p align="left" class="DWbodyText">Occasionally you may want to run Drive Wizard with
+  no vehicle connected e.g. to  set up and test
+  settings
+  offline or to practice using Drive Wizard.</p>
+<p align="left" class="DWbodyText">Drive Wizard incorporates user selectable virtual CAN nodes to
+  allow you to do this. For a full description see <a href="../Advanced%20Users/using%20drive%20wizard%20in%20virtual%20mode.htm">Using
+  Drive Wizard in Virtual mode</a>. </p>
+<p align="left" class="DWbodyText">To connect to virtual nodes you should check this control. Drive
+  Wizard will then allow you to set up your virtual nodes by changing the
+  connected CAN Nodes table.</p>
+<p align="left" class="DWbodyText">To add a virtual node you must first select a Node ID from the
+  Drop down list in the Connected CAN nodes table. This will be the CAN node
+  ID of the virtual CAN node. You then select the type of Node you want by selecting
+  from
+  the drop
+  down list
+  of available
+  EDS files, product codes or manufacturers.</p>
+<p align="left" class="DWbodyText">To make this virtual CAN node a <a href="../Reference/CAN%20and%20CANopen/CAN%20and%20CANopen%20overview%20.htm">bus
+    master</a> you should check the
+  Master column. </p>
+<p align="left" class="DWbodyText">You can add up to eight virtual cAN nodes.</p>
+<h3 align="left"><a name="testconnection"></a>Testing the Bus Connection </h3>
+<p align="left" class="DWbodyText">To connect either real or virtual CNA nodes you should click
+  the Text Connection button. (in virtual mode Drive Wizard will 'find' the
+  nodes that you have specified) </p>
+<p align="left" class="DWbodyText">When connected to a real CNA bus Drive Wizard will search the
+  CNA bus using the criteria you set in this Baud rate controls. Drive Wizard
+  will then display details about the the CNA nodes it has found in the Connected
+  nodes table. Additional feedback is supplied in the status bar</p>
+<table width="100%" border="0">
+  <tr>
+    <td width="10"><img src="../Help%20Images/docs_symbols/UM_caution_symbol.gif" alt="caution symbol" width="29" height="22"></td>
+    <td width="91%" class="DWbodyText">You can use either real or virtual nodes. It is not possible
+      to use a mixture. When using virtual CAN nodes  Drive
+      Wizard should not be connected to a CAN bus.</td>
+  </tr>
+</table>
+<hr>
+<h2><a name="closewindow"></a>Closing Options screen</h2>
+<p align="left" class="DWbodyText">This control closes the window. If you have tested the connection
+  then Drive Wizard will rebuild the System Tree shown in the main window <a href="../Getting%20Started/Screen%20layouts/drive%20wizard%20layout%20overview.htm#structurepane">Structure
+  Pane</a></p>
+<hr>
+<h1 align="left"><a name="language"></a>Options Screen: Language Tab</h1>
+<p align="left" class="DWbodyText">TODO</p>
+<p align="right"><a href="#top">Top</a></p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

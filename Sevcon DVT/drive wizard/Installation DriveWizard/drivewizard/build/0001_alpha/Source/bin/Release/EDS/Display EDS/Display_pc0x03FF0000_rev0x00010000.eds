@@ -1,0 +1,443 @@
+
+[FileInfo]
+FileName=C:\Program Files\Sevcon\DriveWizard\EDS\Display_pc0x03FF0000_rev0x00010000.eds
+FileVersion=1
+FileRevision=0
+EDSVersion=4.0
+Description=SEVCON CANopen display
+CreationTime=07:57AM
+CreationDate=06-29-2007
+CreatedBy=Tech/Ops SEVCON Ltd
+ModificationTime=07:57AM
+ModificationDate=06-29-2007
+ModifiedBy=Tech/Ops SEVCON Ltd
+
+[DeviceInfo]
+VendorName=Tech/Ops SEVCON Ltd
+ProductName=CANopen Display(Bootloader)
+OrderCode=TODO
+VendorNumber=0x1e
+ProductNumber=0x03FF0000
+RevisionNumber=0x00010000
+BaudRate_10=1
+BaudRate_20=1
+BaudRate_50=1
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=0
+BaudRate_1000=1
+SimpleBootUpMaster=1
+SimpleBootUpSlave=1
+Granularity=64
+GroupMessaging=0
+DynamicChannelsSupported=0
+NrOfRXPDO=9
+NrOfTXPDO=9
+LSS_Supported=1
+
+[Comments]
+Lines=1
+Line1=A comment.
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=0
+Dummy0004=0
+Dummy0005=0
+Dummy0006=0
+Dummy0007=0
+
+
+[MandatoryObjects]
+SupportedObjects=1
+1=0x1018
+
+[1018]
+SubNumber=5
+ObjectType=9
+ParameterName=Identity object
+;SEVCONFIELD OBJECT=IDENTITY
+;SEVCONFIELD SECTION=IDENTITY
+
+[1018sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=3
+
+[1018sub1]
+ParameterName=Vendor ID
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0x0000001E
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018sub2]
+ParameterName=Product code
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0x1FF0000
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018sub3]
+ParameterName=Revision number
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+DefaultValue=0x00000001
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[1018sub4]
+ParameterName=Serial number
+ObjectType=7
+DataType=0x07
+AccessType=ro
+LowLimit=0
+HighLimit=0xFFFFFFFF
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[OptionalObjects]
+SupportedObjects=1
+1=0x100A
+
+[100A]
+AccessType=ro
+DataType=0x09
+PDOMapping=0
+ObjectType=7
+ParameterName=Boot loader software version
+;SEVCONFIELD OBJECT=BOOT_SW_VERSION
+
+[ManufacturerObjects]
+SupportedObjects=9
+1=0x5A00
+2=0x5A01
+3=0x5A02
+4=0x5A10
+5=0x5A22
+6=0x5A23
+7=0x5A30
+8=0x5A31
+9=0x5A32
+
+[5A00]
+AccessType=ro
+DataType=0x06
+PDOMapping=0
+ObjectType=7
+ParameterName=Available processors
+;SEVCONFIELD OBJECT=AVAIL_PROCESSORS
+;SEVCONFIELD SECTION=BOOTLOADER
+
+[5A01]
+AccessType=ro
+DataType=0x06
+PDOMapping=0
+ObjectType=7
+ParameterName=Available memory spaces
+;SEVCONFIELD OBJECT=AVAIL_MEM_SPACES
+;SEVCONFIELD SECTION=BOOTLOADER
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A02]
+AccessType=ro
+DataType=0x07
+PDOMapping=0
+ObjectType=7
+ParameterName=Boot loader hardware version
+;SEVCONFIELD OBJECT=BOOT_HW_VERSION
+;SEVCONFIELD SECTION=BOOTLOADER_VERSIONS
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A10]
+AccessType=ro
+DataType=0x09
+PDOMapping=0
+ObjectType=7
+ParameterName=Boot loader software version
+;SEVCONFIELD OBJECT=BOOT_SW_VERSION
+;SEVCONFIELD SECTION=BOOTLOADER_VERSIONS
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A22]
+SubNumber=9
+ObjectType=9
+ParameterName=Host EEPROM Memory Space
+;SEVCONFIELD OBJECT=BOOT_MEMORY_SPACE_EEPROM
+;SEVCONFIELD SECTION=BOOTLOADER_EEPROM
+
+[5A22sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=8
+
+[5A22sub1]
+ParameterName=Memory space max. block size
+ObjectType=7
+DataType=0x06
+AccessType=ro
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A22sub2]
+ParameterName=Memory space page size
+ObjectType=7
+DataType=0x06
+AccessType=ro
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A22sub3]
+ParameterName=Memory space start address
+ObjectType=7
+DataType=0x07
+AccessType=ro
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A22sub4]
+ParameterName=Memory space size
+ObjectType=7
+DataType=0x07
+AccessType=ro
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A22sub5]
+ParameterName=Data block start address
+ObjectType=7
+DataType=0x07
+AccessType=rw
+LowLimit=0x00000000
+HighLimit=0xffffffff
+PDOMapping=0
+;SEVCONFIELD UNITS=Bytes
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A22sub6]
+ParameterName=Data block length
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0x00000000
+HighLimit=0xffffffff
+PDOMapping=0
+;SEVCONFIELD UNITS=Bytes
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A22sub7]
+ParameterName=Block data
+ObjectType=2
+DataType=0x0F
+AccessType=rw
+LowLimit=0x00
+HighLimit=0xff
+PDOMapping=0
+;SEVCONFIELD UNITS=Bytes
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A22sub8]
+ParameterName=Data block checksum
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0x0000
+HighLimit=0xffff
+PDOMapping=0
+;SEVCONFIELD UNITS=Bytes
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+;SEVCONFIELD COMMS_TIMEOUT=15000
+
+[5A23]
+SubNumber=9
+ObjectType=9
+ParameterName=Host External ROM Memory Space
+;SEVCONFIELD OBJECT=BOOT_MEMORY_SPACE_HOST_EXT_ROM
+;SEVCONFIELD SECTION=BOOTLOADER_EXTERNAL_ROM
+
+[5A23sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=0x05
+AccessType=ro
+LowLimit=0
+HighLimit=0xFF
+PDOMapping=0
+DefaultValue=8
+
+[5A23sub1]
+ParameterName=Memory space max. block size
+ObjectType=7
+DataType=0x06
+AccessType=ro
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A23sub2]
+ParameterName=Memory space page size
+ObjectType=7
+DataType=0x06
+AccessType=ro
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A23sub3]
+ParameterName=Memory space start address
+ObjectType=7
+DataType=0x07
+AccessType=ro
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A23sub4]
+ParameterName=Memory space size
+ObjectType=7
+DataType=0x07
+AccessType=ro
+PDOMapping=0
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A23sub5]
+ParameterName=Data block start address
+ObjectType=7
+DataType=0x07
+AccessType=rw
+LowLimit=0x00000000
+HighLimit=0xffffffff
+PDOMapping=0
+;SEVCONFIELD UNITS=Bytes
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A23sub6]
+ParameterName=Data block length
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0x00000000
+HighLimit=0xffffffff
+PDOMapping=0
+;SEVCONFIELD UNITS=Bytes
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A23sub7]
+ParameterName=Block data
+ObjectType=2
+DataType=0x0F
+AccessType=wo
+LowLimit=0x00
+HighLimit=0xff
+PDOMapping=0
+;SEVCONFIELD UNITS=Bytes
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+
+[5A23sub8]
+ParameterName=Data block checksum
+ObjectType=7
+DataType=0x06
+AccessType=rw
+LowLimit=0x0000
+HighLimit=0xffff
+PDOMapping=0
+;SEVCONFIELD UNITS=Bytes
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+;SEVCONFIELD COMMS_TIMEOUT=15000
+
+[5A30]
+AccessType=ro
+DataType=0x06
+PDOMapping=0
+ObjectType=7
+ParameterName=Programming error code
+;SEVCONFIELD OBJECT=BOOT_ERROR_CODE
+;SEVCONFIELD SECTION=BOOTLOADER
+;SEVCONFIELD NUMBER_FORMAT=43
+;SEVCONFIELD 0x0=No Error
+;SEVCONFIELD 0x1=NEED_32BIT_ADDRESS
+;SEVCONFIELD 0x2=ADDRESS_OUT_OF_RANGE
+;SEVCONFIELD 0x3=ADDRESS_NOT_IN_PAGE
+;SEVCONFIELD 0x4=EXPECTING_START_ADDRESS
+;SEVCONFIELD 0x5=DATA_MEMSPACE_CHANGED
+;SEVCONFIELD 0x6=DATA_NOT_IN_PAGE
+;SEVCONFIELD 0x7=EXPECTING_DATA
+;SEVCONFIELD 0x8=NEED_16BIT_SUM
+;SEVCONFIELD 0x9=CHECKSUM_MEMSPACE_CHANGED
+;SEVCONFIELD 0xA=CHECKSUM_INVALID
+;SEVCONFIELD 0xB=BOOTLOADER_OVERWRITE
+;SEVCONFIELD 0xC=MISSING_DATALENGTH
+;SEVCONFIELD 0xD=MEMORY_SPACE_LENGTH_CHANGED
+;SEVCONFIELD 0xE=16BIT_LENGTH_REQURIED
+;SEVCONFIELD 0xF=DATALENGTH_NOT_MULTIPLE_OF_PAGESIZE
+;SEVCONFIELD 0x10=DATALENGTH_EXCEEDS_MEMORY_SPACE
+;SEVCONFIELD 0x11=DATALENGTH_EXCEEDS_MAX_BLOCKSIZE
+;SEVCONFIELD 0x12=CANPROTOCOL_ERROR
+;SEVCONFIELD 0x13=CANNOT_WRITE_ZERO_BYTES
+;SEVCONFIELD 0x14=CANNOT_WRITE_CHEKCSUM
+;SEVCONFIELD 0x101=AT49F_VERIFY_ERROR
+;SEVCONFIELD 0x201=XC16X16F_VERIFY_FAIL
+;SEVCONFIELD 0x202=XC16X16F_FLASH_FAIL
+;SEVCONFIELD 0x301=EEPROM_WRITE_FAIL
+;SEVCONFIELD 0x302=EEPROM_READBACK_FAIL
+;SEVCONFIELD 0x303=EEPROM_VERIFY_FAIL
+;SEVCONFIELD 0x304=EEPROM_READ_FAIL
+;SEVCONFIELD 0x305=BAD_NOTIFICATION
+;SEVCONFIELD 0x306=DSP_NOT_RESPONDING
+;SEVCONFIELD 0x307=DSP_NOT_INITIALISED
+;SEVCONFIELD 0x308=CANNOT_SEND_PROGRAM_TO_DSP
+;SEVCONFIELD 0x30B=CANNOT_RESET_DSP
+;SEVCONFIELD 0x30C=CANNOT_COMMIT_SOFTWARE_TO_DSP
+;SEVCONFIELD 0x30E=DSP_BUSY
+;SEVCONFIELD 0x30F=CANNOT_GET_DSP_RELEASE_NUMBER
+;SEVCONFIELD 0x310=CANNOT_GET_DSP_ROM_START_ADDRESS
+;SEVCONFIELD 0x311=CANNOT_GET_DSP_ROM_DEVICE_LENGTH
+;SEVCONFIELD 0x312=DSP_APPLICATION_DID_NOT_START
+;SEVCONFIELD 0xFF81=UNKNOWN_SUBINDEX_INTERNAL
+;SEVCONFIELD 0xFF82=PROGRAM_PAGE_INTERNAL
+;SEVCONFIELD 0xFF83=FLASH_EEPROM_INTERNAL
+;SEVCONFIELD 0xFF84=CALLBACK_INTERNAL
+
+[5A31]
+AccessType=rw
+DataType=0x06
+PDOMapping=0
+ObjectType=7
+ParameterName=Programming (all data) checksum
+;SEVCONFIELD OBJECT=BOOT_COMPLETE
+;SEVCONFIELD SECTION=BOOTLOADER
+;SEVCONFIELD NUMBER_FORMAT=BASE16
+;SEVCONFIELD COMMS_TIMEOUT=1
+
+[5A32]
+AccessType=wo
+DataType=0x05
+LowLimit=0x00
+HighLimit=0x01
+PDOMapping=0
+ObjectType=7
+ParameterName=Programming reset
+;SEVCONFIELD UNITS=Bytes
+;SEVCONFIELD OBJECT=BOOT_RESET
+;SEVCONFIELD SECTION=BOOTLOADER
+;SEVCONFIELD NUMBER_FORMAT=BASE16

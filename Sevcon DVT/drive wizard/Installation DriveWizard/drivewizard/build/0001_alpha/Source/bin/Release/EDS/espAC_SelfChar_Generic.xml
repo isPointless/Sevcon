@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DWTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DateTimeValue="2006-05-31">
+  <treeStruct Title="Sevcon Device">
+    <XMLSections>
+      <XMLSection Title="Identity">
+        <XMLSections>
+          <XMLSection Title="Identity" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Vehicle">
+        <XMLSections>
+          <XMLSection Title="Configuration">
+            <XMLSections>
+              <XMLSection Title="VehicleConfig" />
+            </XMLSections>
+          </XMLSection>
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Self Characterization">
+        <XMLSections>
+          <XMLSection Title="SelfChar_Test_Parameters" />
+          <XMLSection Title="Power Frame">
+            <XMLSections>
+              <XMLSection Title="SelfChar_PowerFrame" />
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Line Contactor">
+            <XMLSections>
+              <XMLSection Title="SelfChar_LineContactor" />
+            </XMLSections>
+          </XMLSection>
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Status">
+        <XMLSections>
+          <XMLSection Title="NodeStatus" />
+        </XMLSections>
+      </XMLSection>
+    </XMLSections>
+  </treeStruct>
+  <VendorIDs>
+    <vendorID>
+      <vendorNoValue>0x0000001e</vendorNoValue>
+      <productCodeGroup>
+        <productCode>
+          <prodCodeValue>0x00000000</prodCodeValue>
+          <revsionNumberGroup>
+            <revisionNumber>
+              <revNoValue>0x00000000</revNoValue>
+            </revisionNumber>
+          </revsionNumberGroup>
+        </productCode>
+        <productCode>
+          <prodCodeValue>0x01fe0000</prodCodeValue>
+          <revsionNumberGroup>
+            <revisionNumber>
+              <revNoValue>0x********</revNoValue>
+            </revisionNumber>
+          </revsionNumberGroup>
+        </productCode>
+      </productCodeGroup>
+    </vendorID>
+  </VendorIDs>
+</DWTree>

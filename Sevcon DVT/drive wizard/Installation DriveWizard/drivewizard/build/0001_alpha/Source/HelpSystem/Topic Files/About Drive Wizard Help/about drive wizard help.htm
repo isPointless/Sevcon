@@ -1,0 +1,177 @@
+<!--
+(C) COPYRIGHT Sevcon 2007
+
+Project Reference UK0139
+
+FILE
+	$Revision:1.4$
+	$Version:$
+	$Author:ak$
+	$ProjectName:DriveWizard$ 
+
+	$RevDate:11/12/2007 11:22:14$
+	$ModDate:11/12/2007 10:55:20$
+
+ORIGINAL AUTHOR
+    Jude Wood
+
+DESCRIPTION
+	Drive wizard HTML help page.
+ 
+REFERENCES    
+
+MODIFICATION HISTORY
+    $Log:  58830: about drive wizard help.htm 
+
+   Rev 1.4    11/12/2007 11:22:14  ak
+ TC keywords added to source for version control.
+
+
+
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/DWHelpTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>About Drive Wizard Help</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" -->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function ac_populatePanel(eventObj,ieLayer,nnLayer,text,bgColor,borderColor,border,padding,xOffset,yOffset) { //v1.0
+// (c) 1998 Andrew Castles. - andrewc@arrakis.es
+// All rights reserved.     - http://www.arrakis.es/~andrewc/
+// This code may be freely copied if this copyright notice is included.
+  if (null == xOffset) xOffset = 20; // Set default for offset
+  if (null == yOffset) yOffset = 20; // Set default for offset
+
+  if (!(document.all || document.layers)) return;
+  if (null != document.all) document.ac_poppedLayer = eval(ieLayer); else document.ac_poppedLayer = eval(nnLayer);
+
+  var table = "";
+  var bigTable = ""; // Workaround for Netscape
+  if (null != document.all) { // If IE4+
+    table += "<table border=0 cellpadding=" + (null==border?1:border) + " cellspacing=0>";
+    table += "<tr><td bgcolor=" + (null==borderColor?"#000000":borderColor) + ">";
+    table += "<table cellspacing=0 cellpadding="+(null==padding?2:padding)+">";
+    table += "<tr><td bgcolor=" + (null==bgColor?"#ffffcc":bgColor) + ">" + text + "</td></tr>";
+    table += "</table></td></tr></table>"
+  } else { // If NN4+
+    table += "<table cellpadding="+(null==padding?2:padding)+" border=" + (null==border?1:border) + " cellspacing=0 bordercolor=" + (null==borderColor?"#000000":borderColor) + ">";
+    bigTable += "<table width="+(document.width - (null==xOffset?20:xOffset) - eventObj.layerX)+"cellpadding="+(null==padding?2:padding)+" border=" + (null==border?1:border) + " cellspacing=0 bordercolor=" + (null==borderColor?"#000000":borderColor) + ">";
+    table += "<tr><td bgcolor=" + (null==bgColor?"#ffffcc":bgColor) + ">" + text + "</td></tr></table>";
+    bigTable += "<tr><td bgcolor=" + (null==bgColor?"#ffffcc":bgColor) + ">" + text + "</td></tr></table>";
+  }
+
+  if (null != document.all) { // If IE4+
+    document.ac_poppedLayer.innerHTML = table;
+    document.ac_poppedLayer.style.left = eventObj.x + (null==xOffset?20:xOffset);
+    document.ac_poppedLayer.style.top  = eventObj.y + (null==yOffset?20:yOffset);
+    document.ac_poppedLayer.style.visibility = "visible";
+  } else { // If NN4+
+    document.ac_poppedLayer.document.open();
+    document.ac_poppedLayer.document.write(table);
+    document.ac_poppedLayer.document.close();
+    if ((document.ac_poppedLayer.document.width + (null==xOffset?20:xOffset) + eventObj.layerX) > document.width)
+    { // If the layer runs off the right hand side
+      document.ac_poppedLayer.document.open();
+      document.ac_poppedLayer.document.write(bigTable);
+      document.ac_poppedLayer.document.close();
+    }
+    document.ac_poppedLayer.left = eventObj.layerX + (null==xOffset?20:xOffset);
+    document.ac_poppedLayer.top  = eventObj.layerY + (null==yOffset?20:yOffset);
+    document.ac_poppedLayer.visibility = "visible";
+  }
+}
+
+function ac_unpopulatePanel() { //v1.0
+// (c) 1998 Andrew Castles. - andrewc@arrakis.es
+// All rights reserved.     - http://www.arrakis.es/~andrewc/
+// This code may be freely copied if this copyright notice is included.
+  if (!(document.all || document.layers)) return;
+  if (null == document.ac_poppedLayer) {
+//    alert("error in unpopup layers");
+  } else if (null != document.all)
+    document.ac_poppedLayer.style.visibility = "hidden";
+  else
+    document.ac_poppedLayer.visibility = "hidden";
+  document.ac_poppedLayer = null;
+}
+//-->
+</script>
+<!-- InstanceEndEditable -->
+<link href="../../CSS%20Style%20Sheets/DWHelp.css" rel="stylesheet" type="text/css">
+<!-- InstanceParam name="ALinks" type="boolean" value="true" -->
+</head>
+
+<body>
+  <div align="right">    <img src="../../Topic%20Files/Help%20Images/DWlogoSmall.gif" alt="Drive WIzard logo" width="54" height="24">&nbsp;<a name="top"></a><img src="../../Topic%20Files/Help%20Images/SEVCON.gif" alt="Sevcon logo" width="115" height="16" align="left"></br>
+  </div>
+  <hr>
+  <div id="Layer1" style="position:absolute; z-index:1; visibility: hidden; left: 0; top: 0;"></div>
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+<h1>About Drive Wizard help</h1>
+<li><a href="#gettinghelp">Getting  Help</a></li>
+<li><a href="faqs.htm">FAQs</a></li>
+<li><a href="#contactdrivewizardteam">Contacting the Drive Wizard Team</a></li>
+<li><a href="#symbolsused">Symbols used</a></li>
+<li><a href="#helpimages">Help Images</a></li>
+<h2><a name="gettinghelp" id="gettinghelp"></a>Getting help</h2>
+<p class="DWbodyText">To get help at any time from within Drive Wizard press
+  F1</p>
+<h2><a name="symbolsused"></a>Symbols
+    used in Drive Wizard help: </h2>
+<h3 align="left" class="DWbodyText">The following symbols are standard in Sevcon
+  documentation:</h3>
+<table width="98%" border="0">
+  <tr>
+    <td><img src="../Help%20Images/docs_symbols/UM_warning_symbol.gif" alt="Warning symbol" width="29" height="22" align="top"></td>
+    <td valign="middle"><p class="DWbodyText">A WARNING is an instruction that
+        draws attention to the risk of injury or death
+  and tells you how to avoid the problem.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="../Help%20Images/UM_caution_symbol.gif" alt="Caution Symbol" width="29" height="22" align="top"></td>
+    <td><p><span class="DWbodyText"><br>
+  A CAUTION is an instruction that draws attention to the risk of damage
+        to the
+  product, process or surrounings</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="../Help%20Images/UM_note_symbol.gif" alt="Note symbol" width="26" height="22"></td>
+    <td><p class="DWbodyText"><br>
+      A NOTE indicates important infromation that helps you make better use
+    of your Sevcon product.</p>
+    </td>
+  </tr>
+</table>
+<h2><a name="helpimages"></a>Help Images</h2>
+<p class="DWbodyText">Moving the mouse over images in help screens will display more infromation
+  about individual parts of the image.</p>
+<h2><a name="A1"></a>Tooltips</h2>
+<p class="DWbodyText">Text that has an associated popup tooltip is shown with
+  a highlighted background. Moving the mouse over this text will display
+  the tooltip. Moving the mouse away from the text will cause the tooltip
+  to clear. Try this on the text below:</p>
+<p class="DWbodyText">Move mouse over to show <span class="hasTooltip"><a href="#" onMouseOver="ac_populatePanel(document.all||document.layers?event:null,'document.all[\'Layer1\']','document.layers[\'Layer1\']','&lt;!--ac_tip--&gt;Additional information displayed here&lt;!--ac_tip--&gt;',null,null,null,null,-1,-1)" onMouseOut="ac_unpopulatePanel()">tooltip</a></span> here.
+<h2><span class="DWbodyText"><a name="contactdrivewizardteam"></a></span>Contacting the Drive Wizard Team</h2>
+<p class="DWbodyText">If you experience a  problem when usign Drive Wizard then
+  check the Drive Wizard Help Contents and Index. Also check the <a href="faqs.htm">FAQs</a>. If this
+  does not resolve your
+  problem
+  then
+  send
+  a full description of
+  the problem to :</p>
+<p><a href="mailto:jude.wood@sevcon.com?Subject=Drive Wizard Help Request" class="DWbodyText">Email:
+    Drive Wizard team</a></p>
+<p>&nbsp;</p>
+ <!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

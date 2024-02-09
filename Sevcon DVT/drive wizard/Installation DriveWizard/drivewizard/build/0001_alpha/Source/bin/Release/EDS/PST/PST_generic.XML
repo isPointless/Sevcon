@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DWTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DateTimeValue="2006-06-06">
+  <treeStruct Title="Sevcon Device">
+    <XMLSections>
+      <XMLSection Title="Control">
+        <XMLSections>
+          <XMLSection Title="PST_CONTROL" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Status">
+        <XMLSections>
+          <XMLSection Title="PST_STATUS" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Steering Control Modes">
+        <XMLSections>
+          <XMLSection Title="Modes of Operation">
+            <XMLSections>
+              <XMLSection Title="PST_MODESOFOPERATION" />
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Position Control">
+            <XMLSections>
+              <XMLSection Title="General">
+                <XMLSections>
+                  <XMLSection Title="PST_POS_CONTROL_GENERAL" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Digital Position Control">
+                <XMLSections>
+                  <XMLSection Title="PST_DIGITALPOSCONTROL" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Analogue Position control">
+                <XMLSections>
+                  <XMLSection Title="PST_ANALOGPOSCONTROL" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Digital Delta Position Control">
+                <XMLSections>
+                  <XMLSection Title="PST_DIGITALDELTACONTROL" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Position Limits">
+                <XMLSections>
+                  <XMLSection Title="PST_POSITIONLIMITS" />
+                </XMLSections>
+              </XMLSection>
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Torque assist Mode">
+            <XMLSections>
+              <XMLSection Title="PST_TORQUEASSIST" />
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Velocity Control">
+            <XMLSections>
+              <XMLSection Title="PST_VELOCITYCONTROL" />
+            </XMLSections>
+          </XMLSection>
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Electrical params">
+        <XMLSections>
+          <XMLSection Title="PST_ELEC_PARAMS" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Mechanical params">
+        <XMLSections>
+          <XMLSection Title="PST_MECHANICAL" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Motor params">
+        <XMLSections>
+          <XMLSection Title="PST_MOTOR" />
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Comms objects setup wizard">
+        <XMLSections>
+          <XMLSection Title="Transmit PDOs">
+            <XMLSections>
+              <XMLSection Title="PDO 1">
+                <XMLSections>
+                  <XMLSection Title="TRANSMITPDO1" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 2">
+                <XMLSections>
+                  <XMLSection Title="TRANSMITPDO2" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 3">
+                <XMLSections>
+                  <XMLSection Title="TRANSMITPDO3" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 4">
+                <XMLSections>
+                  <XMLSection Title="TRANSMITPDO4" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 5">
+                <XMLSections>
+                  <XMLSection Title="TRANSMITPDO5" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 6">
+                <XMLSections>
+                  <XMLSection Title="TRANSMITPDO6" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 7">
+                <XMLSections>
+                  <XMLSection Title="TRANSMITPDO7" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 8">
+                <XMLSections>
+                  <XMLSection Title="TRANSMITPDO8" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 9">
+                <XMLSections>
+                  <XMLSection Title="TRANSMITPDO9" />
+                </XMLSections>
+              </XMLSection>
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Receive PDOs">
+            <XMLSections>
+              <XMLSection Title="PDO 1">
+                <XMLSections>
+                  <XMLSection Title="RECEIVEPDO1" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 2">
+                <XMLSections>
+                  <XMLSection Title="RECEIVEPDO2" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 3">
+                <XMLSections>
+                  <XMLSection Title="RECEIVEPDO3" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PD0 4">
+                <XMLSections>
+                  <XMLSection Title="RECEIVEPDO4" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 5">
+                <XMLSections>
+                  <XMLSection Title="RECEIVEPDO5" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 7">
+                <XMLSections>
+                  <XMLSection Title="RECEIVEPDO7" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 8">
+                <XMLSections>
+                  <XMLSection Title="RECEIVEPDO8" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="PDO 9">
+                <XMLSections>
+                  <XMLSection Title="RECEIVEPDO9" />
+                </XMLSections>
+              </XMLSection>
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Virtual PDO Maps">
+            <XMLSections>
+              <XMLSection Title="Analogue inputs">
+                <XMLSections>
+                  <XMLSection Title="LocalAIMapping" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Analogue outputs">
+                <XMLSections>
+                  <XMLSection Title="LocalAOMapping" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Digital inputs">
+                <XMLSections>
+                  <XMLSection Title="LocalDIMapping" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Digital outputs">
+                <XMLSections>
+                  <XMLSection Title="LocalDOMapping" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Motor">
+                <XMLSections>
+                  <XMLSection Title="LocalMotorMapping" />
+                </XMLSections>
+              </XMLSection>
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Emergency">
+            <XMLSections>
+              <XMLSection Title="Emergency" />
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Client Server SDOs">
+            <XMLSections>
+              <XMLSection Title="ClientServerSDOs" />
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Sync">
+            <XMLSections>
+              <XMLSection Title="SYNCCOB" />
+            </XMLSections>
+          </XMLSection>
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="CANopen">
+        <XMLSections>
+          <XMLSection Title="NMT Error Control">
+            <XMLSections>
+              <XMLSection Title="Heartbeat">
+                <XMLSections>
+                  <XMLSection Title="Heartbeat" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Guarding">
+                <XMLSections>
+                  <XMLSection Title="Guarding" />
+                </XMLSections>
+              </XMLSection>
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="General">
+            <XMLSections>
+              <XMLSection Title="Status">
+                <XMLSections>
+                  <XMLSection Title="CANOPEN_GENERALSTATUS" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Control">
+                <XMLSections>
+                  <XMLSection Title="CANOPEN_GENERALCONTROL" />
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Set up">
+                <XMLSections>
+                  <XMLSection Title="CANOpenSetup" />
+                </XMLSections>
+              </XMLSection>
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Store">
+            <XMLSections>
+              <XMLSection Title="CANOpenStore" />
+            </XMLSections>
+          </XMLSection>
+          <XMLSection Title="Supported profiles">
+            <XMLSections>
+              <XMLSection Title="Drives and Motion Control">
+                <XMLSections>
+                  <XMLSection Title="Status">
+                    <XMLSections>
+                      <XMLSection Title="Motor1Status" />
+                    </XMLSections>
+                  </XMLSection>
+                  <XMLSection Title="Debug">
+                    <XMLSections>
+                      <XMLSection Title="Motor1Debug" />
+                    </XMLSections>
+                  </XMLSection>
+                  <XMLSection Title="Setup">
+                    <XMLSections>
+                      <XMLSection Title="MOTOR1SETUP" />
+                    </XMLSections>
+                  </XMLSection>
+                  <XMLSection Title="Characterization">
+                    <XMLSections>
+                      <XMLSection Title="MOTOR1CHARACTERIZATION" />
+                    </XMLSections>
+                  </XMLSection>
+                  <XMLSection Title="Control">
+                    <XMLSections>
+                      <XMLSection Title="MOTOR1CONTROL" />
+                    </XMLSections>
+                  </XMLSection>
+                  <XMLSection Title="Plate Data">
+                    <XMLSections>
+                      <XMLSection Title="Motor1PlateData" />
+                    </XMLSections>
+                  </XMLSection>
+                  <XMLSection Title="Encoder">
+                    <XMLSections>
+                      <XMLSection Title="EncoderConfig" />
+                    </XMLSections>
+                  </XMLSection>
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="Generic I/O">
+                <XMLSections>
+                  <XMLSection Title="Status">
+                    <XMLSections>
+                      <XMLSection Title="IO Status">
+                        <XMLSections>
+                          <XMLSection Title="IOSTATUS" />
+                        </XMLSections>
+                      </XMLSection>
+                      <XMLSection Title="Digital inputs">
+                        <XMLSections>
+                          <XMLSection Title="DIStatus" />
+                        </XMLSections>
+                      </XMLSection>
+                      <XMLSection Title="Digital outputs">
+                        <XMLSections>
+                          <XMLSection Title="DOStatus" />
+                        </XMLSections>
+                      </XMLSection>
+                      <XMLSection Title="Analogue inputs">
+                        <XMLSections>
+                          <XMLSection Title="AIStatus" />
+                        </XMLSections>
+                      </XMLSection>
+                      <XMLSection Title="Analogue outputs">
+                        <XMLSections>
+                          <XMLSection Title="AOStatus" />
+                        </XMLSections>
+                      </XMLSection>
+                    </XMLSections>
+                  </XMLSection>
+                  <XMLSection Title="Configuration">
+                    <XMLSections>
+                      <XMLSection Title="Digital inputs">
+                        <XMLSections>
+                          <XMLSection Title="DIConfiguration" />
+                        </XMLSections>
+                      </XMLSection>
+                      <XMLSection Title="Digital outputs">
+                        <XMLSections>
+                          <XMLSection Title="DOConfiguration" />
+                        </XMLSections>
+                      </XMLSection>
+                      <XMLSection Title="Analogue inputs">
+                        <XMLSections>
+                          <XMLSection Title="AIConfiguration" />
+                        </XMLSections>
+                      </XMLSection>
+                      <XMLSection Title="Analogue outputs">
+                        <XMLSections>
+                          <XMLSection Title="AOConfiguration" />
+                        </XMLSections>
+                      </XMLSection>
+                    </XMLSections>
+                  </XMLSection>
+                  <XMLSection Title="Control">
+                    <XMLSections>
+                      <XMLSection Title="AO Control">
+                        <XMLSections>
+                          <XMLSection Title="AODirectControl" />
+                        </XMLSections>
+                      </XMLSection>
+                    </XMLSections>
+                  </XMLSection>
+                </XMLSections>
+              </XMLSection>
+              <XMLSection Title="CANopen profiles used">
+                <XMLSections>
+                  <XMLSection Title="CANOPEN_PROFILEEND" />
+                </XMLSections>
+              </XMLSection>
+            </XMLSections>
+          </XMLSection>
+        </XMLSections>
+      </XMLSection>
+      <XMLSection Title="Unassigned EDS Sections">
+        <XMLSections>
+          <XMLSection Title="UNASSIGNED" />
+        </XMLSections>
+      </XMLSection>
+    </XMLSections>
+  </treeStruct>
+  <VendorIDs>
+    <vendorID>
+      <vendorNoValue>0x0000001e</vendorNoValue>
+      <productCodeGroup>
+        <productCode>
+          <prodCodeValue>0x0201****</prodCodeValue>
+          <revsionNumberGroup>
+            <revisionNumber>
+              <revNoValue>0x********</revNoValue>
+            </revisionNumber>
+          </revsionNumberGroup>
+        </productCode>
+      </productCodeGroup>
+    </vendorID>
+  </VendorIDs>
+</DWTree>
